@@ -1,0 +1,68 @@
+main#home {
+    height: 100%;
+    width: 100%;
+    section.landing {
+        background-image: url(../img/flower1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        .text {
+            border-bottom: 2px solid #fefefe;
+            padding-bottom: 40px;
+        }
+            h1.name {
+                text-align: center;
+                font-family: $font-quicksand;
+                color: #fefefe;
+                font-size: 50px;
+            }
+            h2.role {
+                text-align: center;
+                font-family: $font-quicksand;
+                color: #fefefe;
+                font-size: 33px;
+                small {
+                    font-size: 28px;
+                    font-style: italic;
+                }
+            }
+    }
+}
+
+@media screen and (min-width:768px) {
+    main#home {
+        section.landing {
+                h1.name {
+                    font-size: 65px;
+                }
+                h2.role {
+                    font-size: 43px;
+                    small {
+                        font-size: 38px;
+                    }
+                }
+        }
+    }
+
+}
+@media screen and (min-width:992px) {
+    main#home {
+        section.landing {
+                h1.name {
+                    font-size: 75px;
+                }
+                h2.role {
+                    font-size: 49px;
+                    small {
+                        font-size: 42px;
+                    }
+                }
+        }
+    }
+}
