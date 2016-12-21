@@ -2,7 +2,7 @@ main#home {
     height: 100%;
     width: 100%;
     section.landing {
-        background-image: url(../img/flower1.jpg);
+        background-image: url(../img/landscapepeople.jpg);
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -12,25 +12,21 @@ main#home {
         align-items: center;
         height: 100%;
         width: 100%;
-        .text {
-            border-bottom: 2px solid #fefefe;
-            padding-bottom: 40px;
-        }
             h1.name {
                 text-align: center;
-                font-family: $font-quicksand;
+                font-family: $font-montserrat;
+                text-transform: uppercase;
                 color: #fefefe;
                 font-size: 50px;
+                margin-bottom: 20px;
             }
             h2.role {
                 text-align: center;
-                font-family: $font-quicksand;
+                font-family: $font-poiretone;
+                text-transform: uppercase;
+                letter-spacing: 3px;
                 color: #fefefe;
                 font-size: 33px;
-                small {
-                    font-size: 28px;
-                    font-style: italic;
-                }
             }
     }
 }
@@ -43,9 +39,6 @@ main#home {
                 }
                 h2.role {
                     font-size: 43px;
-                    small {
-                        font-size: 38px;
-                    }
                 }
         }
     }
@@ -53,16 +46,45 @@ main#home {
 }
 @media screen and (min-width:992px) {
     main#home {
+        .block_noir {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            transform: skewX(-20deg);
+            margin-right: -110%;
+        }
         section.landing {
+            .content {
+                z-index: 1;
+                transform: skewX(20deg);
+                position: relative;
+                top: 35%;
+                left: 5%;
                 h1.name {
-                    font-size: 75px;
+                    text-align: left;
+                    font-size: 52px;
+                    margin-left:22px;
                 }
                 h2.role {
-                    font-size: 49px;
-                    small {
-                        font-size: 42px;
-                    }
+                    text-align: left;
+                    font-size: 38px;
                 }
+                hr {
+                    width: 50px;
+                    margin: 50px 0;
+                    margin-left: -10px;
+                }
+                p {
+                    transform: skewX(-20deg);
+                    font-family: $font-poiretone;
+                    letter-spacing: 2px;
+                    width: 400px;
+                    text-align: justify;
+                    color: #fefefe;
+                    line-height: 20px;
+                    margin-left: -50px;
+                }
+            }
         }
     }
 }
