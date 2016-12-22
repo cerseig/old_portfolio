@@ -90,23 +90,65 @@ main#home section.about {
   width: 100%;
   height: 100%;
 }
+/* line 60, ../scss/_home.scss */
+main#home section.about img {
+  width: 90%;
+}
+/* line 63, ../scss/_home.scss */
+main#home section.about .text {
+  text-align: center;
+}
+/* line 65, ../scss/_home.scss */
+main#home section.about .text h3 {
+  color: #cc3554;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  background-color: #fefefe;
+  line-height: 25px;
+}
+/* line 76, ../scss/_home.scss */
+main#home section.about .text p {
+  margin: 0;
+}
+/* line 79, ../scss/_home.scss */
+main#home section.about .text a {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 15px 40px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+/* line 90, ../scss/_home.scss */
+main#home section.about .text a:hover {
+  border-color: #cc3554;
+  background-color: #cc3554;
+  color: #fefefe;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 66, ../scss/_home.scss */
+  /* line 102, ../scss/_home.scss */
   main#home section.landing .triangles {
     display: none;
   }
-  /* line 69, ../scss/_home.scss */
+  /* line 105, ../scss/_home.scss */
   main#home section.landing h1.name {
     font-size: 65px;
   }
-  /* line 72, ../scss/_home.scss */
+  /* line 108, ../scss/_home.scss */
   main#home section.landing h2.role {
     font-size: 43px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 81, ../scss/_home.scss */
+  /* line 117, ../scss/_home.scss */
   main#home section.landing {
     background-image: url(../img/trytrait.jpg);
     display: flex;
@@ -115,12 +157,12 @@ main#home section.about {
     background-position: center;
     background-size: cover;
   }
-  /* line 83, ../scss/_home.scss */
+  /* line 119, ../scss/_home.scss */
   main#home section.landing .container {
     width: 100%;
     height: 100%;
   }
-  /* line 92, ../scss/_home.scss */
+  /* line 128, ../scss/_home.scss */
   main#home section.landing .particles {
     display: block;
     width: 350px;
@@ -130,11 +172,11 @@ main#home section.about {
     top: 68px;
     left: -5px;
   }
-  /* line 101, ../scss/_home.scss */
+  /* line 137, ../scss/_home.scss */
   main#home section.landing canvas {
     border-radius: 50%;
   }
-  /* line 104, ../scss/_home.scss */
+  /* line 140, ../scss/_home.scss */
   main#home section.landing .block_noir {
     display: flex;
     width: 100%;
@@ -143,7 +185,7 @@ main#home section.about {
     transform: skewX(-20deg);
     margin-left: 55%;
   }
-  /* line 113, ../scss/_home.scss */
+  /* line 149, ../scss/_home.scss */
   main#home section.landing .content {
     z-index: 1;
     margin-left: 50px;
@@ -151,21 +193,21 @@ main#home section.about {
     justify-content: center;
     flex-flow: column wrap;
   }
-  /* line 119, ../scss/_home.scss */
+  /* line 155, ../scss/_home.scss */
   main#home section.landing .content .title {
     position: static;
     top: 0;
     left: 0;
     transform: skewX(20deg);
   }
-  /* line 125, ../scss/_home.scss */
+  /* line 161, ../scss/_home.scss */
   main#home section.landing .content h1.name {
     color: #1d314a;
     font-weight: bold;
     text-align: left;
     font-size: 48px;
   }
-  /* line 131, ../scss/_home.scss */
+  /* line 167, ../scss/_home.scss */
   main#home section.landing .content h2.role {
     margin-left: -20px;
     color: #1d314a;
@@ -173,13 +215,13 @@ main#home section.about {
     font-size: 36px;
     letter-spacing: 2px;
   }
-  /* line 138, ../scss/_home.scss */
+  /* line 174, ../scss/_home.scss */
   main#home section.landing .content hr {
     display: block;
     width: 50px;
     margin: 50px 0;
   }
-  /* line 143, ../scss/_home.scss */
+  /* line 179, ../scss/_home.scss */
   main#home section.landing .content p {
     display: block;
     font-weight: bold;
@@ -190,25 +232,25 @@ main#home section.about {
     text-align: justify;
     line-height: 20px;
   }
-  /* line 155, ../scss/_home.scss */
+  /* line 191, ../scss/_home.scss */
   main#home section.about {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 159, ../scss/_home.scss */
+  /* line 195, ../scss/_home.scss */
   main#home section.about .content {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 163, ../scss/_home.scss */
+  /* line 199, ../scss/_home.scss */
   main#home section.about .content .text {
     width: 50%;
     position: relative;
     z-index: 100;
   }
-  /* line 167, ../scss/_home.scss */
+  /* line 203, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     color: #cc3554;
     position: absolute;
@@ -223,7 +265,7 @@ main#home section.about {
     padding: 10px 20px;
     line-height: 45px;
   }
-  /* line 181, ../scss/_home.scss */
+  /* line 217, ../scss/_home.scss */
   main#home section.about .content .text p {
     padding-top: 200px;
     width: 500px;
@@ -235,7 +277,7 @@ main#home section.about {
     line-height: 20px;
     margin-bottom: 30px;
   }
-  /* line 193, ../scss/_home.scss */
+  /* line 229, ../scss/_home.scss */
   main#home section.about .content a {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -247,7 +289,7 @@ main#home section.about {
     margin-left: 170px;
     transition: all 0.5s ease;
   }
-  /* line 205, ../scss/_home.scss */
+  /* line 241, ../scss/_home.scss */
   main#home section.about .content a:hover {
     border-color: #cc3554;
     background-color: #cc3554;
