@@ -1,8 +1,9 @@
         <!-- Include scripts -->
-        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/script.js"></script>
         <script src="assets/js/particles.js"></script>
         <script src="assets/js/app.js"></script>
-        <script src="assets/js/particlesjs-config.json"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
 
         <script>
           var count_particles, stats, update;
@@ -25,6 +26,12 @@
         </script>
 
         <!-- Initialize scripts -->
-        <script type="text/javascript"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                $('.landing').parallax("center", 0.6, 0.1, true);
+            })
+
+        </script>
     </body>
 </html>

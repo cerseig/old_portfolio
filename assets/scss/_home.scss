@@ -2,50 +2,70 @@ main#home {
     height: 100%;
     width: 100%;
     section.landing {
-        background-image: url(../img/trytrait.jpg);
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
         width: 100%;
+        height: 100%;
+        background-image: url(../img/mobile-first.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        .particles, hr, p {
+            display: none;
+        }
+        .triangles {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);}
+            text-align: center;
+        .triangles img {
+            width: 150px;
+        }
+        .triangles img:first-child {
+            opacity: 0.5;
+            position: relative;
+            top: 60px;
+        }
+        .triangles img:last-child {
+            transform: rotate(180deg);
+            position: relative;
+            top: -60px;
+        }
+        .title {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
             h1.name {
+                color: black;
                 text-align: center;
                 font-family: $font-montserrat;
+                font-weight: bold;
                 text-transform: uppercase;
-                color: #fefefe;
-                font-size: 50px;
-                margin-bottom: 20px;
+                font-size: 40px;
             }
             h2.role {
                 text-align: center;
                 font-family: $font-poiretone;
                 text-transform: uppercase;
-                letter-spacing: 3px;
-                color: #fefefe;
-                font-size: 33px;
+                letter-spacing: 2px;
+                font-size: 28px;
             }
+        }
     }
     section.about {
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     }
 }
 
 @media screen and (min-width:768px) {
     main#home {
         section.landing {
+            .triangles {
+                display: none;
+            }
                 h1.name {
                     font-size: 65px;
                 }
@@ -58,71 +78,100 @@ main#home {
 }
 @media screen and (min-width:992px) {
     main#home {
-        .particles {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            position: absolute;
-            top: 68px;
-            left: 0px;
-        }
-        canvas {
-            border-radius: 50%;
-        }
-        .block_noir {
-            background-color: rgba(0, 0, 0, 0.6);
-            width: 100%;
-            height: 100%;
-            transform: skewX(-20deg);
-            margin-right: -110%;
-        }
         section.landing {
+            background-image: url(../img/trytrait.jpg);
+            .container {
+                width: 100%;
+                height: 100%;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-size: cover;
+            .particles {
+                display: block;
+                width: 350px;
+                height: 370px;
+                border-radius: 50%;
+                position: absolute;
+                top: 68px;
+                left: -5px;
+            }
+            canvas {
+                border-radius: 50%;
+            }
+            .block_noir {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                transform: skewX(-20deg);
+                margin-left: 55%;
+
+            }
             .content {
                 z-index: 1;
-                transform: skewX(20deg);
-                position: relative;
-                top: 35%;
-                left: 5%;
+                margin-left: 50px;
+                display: flex;
+                justify-content: center;
+                flex-flow: column wrap;
+                .title {
+                    position: static;
+                    top: 0;
+                    left: 0;
+                    transform: skewX(20deg);
+                }
                 h1.name {
+                    color: #1d314a;
+                    font-weight: bold;
                     text-align: left;
-                    font-size: 52px;
-                    margin-left:22px;
+                    font-size: 48px;
                 }
                 h2.role {
+                    margin-left: -20px;
+                    color: #1d314a;
                     text-align: left;
-                    font-size: 38px;
+                    font-size: 36px;
+                    letter-spacing: 2px;
                 }
                 hr {
+                    display: block;
                     width: 50px;
                     margin: 50px 0;
-                    margin-left: -10px;
                 }
                 p {
-                    transform: skewX(-20deg);
+                    display: block;
+                    font-weight: bold;
+                    color: #1d314a;
                     font-family: $font-poiretone;
                     letter-spacing: 2px;
                     width: 400px;
                     text-align: justify;
-                    color: #fefefe;
                     line-height: 20px;
-                    margin-left: -50px;
                 }
             }
         }
         section.about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 .text {
                     width: 50%;
                     position: relative;
                     z-index: 100;
                     h3 {
+                        color: #cc3554;
                         position: absolute;
                         left: -150px;
                         top: 30px;
                         font-family: $font-montserrat;
                         font-weight: bold;
                         text-transform: uppercase;
-                        color: black;
                         font-size: 40px;
                         margin-bottom: 50px;
                         background-color: #fefefe;
@@ -138,18 +187,25 @@ main#home {
                         left: -80px;
                         text-align: justify;
                         line-height: 20px;
-                        margin-bottom: 50px;
+                        margin-bottom: 30px;
                     }
                 }
                 a {
                     text-transform: uppercase;
                     letter-spacing: 3px;
                     font-weight: bold;
-                    border: 1px solid black;
+                    border: 2px solid black;
                     padding: 15px 40px;
                     color: black;
                     text-decoration: none;
-                    margin-left: 175px;
+                    margin-left: 170px;
+                    transition: all 0.5s ease;
+
+                }
+                a:hover {
+                    border-color: #cc3554;
+                    background-color: #cc3554;
+                    color: #fefefe;
 
                 }
             }

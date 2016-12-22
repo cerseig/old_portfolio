@@ -1,11 +1,17 @@
-<?php include 'header.php' ?>
+<?php require 'header.php' ?>
 
 <main id="home" class="home" role="main">
+
+<!-- SECTION PAGE D'ARRIVÉE -->
     <section class="landing">
         <div class="container">
         <div class="particles" id="particles-js"></div>
         <div class="block_noir">
             <div class="content">
+                <div class="triangles">
+                    <img src="assets/img/triangle.png" alt="">
+                    <img src="assets/img/triangle-contour.png" alt="">
+                </div>
                 <div class="title">
                     <h1 class="name">Circé Grand</h1>
                     <h2 class="role">Creative Developper</2>
@@ -16,6 +22,8 @@
         </div>
     </div>
     </section>
+
+<!-- SECTION A PROPOS -->
     <section class="about">
         <div class="container">
         <div class="content">
@@ -30,4 +38,4 @@
     </section>
 </main>
 
-<?php include 'footer.php' ?>
+<?php require 'footer.php' ?>

@@ -24,140 +24,206 @@ main#home {
 }
 /* line 4, ../scss/_home.scss */
 main#home section.landing {
-  background-image: url(../img/trytrait.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  background-image: url(../img/mobile-first.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+/* line 12, ../scss/_home.scss */
+main#home section.landing .particles, main#home section.landing hr, main#home section.landing p {
+  display: none;
 }
 /* line 15, ../scss/_home.scss */
-main#home section.landing h1.name {
+main#home section.landing .triangles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 21, ../scss/_home.scss */
+main#home section.landing .triangles img {
+  width: 150px;
+}
+/* line 24, ../scss/_home.scss */
+main#home section.landing .triangles img:first-child {
+  opacity: 0.5;
+  position: relative;
+  top: 60px;
+}
+/* line 29, ../scss/_home.scss */
+main#home section.landing .triangles img:last-child {
+  transform: rotate(180deg);
+  position: relative;
+  top: -60px;
+}
+/* line 34, ../scss/_home.scss */
+main#home section.landing .title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 40, ../scss/_home.scss */
+main#home section.landing .title h1.name {
+  color: black;
   text-align: center;
   font-family: "Montserrat";
+  font-weight: bold;
   text-transform: uppercase;
-  color: #fefefe;
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 40px;
 }
-/* line 23, ../scss/_home.scss */
-main#home section.landing h2.role {
+/* line 48, ../scss/_home.scss */
+main#home section.landing .title h2.role {
   text-align: center;
   font-family: "Poiret One";
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fefefe;
-  font-size: 33px;
+  letter-spacing: 2px;
+  font-size: 28px;
 }
-/* line 32, ../scss/_home.scss */
+/* line 57, ../scss/_home.scss */
 main#home section.about {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* line 38, ../scss/_home.scss */
-main#home section.about .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 49, ../scss/_home.scss */
+  /* line 66, ../scss/_home.scss */
+  main#home section.landing .triangles {
+    display: none;
+  }
+  /* line 69, ../scss/_home.scss */
   main#home section.landing h1.name {
     font-size: 65px;
   }
-  /* line 52, ../scss/_home.scss */
+  /* line 72, ../scss/_home.scss */
   main#home section.landing h2.role {
     font-size: 43px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 61, ../scss/_home.scss */
-  main#home .particles {
+  /* line 81, ../scss/_home.scss */
+  main#home section.landing {
+    background-image: url(../img/trytrait.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+  }
+  /* line 83, ../scss/_home.scss */
+  main#home section.landing .container {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 92, ../scss/_home.scss */
+  main#home section.landing .particles {
+    display: block;
     width: 350px;
-    height: 350px;
+    height: 370px;
     border-radius: 50%;
     position: absolute;
     top: 68px;
-    left: 0px;
+    left: -5px;
   }
-  /* line 69, ../scss/_home.scss */
-  main#home canvas {
+  /* line 101, ../scss/_home.scss */
+  main#home section.landing canvas {
     border-radius: 50%;
   }
-  /* line 72, ../scss/_home.scss */
-  main#home .block_noir {
-    background-color: rgba(0, 0, 0, 0.6);
+  /* line 104, ../scss/_home.scss */
+  main#home section.landing .block_noir {
+    display: flex;
     width: 100%;
     height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
     transform: skewX(-20deg);
-    margin-right: -110%;
+    margin-left: 55%;
   }
-  /* line 80, ../scss/_home.scss */
+  /* line 113, ../scss/_home.scss */
   main#home section.landing .content {
     z-index: 1;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+  /* line 119, ../scss/_home.scss */
+  main#home section.landing .content .title {
+    position: static;
+    top: 0;
+    left: 0;
     transform: skewX(20deg);
-    position: relative;
-    top: 35%;
-    left: 5%;
   }
-  /* line 86, ../scss/_home.scss */
+  /* line 125, ../scss/_home.scss */
   main#home section.landing .content h1.name {
+    color: #1d314a;
+    font-weight: bold;
     text-align: left;
-    font-size: 52px;
-    margin-left: 22px;
+    font-size: 48px;
   }
-  /* line 91, ../scss/_home.scss */
+  /* line 131, ../scss/_home.scss */
   main#home section.landing .content h2.role {
+    margin-left: -20px;
+    color: #1d314a;
     text-align: left;
-    font-size: 38px;
+    font-size: 36px;
+    letter-spacing: 2px;
   }
-  /* line 95, ../scss/_home.scss */
+  /* line 138, ../scss/_home.scss */
   main#home section.landing .content hr {
+    display: block;
     width: 50px;
     margin: 50px 0;
-    margin-left: -10px;
   }
-  /* line 100, ../scss/_home.scss */
+  /* line 143, ../scss/_home.scss */
   main#home section.landing .content p {
-    transform: skewX(-20deg);
+    display: block;
+    font-weight: bold;
+    color: #1d314a;
     font-family: "Poiret One";
     letter-spacing: 2px;
     width: 400px;
     text-align: justify;
-    color: #fefefe;
     line-height: 20px;
-    margin-left: -50px;
   }
-  /* line 114, ../scss/_home.scss */
+  /* line 155, ../scss/_home.scss */
+  main#home section.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 159, ../scss/_home.scss */
+  main#home section.about .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 163, ../scss/_home.scss */
   main#home section.about .content .text {
     width: 50%;
     position: relative;
     z-index: 100;
   }
-  /* line 118, ../scss/_home.scss */
+  /* line 167, ../scss/_home.scss */
   main#home section.about .content .text h3 {
+    color: #cc3554;
     position: absolute;
     left: -150px;
     top: 30px;
     font-family: "Montserrat";
     font-weight: bold;
     text-transform: uppercase;
-    color: black;
     font-size: 40px;
     margin-bottom: 50px;
     background-color: #fefefe;
     padding: 10px 20px;
     line-height: 45px;
   }
-  /* line 132, ../scss/_home.scss */
+  /* line 181, ../scss/_home.scss */
   main#home section.about .content .text p {
     padding-top: 200px;
     width: 500px;
@@ -167,17 +233,24 @@ main#home section.about .content {
     left: -80px;
     text-align: justify;
     line-height: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
-  /* line 144, ../scss/_home.scss */
+  /* line 193, ../scss/_home.scss */
   main#home section.about .content a {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bold;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 15px 40px;
     color: black;
     text-decoration: none;
-    margin-left: 175px;
+    margin-left: 170px;
+    transition: all 0.5s ease;
+  }
+  /* line 205, ../scss/_home.scss */
+  main#home section.about .content a:hover {
+    border-color: #cc3554;
+    background-color: #cc3554;
+    color: #fefefe;
   }
 }
