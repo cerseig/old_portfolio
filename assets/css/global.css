@@ -17,6 +17,76 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (min-width: 768px) {
+  /* line 4, ../scss/_navigation.scss */
+  nav {
+    height: 100%;
+    z-index: 100000;
+    position: fixed;
+    right: 40px;
+    display: flex;
+    align-items: center;
+  }
+  /* line 12, ../scss/_navigation.scss */
+  nav ul li {
+    margin-top: 120%;
+  }
+  /* line 14, ../scss/_navigation.scss */
+  nav ul li a {
+    text-decoration: none;
+  }
+  /* line 18, ../scss/_navigation.scss */
+  nav ul li .losange {
+    height: 45px;
+    width: 45px;
+    background-color: #a28287;
+    -ms-transform: rotate(45deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(45deg);
+    /* Firefox */
+    -webkit-transform: rotate(45deg);
+    /* Safari et Chrome */
+    -moz-transition: -moz-transform ease 0.6s;
+    -webkit-transition: -webkit-transform ease 0.6s;
+    -ms-transition: -ms-transform ease 0.6s;
+    transition: transform ease 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 33, ../scss/_navigation.scss */
+  nav ul li .fa {
+    font-size: 20px;
+    color: #fefefe;
+    -ms-transform: rotate(-45deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(-45deg);
+    /* Firefox */
+    -webkit-transform: rotate(-45deg);
+    /* Safari et Chrome */
+  }
+  /* line 40, ../scss/_navigation.scss */
+  nav ul li .losange:hover {
+    background-color: #851e31;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  /* line 46, ../scss/_navigation.scss */
+  nav ul li .losange:hover .fa {
+    -ms-transform: rotate(405deg);
+    /* Internet Explorer */
+    -moz-transform: rotate(405deg);
+    /* Firefox */
+    -webkit-transform: rotate(405deg);
+    /* Safari et Chrome */
+  }
+  /* line 53, ../scss/_navigation.scss */
+  nav ul li:first-child {
+    margin-top: 0;
+  }
+}
 /* line 1, ../scss/_home.scss */
 main#home {
   height: 100%;
@@ -328,11 +398,11 @@ main#about section.about_page .band_picture {
 }
 /* line 12, ../scss/_about.scss */
 main#about section.about_page .geometry {
-  width: 250px;
+  width: 350px;
   height: 250px;
   position: absolute;
   top: 75px;
-  left: 400px;
+  left: 30%;
 }
 /* line 19, ../scss/_about.scss */
 main#about section.about_page .big-square {
@@ -366,69 +436,80 @@ main#about section.about_page h1 {
   font-family: "Montserrat";
   font-size: 35px;
   line-height: 45px;
-  position: absolute;
-  top: 130px;
-  left: 130px;
+  position: relative;
+  float: left;
+  top: 20px;
+  left: -250px;
 }
 
-@media screen and (min-width: 992px) {
-  /* line 8, ../scss/_navigation.scss */
-  nav {
+/* line 1, ../scss/_contact.scss */
+main#contact {
+  height: 100%;
+  width: 100%;
+}
+/* line 4, ../scss/_contact.scss */
+main#contact section.contact_page {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 12, ../scss/_contact.scss */
+  section.contact_page .column-1 {
+    float: left;
+    width: 40%;
     height: 100%;
-    z-index: 100000;
-    position: fixed;
-    right: 30px;
+    background-color: gray;
+  }
+  /* line 18, ../scss/_contact.scss */
+  section.contact_page .column-2 {
+    float: left;
+    width: 60%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 28, ../scss/_contact.scss */
+  section.contact_page .column-1 {
+    float: left;
+    width: 45%;
+    height: 100%;
+  }
+  /* line 33, ../scss/_contact.scss */
+  section.contact_page .column-2 {
+    float: left;
+    width: 55%;
+    height: 100%;
     display: flex;
     align-items: center;
   }
-  /* line 16, ../scss/_navigation.scss */
-  nav ul li {
-    margin-top: 120%;
+  /* line 40, ../scss/_contact.scss */
+  section.contact_page form {
+    padding-left: 30px;
+    width: 100%;
   }
-  /* line 18, ../scss/_navigation.scss */
-  nav ul li a {
-    text-decoration: none;
-  }
-  /* line 21, ../scss/_navigation.scss */
-  nav ul li .losange:hover {
-    background-color: #851e31;
-    -moz-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-  /* line 28, ../scss/_navigation.scss */
-  nav ul li .losange {
+  /* line 43, ../scss/_contact.scss */
+  section.contact_page form input, section.contact_page form textarea {
+    width: 75%;
     height: 50px;
-    width: 50px;
-    background-color: #a28287;
-    -ms-transform: rotate(45deg);
-    /* Internet Explorer */
-    -moz-transform: rotate(45deg);
-    /* Firefox */
-    -webkit-transform: rotate(45deg);
-    /* Safari et Chrome */
-    -moz-transition: -moz-transform ease 0.6s;
-    -webkit-transition: -webkit-transform ease 0.6s;
-    -ms-transition: -ms-transform ease 0.6s;
-    transition: transform ease 0.6s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
-  /* line 42, ../scss/_navigation.scss */
-  nav ul li .losange .fa {
-    font-size: 20px;
-    color: #fefefe;
-    -ms-transform: rotate(-45deg);
-    /* Internet Explorer */
-    -moz-transform: rotate(-45deg);
-    /* Firefox */
-    -webkit-transform: rotate(-45deg);
-    /* Safari et Chrome */
+  /* line 50, ../scss/_contact.scss */
+  section.contact_page form input[type="submit"] {
+    margin-top: 50px;
+    border: 1px solid black;
+    background-color: #fefefe;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 30%;
   }
-  /* line 51, ../scss/_navigation.scss */
-  nav ul li:first-child {
-    margin-top: 0;
+  /* line 61, ../scss/_contact.scss */
+  section.contact_page form textarea {
+    height: 150px;
   }
 }

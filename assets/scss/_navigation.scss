@@ -1,15 +1,11 @@
 
 
 @media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:992px) {
     nav {
         height: 100%;
         z-index: 100000;
         position: fixed;
-        right: 30px;
+        right: 40px;
         display: flex;
         align-items: center;
         ul {
@@ -18,16 +14,10 @@
                 a {
                     text-decoration: none;
                 }
-                .losange:hover {
-                    background-color: #851e31;
-                    -moz-transform: rotate(90deg);
-                    -webkit-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                    transform: rotate(90deg);
-                }
+
                 .losange {
-                    height: 50px;
-                    width: 50px;
+                    height: 45px;
+                    width: 45px;
                     background-color: #a28287;
                     -ms-transform: rotate(45deg); /* Internet Explorer */
                     -moz-transform: rotate(45deg); /* Firefox */
@@ -39,12 +29,24 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                }
+                .fa {
+                    font-size: 20px;
+                    color: #fefefe;
+                    -ms-transform: rotate(-45deg); /* Internet Explorer */
+                    -moz-transform: rotate(-45deg); /* Firefox */
+                    -webkit-transform: rotate(-45deg); /* Safari et Chrome */
+                }
+                .losange:hover {
+                    background-color: #851e31;
+                    -moz-transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
                     .fa {
-                        font-size: 20px;
-                        color: #fefefe;
-                        -ms-transform: rotate(-45deg); /* Internet Explorer */
-                        -moz-transform: rotate(-45deg); /* Firefox */
-                        -webkit-transform: rotate(-45deg); /* Safari et Chrome */
+                        -ms-transform: rotate(405deg); /* Internet Explorer */
+                        -moz-transform: rotate(405deg); /* Firefox */
+                        -webkit-transform: rotate(405deg); /* Safari et Chrome */
                     }
                 }
             }
@@ -53,4 +55,8 @@
             }
         }
     }
+}
+
+@media screen and (min-width:992px) {
+
 }

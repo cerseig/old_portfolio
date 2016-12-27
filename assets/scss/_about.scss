@@ -10,11 +10,11 @@ main#about {
             background-color:gray;
         }
         .geometry {
-            width: 250px;
+            width: 350px;
             height: 250px;
             position: absolute;
             top: 75px;
-            left: 400px;
+            left: 30%;
         }
         .big-square {
             width: 200px;
@@ -44,9 +44,10 @@ main#about {
             font-family: $font-montserrat;
             font-size: 35px;
             line-height: 45px;
-            position: absolute;
-            top: 130px;
-            left: 130px;
+            position: relative;
+            float: left;
+            top: 20px;
+            left: -250px;
         }
     }
 }
