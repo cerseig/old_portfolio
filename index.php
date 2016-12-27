@@ -2,6 +2,8 @@
 
 <main id="home" class="home" role="main">
 
+<?php include 'navigation.php' ?>
+
 <!-- SECTION PAGE D'ARRIVÉE -->
     <section class="landing">
         <div class="container">

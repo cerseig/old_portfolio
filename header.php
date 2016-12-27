@@ -13,6 +13,7 @@
 
         <!-- Stylesheets -->
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Poiret+One|Montserrat:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 
