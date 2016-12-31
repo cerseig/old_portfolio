@@ -128,17 +128,19 @@ main#home {
 }
 @media screen and (min-width:992px) {
     main#home {
+        max-width: 1300px;
         section.landing {
             background-image: url(../img/trytrait.jpg);
-            .container {
-                width: 100%;
-                height: 100%;
-            }
+            background-position: left;
             display: flex;
             justify-content: center;
             align-items: center;
             background-position: center;
             background-size: cover;
+            .container {
+                width: 100%;
+                height: 100%;
+            }
             .particles {
                 display: block;
                 width: 360px;
@@ -146,7 +148,7 @@ main#home {
                 border-radius: 50%;
                 position: absolute;
                 top: 68px;
-                left: -5px;
+                left: -140px;
             }
             canvas {
                 border-radius: 50%;
@@ -157,8 +159,8 @@ main#home {
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.5);
                 transform: skewX(-20deg);
-                margin-left: 55%;
-
+                margin-left: 46%;
+                transition: all 0.5s ease;
             }
             .content {
                 z-index: 1;
@@ -210,6 +212,9 @@ main#home {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                img {
+                    width: 60%;
+                }
                 .text {
                     width: 50%;
                     position: relative;
@@ -223,22 +228,24 @@ main#home {
                         font-family: $font-montserrat;
                         font-weight: bold;
                         text-transform: uppercase;
-                        font-size: 40px;
+                        font-size: 34px;
                         margin-bottom: 50px;
                         background-color: #fefefe;
                         padding: 10px 20px;
                         line-height: 45px;
+                        transition: all 0.5s ease;
                     }
                     p {
                         padding-top: 200px;
-                        width: 500px;
+                        width: 350px;
                         font-family: $font-poiretone;
                         letter-spacing: 2px;
                         position: relative;
-                        left: -80px;
+                        left: -50px;
                         text-align: justify;
                         line-height: 20px;
-                        margin-bottom: 30px;
+                        margin-bottom: 50px;
+                        transition: all 0.5s ease;
                     }
                 }
                 a {
@@ -249,7 +256,7 @@ main#home {
                     padding: 15px 40px;
                     color: black;
                     text-decoration: none;
-                    margin-left: 50px;
+                    margin-left: -110px;
                     transition: all 0.5s ease;
 
                 }
@@ -258,6 +265,96 @@ main#home {
                     background-color: #cc3554;
                     color: #fefefe;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1050px) {
+    main#home {
+        section.landing {
+            .block_noir {
+                margin-left: 48%;
+            }
+            .particles {
+                left: -120px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1100px) {
+    main#home {
+        section.landing {
+            .particles {
+                left: -90px;
+            }
+        }
+        section.about {
+            .content {
+                .text {
+                    h3 {
+                        left: -150px;
+                        top: 30px;
+                        font-size: 38px;
+                        margin-bottom: 50px;
+                    }
+                    p {
+                        width: 400px;
+                        left: -80px;
+                        margin-bottom: 30px;
+                    }
+                }
+                a {
+                    margin-left: -80px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1150px) {
+    main#home {
+        section.landing {
+            .block_noir {
+                margin-left: 51%;
+            }
+            .particles {
+                left: -60px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    main#home {
+        section.landing {
+            .particles {
+                left: -30px;
+            }
+        }
+        section.about {
+            .content {
+                .text {
+                    h3 {
+                        font-size: 40px;
+                    }
+                    p {
+                        width: 500px;
+                    }
+                }
+                a {
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1250px) {
+    main#home {
+        section.landing {
+            .block_noir {
+                margin-left: 55%;
+            }
+            .particles {
+                left: -5px;
             }
         }
     }

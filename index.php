@@ -19,7 +19,7 @@
                             <h2 class="role">Creative Developper</2>
                         </div>
                         <hr>
-                        <p class="resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="resume">Hello ! I am  a student in second yeard of my two-year university Degree of Techonology specialised in Multimedia and the Internet. I am a creative developper and I am looking for an internship as web integrator for 3 months in Paris (or around)</p>
                     </div>
             </div>
         </div>

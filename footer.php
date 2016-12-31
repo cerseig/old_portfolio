@@ -1,3 +1,7 @@
+        <footer>
+            ©Portfolio | Circé Grand, created on 2016. 
+        </footer>
+
         <!-- Include scripts -->
         <script src="assets/js/script.js"></script>
         <script src="assets/js/particles.js"></script>
