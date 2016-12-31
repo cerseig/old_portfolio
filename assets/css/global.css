@@ -26,21 +26,22 @@ nav {
 }
 /* line 6, ../scss/_navigation.scss */
 nav ul {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10%;
 }
 /* line 11, ../scss/_navigation.scss */
 nav ul li {
-  flex-grow: 1;
-  display: inline-block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
-/* line 14, ../scss/_navigation.scss */
+/* line 15, ../scss/_navigation.scss */
 nav ul li a {
   text-decoration: none;
 }
-/* line 17, ../scss/_navigation.scss */
+/* line 18, ../scss/_navigation.scss */
 nav ul li .losange {
   height: 40px;
   width: 40px;
@@ -59,7 +60,7 @@ nav ul li .losange {
   align-items: center;
   justify-content: center;
 }
-/* line 32, ../scss/_navigation.scss */
+/* line 33, ../scss/_navigation.scss */
 nav ul li .fa {
   font-size: 18px;
   color: #fefefe;
@@ -70,9 +71,13 @@ nav ul li .fa {
   -webkit-transform: rotate(-45deg);
   /* Safari et Chrome */
 }
+/* line 41, ../scss/_navigation.scss */
+nav ul li:last-child {
+  flex: none;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 44, ../scss/_navigation.scss */
+  /* line 48, ../scss/_navigation.scss */
   nav {
     width: auto;
     height: 100%;
@@ -82,18 +87,19 @@ nav ul li .fa {
     align-items: center;
     right: 0;
   }
-  /* line 52, ../scss/_navigation.scss */
+  /* line 56, ../scss/_navigation.scss */
   nav ul {
+    padding: 0;
     display: block;
     margin: 0;
   }
-  /* line 55, ../scss/_navigation.scss */
+  /* line 60, ../scss/_navigation.scss */
   nav ul li {
     flex-grow: none;
     display: block;
     margin-top: 120%;
   }
-  /* line 59, ../scss/_navigation.scss */
+  /* line 64, ../scss/_navigation.scss */
   nav ul li .losange {
     height: 50px;
     width: 50px;
@@ -112,7 +118,7 @@ nav ul li .fa {
     align-items: center;
     justify-content: center;
   }
-  /* line 74, ../scss/_navigation.scss */
+  /* line 79, ../scss/_navigation.scss */
   nav ul li .fa {
     font-size: 20px;
     color: #fefefe;
@@ -123,7 +129,7 @@ nav ul li .fa {
     -webkit-transform: rotate(-45deg);
     /* Safari et Chrome */
   }
-  /* line 81, ../scss/_navigation.scss */
+  /* line 86, ../scss/_navigation.scss */
   nav ul li .losange:hover {
     background-color: #851e31;
     -moz-transform: rotate(-45deg);
@@ -131,7 +137,7 @@ nav ul li .fa {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 87, ../scss/_navigation.scss */
+  /* line 92, ../scss/_navigation.scss */
   nav ul li .losange:hover .fa {
     -ms-transform: rotate(405deg);
     /* Internet Explorer */
@@ -140,7 +146,7 @@ nav ul li .fa {
     -webkit-transform: rotate(405deg);
     /* Safari et Chrome */
   }
-  /* line 94, ../scss/_navigation.scss */
+  /* line 99, ../scss/_navigation.scss */
   nav ul li:first-child {
     margin-top: 0;
   }
@@ -273,27 +279,55 @@ main#home section.projects .container {
   width: 100%;
   height: 100%;
 }
+/* line 109, ../scss/_home.scss */
+main#home section.projects .container .triangle {
+  display: none;
+}
+/* line 112, ../scss/_home.scss */
+main#home section.projects .container h3 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 40px;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 116, ../scss/_home.scss */
+  /* line 127, ../scss/_home.scss */
   main#home section.landing .triangles {
     display: none;
   }
-  /* line 119, ../scss/_home.scss */
+  /* line 130, ../scss/_home.scss */
   main#home section.landing h1.name {
     font-size: 65px;
   }
-  /* line 122, ../scss/_home.scss */
+  /* line 133, ../scss/_home.scss */
   main#home section.landing h2.role {
     font-size: 43px;
   }
+  /* line 139, ../scss/_home.scss */
+  main#home section.projects .container .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 200px 0 0;
+    border-color: #007bff transparent transparent transparent;
+  }
+  /* line 147, ../scss/_home.scss */
+  main#home section.projects .container h3 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 992px) {
-  /* line 130, ../scss/_home.scss */
+  /* line 158, ../scss/_home.scss */
   main#home {
     max-width: 1300px;
   }
-  /* line 132, ../scss/_home.scss */
+  /* line 160, ../scss/_home.scss */
   main#home section.landing {
     background-image: url(../img/trytrait.jpg);
     background-position: left;
@@ -303,12 +337,12 @@ main#home section.projects .container {
     background-position: center;
     background-size: cover;
   }
-  /* line 140, ../scss/_home.scss */
+  /* line 168, ../scss/_home.scss */
   main#home section.landing .container {
     width: 100%;
     height: 100%;
   }
-  /* line 144, ../scss/_home.scss */
+  /* line 172, ../scss/_home.scss */
   main#home section.landing .particles {
     display: block;
     width: 360px;
@@ -318,11 +352,11 @@ main#home section.projects .container {
     top: 68px;
     left: -140px;
   }
-  /* line 153, ../scss/_home.scss */
+  /* line 181, ../scss/_home.scss */
   main#home section.landing canvas {
     border-radius: 50%;
   }
-  /* line 156, ../scss/_home.scss */
+  /* line 184, ../scss/_home.scss */
   main#home section.landing .block_noir {
     display: flex;
     width: 100%;
@@ -332,7 +366,7 @@ main#home section.projects .container {
     margin-left: 46%;
     transition: all 0.5s ease;
   }
-  /* line 165, ../scss/_home.scss */
+  /* line 193, ../scss/_home.scss */
   main#home section.landing .content {
     z-index: 1;
     margin-left: 50px;
@@ -340,21 +374,21 @@ main#home section.projects .container {
     justify-content: center;
     flex-flow: column wrap;
   }
-  /* line 171, ../scss/_home.scss */
+  /* line 199, ../scss/_home.scss */
   main#home section.landing .content .title {
     position: static;
     top: 0;
     left: 0;
     transform: skewX(20deg);
   }
-  /* line 177, ../scss/_home.scss */
+  /* line 205, ../scss/_home.scss */
   main#home section.landing .content h1.name {
     color: #1d314a;
     font-weight: bold;
     text-align: left;
     font-size: 48px;
   }
-  /* line 183, ../scss/_home.scss */
+  /* line 211, ../scss/_home.scss */
   main#home section.landing .content h2.role {
     margin-left: -20px;
     color: #1d314a;
@@ -362,13 +396,13 @@ main#home section.projects .container {
     font-size: 36px;
     letter-spacing: 2px;
   }
-  /* line 190, ../scss/_home.scss */
+  /* line 218, ../scss/_home.scss */
   main#home section.landing .content hr {
     display: block;
     width: 50px;
     margin: 50px 0;
   }
-  /* line 195, ../scss/_home.scss */
+  /* line 223, ../scss/_home.scss */
   main#home section.landing .content p {
     display: block;
     font-weight: bold;
@@ -379,29 +413,29 @@ main#home section.projects .container {
     text-align: justify;
     line-height: 20px;
   }
-  /* line 207, ../scss/_home.scss */
+  /* line 235, ../scss/_home.scss */
   main#home section.about {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 211, ../scss/_home.scss */
+  /* line 239, ../scss/_home.scss */
   main#home section.about .content {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 215, ../scss/_home.scss */
+  /* line 243, ../scss/_home.scss */
   main#home section.about .content img {
     width: 60%;
   }
-  /* line 218, ../scss/_home.scss */
+  /* line 246, ../scss/_home.scss */
   main#home section.about .content .text {
     width: 50%;
     position: relative;
     z-index: 100;
   }
-  /* line 222, ../scss/_home.scss */
+  /* line 250, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     text-align: left;
     color: #cc3554;
@@ -418,7 +452,7 @@ main#home section.projects .container {
     line-height: 45px;
     transition: all 0.5s ease;
   }
-  /* line 238, ../scss/_home.scss */
+  /* line 266, ../scss/_home.scss */
   main#home section.about .content .text p {
     padding-top: 200px;
     width: 350px;
@@ -431,7 +465,7 @@ main#home section.projects .container {
     margin-bottom: 50px;
     transition: all 0.5s ease;
   }
-  /* line 251, ../scss/_home.scss */
+  /* line 279, ../scss/_home.scss */
   main#home section.about .content a {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -443,80 +477,94 @@ main#home section.projects .container {
     margin-left: -110px;
     transition: all 0.5s ease;
   }
-  /* line 263, ../scss/_home.scss */
+  /* line 291, ../scss/_home.scss */
   main#home section.about .content a:hover {
     border-color: #cc3554;
     background-color: #cc3554;
     color: #fefefe;
   }
+  /* line 300, ../scss/_home.scss */
+  main#home section.projects .container .triangle {
+    border-width: 300px 300px 0 0;
+  }
+  /* line 303, ../scss/_home.scss */
+  main#home section.projects .container h3 {
+    background-color: white;
+    position: relative;
+    top: -240px;
+    left: 50px;
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1050px) {
-  /* line 276, ../scss/_home.scss */
+  /* line 320, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 48%;
   }
-  /* line 279, ../scss/_home.scss */
+  /* line 323, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -120px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 288, ../scss/_home.scss */
+  /* line 332, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -90px;
   }
-  /* line 295, ../scss/_home.scss */
+  /* line 339, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     left: -150px;
     top: 30px;
     font-size: 38px;
     margin-bottom: 50px;
   }
-  /* line 301, ../scss/_home.scss */
+  /* line 345, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 400px;
     left: -80px;
     margin-bottom: 30px;
   }
-  /* line 307, ../scss/_home.scss */
+  /* line 351, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: -80px;
   }
 }
 @media screen and (min-width: 1150px) {
-  /* line 317, ../scss/_home.scss */
+  /* line 361, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 51%;
   }
-  /* line 320, ../scss/_home.scss */
+  /* line 364, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 329, ../scss/_home.scss */
+  /* line 373, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -30px;
   }
-  /* line 336, ../scss/_home.scss */
+  /* line 380, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     font-size: 40px;
   }
-  /* line 339, ../scss/_home.scss */
+  /* line 383, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 500px;
   }
-  /* line 343, ../scss/_home.scss */
+  /* line 387, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: 50px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 353, ../scss/_home.scss */
+  /* line 397, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 55%;
   }
-  /* line 356, ../scss/_home.scss */
+  /* line 400, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -5px;
   }
@@ -534,55 +582,127 @@ main#about section.about_page {
 /* line 7, ../scss/_about.scss */
 main#about section.about_page .band_picture {
   width: 100%;
-  height: 250px;
+  height: 150px;
   background-color: gray;
 }
 /* line 12, ../scss/_about.scss */
 main#about section.about_page .geometry {
-  width: 350px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   position: absolute;
-  top: 75px;
-  left: 30%;
+  top: 45px;
+  left: 50%;
 }
 /* line 19, ../scss/_about.scss */
 main#about section.about_page .big-square {
-  width: 200px;
-  height: 200px;
+  width: 120px;
+  height: 120px;
   border: 1px solid black;
 }
 /* line 24, ../scss/_about.scss */
 main#about section.about_page .medium-square {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   background-color: black;
   position: relative;
-  left: 100px;
-  bottom: 70px;
+  left: 65px;
+  bottom: 30px;
 }
 /* line 32, ../scss/_about.scss */
 main#about section.about_page .little-square {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background-color: black;
   position: relative;
-  left: 215px;
-  bottom: 70px;
+  left: 120px;
+  bottom: 30px;
 }
 /* line 40, ../scss/_about.scss */
 main#about section.about_page h1 {
-  width: 350px;
+  width: 250px;
   text-align: right;
   text-transform: uppercase;
   font-family: "Montserrat";
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 25px;
+  line-height: 25px;
   position: relative;
   float: left;
   top: 20px;
-  left: -250px;
+  left: -200px;
+}
+/* line 52, ../scss/_about.scss */
+main#about section.about_page .content {
+  text-align: center;
+}
+/* line 54, ../scss/_about.scss */
+main#about section.about_page .content img {
+  margin-top: 40px;
+  width: 60%;
 }
 
+@media screen and (min-width: 768px) {
+  /* line 64, ../scss/_about.scss */
+  main#about section.about_page .band_picture {
+    height: 250px;
+  }
+  /* line 67, ../scss/_about.scss */
+  main#about section.about_page .geometry {
+    width: 350px;
+    height: 250px;
+    top: 75px;
+    left: 30%;
+  }
+  /* line 73, ../scss/_about.scss */
+  main#about section.about_page .big-square {
+    width: 200px;
+    height: 200px;
+  }
+  /* line 77, ../scss/_about.scss */
+  main#about section.about_page .medium-square {
+    width: 80px;
+    height: 80px;
+    left: 100px;
+    bottom: 70px;
+  }
+  /* line 83, ../scss/_about.scss */
+  main#about section.about_page .little-square {
+    width: 10px;
+    height: 10px;
+    left: 215px;
+    bottom: 70px;
+  }
+  /* line 89, ../scss/_about.scss */
+  main#about section.about_page h1 {
+    width: 350px;
+    font-size: 35px;
+    line-height: 45px;
+    top: 20px;
+    left: -250px;
+  }
+  /* line 96, ../scss/_about.scss */
+  main#about section.about_page .content {
+    text-align: left;
+  }
+  /* line 98, ../scss/_about.scss */
+  main#about section.about_page .content img {
+    margin: 0;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 110, ../scss/_about.scss */
+  main#about section.about_page .content {
+    text-align: left;
+  }
+  /* line 112, ../scss/_about.scss */
+  main#about section.about_page .content img {
+    position: relative;
+    left: 830px;
+    top: 100px;
+    margin: 0;
+    width: 25%;
+  }
+}
 /* line 1, ../scss/_skills.scss */
 main#skills {
   height: 100%;
@@ -615,54 +735,108 @@ main#contact section.contact_page {
   width: 100%;
   height: 100%;
 }
+/* line 7, ../scss/_contact.scss */
+main#contact section.contact_page .column-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 0.75s ease;
+}
+/* line 14, ../scss/_contact.scss */
+main#contact section.contact_page .contact-form h1 {
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #1d314a;
+  transition: all 0.75s ease;
+}
+/* line 26, ../scss/_contact.scss */
+main#contact section.contact_page form {
+  padding: 0 30px;
+  width: 100%;
+}
+/* line 29, ../scss/_contact.scss */
+main#contact section.contact_page form input, main#contact section.contact_page form textarea {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 36, ../scss/_contact.scss */
+main#contact section.contact_page form input[type="submit"] {
+  margin-top: 30px;
+  border: 1px solid #1d314a;
+  background-color: #fefefe;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: 100%;
+  transition: all 0.75s ease;
+}
+/* line 48, ../scss/_contact.scss */
+main#contact section.contact_page form input[type="submit"]:hover {
+  border: 1px solid #1d314a;
+  background-color: #1d314a;
+  color: white;
+}
+/* line 53, ../scss/_contact.scss */
+main#contact section.contact_page form textarea {
+  height: 150px;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 12, ../scss/_contact.scss */
-  section.contact_page .column-1 {
+  /* line 63, ../scss/_contact.scss */
+  main#contact section.contact_page .column-1 {
     float: left;
     width: 40%;
     height: 100%;
-    background-color: gray;
+    background-image: url(../img/toureiffel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.75s ease;
   }
-  /* line 18, ../scss/_contact.scss */
-  section.contact_page .column-2 {
+  /* line 73, ../scss/_contact.scss */
+  main#contact section.contact_page .column-2 {
     float: left;
     width: 60%;
     height: 100%;
-  }
-}
-@media screen and (min-width: 992px) {
-  /* line 28, ../scss/_contact.scss */
-  section.contact_page .column-1 {
-    float: left;
-    width: 45%;
-    height: 100%;
-  }
-  /* line 33, ../scss/_contact.scss */
-  section.contact_page .column-2 {
-    float: left;
-    width: 55%;
-    height: 100%;
     display: flex;
     align-items: center;
+    transition: all 0.75s ease;
   }
-  /* line 40, ../scss/_contact.scss */
-  section.contact_page form {
+  /* line 82, ../scss/_contact.scss */
+  main#contact section.contact_page .contact-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1d314a;
+    transition: all 0.75s ease;
+    text-align: left;
+  }
+  /* line 90, ../scss/_contact.scss */
+  main#contact section.contact_page form {
+    padding: 0;
     padding-left: 30px;
-    width: 100%;
   }
-  /* line 43, ../scss/_contact.scss */
-  section.contact_page form input, section.contact_page form textarea {
+  /* line 93, ../scss/_contact.scss */
+  main#contact section.contact_page form input, main#contact section.contact_page form textarea {
     width: 75%;
     height: 50px;
     margin: 10px 0;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
-  /* line 50, ../scss/_contact.scss */
-  section.contact_page form input[type="submit"] {
-    margin-top: 50px;
-    border: 1px solid black;
+  /* line 100, ../scss/_contact.scss */
+  main#contact section.contact_page form input[type="submit"] {
+    margin-top: 30px;
+    border: 1px solid #1d314a;
     background-color: #fefefe;
     color: black;
     text-transform: uppercase;
@@ -670,14 +844,36 @@ main#contact section.contact_page {
     font-weight: bold;
     letter-spacing: 3px;
     width: 30%;
+    transition: all 0.75s ease;
   }
-  /* line 61, ../scss/_contact.scss */
-  section.contact_page form textarea {
+  /* line 112, ../scss/_contact.scss */
+  main#contact section.contact_page form input[type="submit"]:hover {
+    border: 1px solid #1d314a;
+    background-color: #1d314a;
+    color: white;
+  }
+  /* line 117, ../scss/_contact.scss */
+  main#contact section.contact_page form textarea {
     height: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 128, ../scss/_contact.scss */
+  main#contact section.contact_page .column-1 {
+    width: 45%;
+  }
+  /* line 131, ../scss/_contact.scss */
+  main#contact section.contact_page .column-2 {
+    width: 55%;
+  }
+  /* line 135, ../scss/_contact.scss */
+  main#contact section.contact_page .contact-form h1 {
+    font-size: 40px;
   }
 }
 /* line 1, ../scss/_footer.scss */
 footer {
+  display: none;
   width: 100%;
   background-color: #14121f;
   color: #fefefe;

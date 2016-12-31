@@ -6,12 +6,13 @@
         <div class="column column-1"></div>
         <div class="column column-2">
             <form class="contact-form" action="contact_process.php" method="post">
-                <input type="text" name="lastname" value="" placeholder="Nom" require>
-                <br><input type="text" name="firstname" value="" placeholder="Prénom">
-                <br><input type="mail" name="mail" value="" placeholder="Mail" require>
-                <br><input type="text" name="subject" value="" placeholder="Sujet" require>
-                <br><textarea name="message" placeholder="Votre message"></textarea>
-                <br><input type="submit" value="Envoyer">
+                <h1>Un message ?</h1>
+                <input type="text" name="lastname" value="" placeholder="Nom" autocomplete="off" require>
+                <br><input type="text" name="firstname" value="" placeholder="Prénom" autocomplete="off">
+                <br><input type="mail" name="mail" value="" placeholder="Mail" autocomplete="off" require>
+                <br><input type="text" name="subject" value="" placeholder="Sujet" autocomplete="off" require>
+                <br><textarea name="message" placeholder="Votre message" autocomplete="off" ></textarea>
+                <br><input type="submit" name="valid" value="Envoyer">
             </form>
         </div>
     </section>

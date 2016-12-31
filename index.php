@@ -42,6 +42,16 @@
 <!-- SECTION PROJETS -->
     <section class="projects">
         <div class="container">
+            <div class="top">
+                <div class="triangle"></div>
+                <h3>Les meilleurs projets<h3>
+            </div>
+        </div>
+    </section>
+
+<!-- SECTION CONTACT -->
+    <section class="contact">
+        <div class="container">
 
         </div>
     </section>
