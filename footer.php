@@ -1,5 +1,5 @@
         <footer>
-            ©Portfolio | Circé Grand, created on 2016. 
+            ©Portfolio | Circé Grand, created on 2016.
         </footer>
 
         <!-- Include scripts -->
@@ -8,6 +8,43 @@
         <script src="assets/js/app.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+
+        <script>
+            $( ".losange-home" ).mouseenter(function() {
+                $( ".p-home" ).slideDown( "fast" );
+            });
+            $( ".losange-home" ).mouseleave(function() {
+                $( ".p-home" ).slideUp( "fast" );
+            });
+
+            $( ".losange-about" ).mouseenter(function() {
+                $( ".p-about" ).slideDown( "fast" );
+            });
+            $( ".losange-about" ).mouseleave(function() {
+                $( ".p-about" ).slideUp( "fast" );
+            });
+
+            $( ".losange-skills" ).mouseenter(function() {
+                $( ".p-skills" ).slideDown( "fast" );
+            });
+            $( ".losange-skills" ).mouseleave(function() {
+                $( ".p-skills" ).slideUp( "fast" );
+            });
+
+            $( ".losange-projects" ).mouseenter(function() {
+                $( ".p-projects" ).slideDown( "fast" );
+            });
+            $( ".losange-projects" ).mouseleave(function() {
+                $( ".p-projects" ).slideUp( "fast" );
+            });
+
+            $( ".losange-contact" ).mouseenter(function() {
+                $( ".p-contact" ).slideDown( "fast" );
+            });
+            $( ".losange-contact" ).mouseleave(function() {
+                $( ".p-contact" ).slideUp( "fast" );
+            });
+        </script>
 
         <script>
           var count_particles, stats, update;

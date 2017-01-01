@@ -72,18 +72,26 @@ nav ul li .fa {
   /* Safari et Chrome */
 }
 /* line 41, ../scss/_navigation.scss */
+nav ul li:nth-of-type(5) {
+  margin-right: 0;
+}
+/* line 44, ../scss/_navigation.scss */
+nav ul p {
+  display: none;
+}
+/* line 47, ../scss/_navigation.scss */
 nav ul li:last-child {
   flex: none;
 }
 
 @media screen and (min-width: 500px) {
-  /* line 49, ../scss/_navigation.scss */
+  /* line 55, ../scss/_navigation.scss */
   nav ul {
     padding: 0 100px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 55, ../scss/_navigation.scss */
+  /* line 61, ../scss/_navigation.scss */
   nav {
     width: auto;
     height: 100%;
@@ -93,28 +101,29 @@ nav ul li:last-child {
     align-items: center;
     right: 0;
   }
-  /* line 63, ../scss/_navigation.scss */
+  /* line 69, ../scss/_navigation.scss */
   nav ul {
     padding: 0;
     display: block;
     margin: 0;
   }
-  /* line 67, ../scss/_navigation.scss */
+  /* line 73, ../scss/_navigation.scss */
   nav ul li {
     flex-grow: none;
     display: block;
     margin-top: 120%;
+    text-align: -webkit-center;
   }
-  /* line 71, ../scss/_navigation.scss */
+  /* line 78, ../scss/_navigation.scss */
   nav ul li .losange {
     height: 50px;
     width: 50px;
   }
-  /* line 75, ../scss/_navigation.scss */
+  /* line 82, ../scss/_navigation.scss */
   nav ul li .fa {
     font-size: 20px;
   }
-  /* line 78, ../scss/_navigation.scss */
+  /* line 85, ../scss/_navigation.scss */
   nav ul li .losange:hover {
     background-color: #385273;
     -moz-transform: rotate(-45deg);
@@ -122,7 +131,7 @@ nav ul li:last-child {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 84, ../scss/_navigation.scss */
+  /* line 91, ../scss/_navigation.scss */
   nav ul li .losange:hover .fa {
     -ms-transform: rotate(405deg);
     /* Internet Explorer */
@@ -131,9 +140,19 @@ nav ul li:last-child {
     -webkit-transform: rotate(405deg);
     /* Safari et Chrome */
   }
-  /* line 91, ../scss/_navigation.scss */
-  nav ul li:first-child {
-    margin-top: 0;
+  /* line 98, ../scss/_navigation.scss */
+  nav ul li:nth-of-type(5) {
+    margin-bottom: 0;
+  }
+  /* line 101, ../scss/_navigation.scss */
+  nav ul p {
+    margin-top: 20px;
+    font-family: "Poiret One";
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 50px;
+    font-size: 14px;
   }
 }
 /* line 1, ../scss/_home.scss */

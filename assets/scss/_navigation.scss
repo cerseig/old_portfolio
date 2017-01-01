@@ -38,6 +38,12 @@ nav {
                 -webkit-transform: rotate(-45deg); /* Safari et Chrome */
             }
         }
+        li:nth-of-type(5){
+            margin-right: 0;
+        }
+        p {
+            display: none;
+        }
         li:last-child {
             flex: none;
         }
@@ -68,6 +74,7 @@ nav {
                 flex-grow: none;
                 display: block;
                 margin-top: 120%;
+                text-align: -webkit-center;
                 .losange {
                     height: 50px;
                     width: 50px;
@@ -88,8 +95,17 @@ nav {
                     }
                 }
             }
-            li:first-child {
-                margin-top: 0;
+            li:nth-of-type(5){
+                margin-bottom: 0;
+            }
+            p {
+                margin-top: 20px;
+                font-family: $font-poiretone;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                width: 50px;
+                font-size: 14px;
             }
         }
     }
