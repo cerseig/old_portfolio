@@ -18,7 +18,7 @@ nav {
             .losange {
                 height: 40px;
                 width: 40px;
-                background-color: #a28287;
+                background-color: #1d314a;
                 -ms-transform: rotate(45deg); /* Internet Explorer */
                 -moz-transform: rotate(45deg); /* Firefox */
                 -webkit-transform: rotate(45deg); /* Safari et Chrome */
@@ -44,6 +44,13 @@ nav {
     }
 }
 
+@media screen and (min-width:500px){
+    nav {
+        ul {
+            padding: 0 100px;
+        }
+    }
+}
 @media screen and (min-width:768px) {
     nav {
         width: auto;
@@ -64,27 +71,12 @@ nav {
                 .losange {
                     height: 50px;
                     width: 50px;
-                    background-color: #a28287;
-                    -ms-transform: rotate(45deg); /* Internet Explorer */
-                    -moz-transform: rotate(45deg); /* Firefox */
-                    -webkit-transform: rotate(45deg); /* Safari et Chrome */
-                    -moz-transition: -moz-transform ease 0.6s;
-                    -webkit-transition: -webkit-transform ease 0.6s;
-                    -ms-transition: -ms-transform ease 0.6s;
-                    transition: transform ease 0.6s;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                 }
                 .fa {
                     font-size: 20px;
-                    color: #fefefe;
-                    -ms-transform: rotate(-45deg); /* Internet Explorer */
-                    -moz-transform: rotate(-45deg); /* Firefox */
-                    -webkit-transform: rotate(-45deg); /* Safari et Chrome */
                 }
                 .losange:hover {
-                    background-color: #851e31;
+                    background-color: #385273;
                     -moz-transform: rotate(-45deg);
                     -webkit-transform: rotate(-45deg);
                     -ms-transform: rotate(-45deg);
@@ -101,8 +93,4 @@ nav {
             }
         }
     }
-}
-
-@media screen and (min-width:992px) {
-
 }

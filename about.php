@@ -10,8 +10,7 @@
             <div class="medium-square"></div>
             <div class="little-square"></div>
         </div>
-        <div class="content">
-            <img src="assets/img/about.png" alt="Photo de Circé Grand">
+        <div class="container">
         </div>
     </section>
 </main>

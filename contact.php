@@ -5,7 +5,7 @@
     <section class="contact_page">
         <div class="column column-1"></div>
         <div class="column column-2">
-            <form class="contact-form" action="contact_process.php" method="post">
+            <form class="contact-form" action="_contact.php" method="post">
                 <h1>Un message ?</h1>
                 <input type="text" name="lastname" value="" placeholder="Nom" autocomplete="off" require>
                 <br><input type="text" name="firstname" value="" placeholder="Prénom" autocomplete="off">

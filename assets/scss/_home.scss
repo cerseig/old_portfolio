@@ -56,8 +56,13 @@ main#home {
     }
     section.about {
         width: 100%;
-        height: 100%;
+        min-height: 100%;
         text-align: center;
+        padding-bottom: 50px;
+        .container {
+            width: 100%;
+            min-height: 100%;
+        }
         img {
             margin-top: 20px;
             width: 90%;
@@ -92,6 +97,7 @@ main#home {
                 color: black;
                 text-decoration: none;
                 transition: all 0.5s ease;
+                margin-bottom: 10px;
             }
             a:hover {
                 border-color: #cc3554;
@@ -102,20 +108,189 @@ main#home {
     }
     section.projects {
         width: 100%;
-        height: 100%;
+        min-height: 100%;
+        padding: 50px 0;
+        background-image: url(../img/papier1.png);
+        background-position: center;
+        background-repeat: repeat;
+        background-attachment: fixed;
         .container {
             width: 100%;
             height: 100%;
-            .triangle {
-                display: none;
-            }
+            text-align: center;
             h3 {
                 font-family: $font-montserrat;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 25px;
                 text-align: center;
-                margin-top: 40px;
+                color: #14121f;
+                transition: all 0.75s ease;
+            }
+            hr {
+                width: 90%;
+                margin-bottom: 50px;
+            }
+            .content {
+                padding: 0 20px;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-bottom: 50px;
+                .important-project {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    transition: all 0.75s ease;
+                    .presentation {
+                        width: 50%;
+                        float: left;
+                        transition: all 0.75s ease;
+                        h4 {
+                            font-family: $font-montserrat;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 15px;
+                            transition: all 0.75s ease;
+                        }
+                        p {
+                            font-family: $font-poiretone;
+                            font-size: 13px;
+                            transition: all 0.75s ease;
+                        }
+                    }
+                    img {
+                        width: 50%;
+                        float: left;
+                        transition: all 0.75s ease;
+                    }
+                }
+                .important-project:nth-of-type(3) {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    section.contact {
+        width: 100%;
+        height: 50%;
+        padding: 40px 80px;
+        .container {
+            text-align: center;
+            padding-bottom: 80px;
+            h3 {
+                font-family: $font-montserrat;
+                font-size: 25px;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 40px;
+                color: #633c41;
+                transition: all 0.75s ease;
+                small {
+                    font-family: $font-poiretone;
+                    font-size: 15px;
+                    letter-spacing: 3px;
+                    transition: all 0.75s ease;
+                }
+            }
+            ul {
+                margin-top: 60px;
+                margin-bottom: 20px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                transition: all 0.75s ease;
+                li {
+                    -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                    flex: 1;
+                    transition: all 0.75s ease;
+                }
+            }
+            a.contact-link {
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: bold;
+                border: 2px solid black;
+                padding: 15px 40px;
+                color: black;
+                text-decoration: none;
+                transition: all 0.5s ease;
+            }
+            a.contact-link:hover {
+                border-color: #a28287;
+                background-color: #a28287;
+                color: #fefefe;
+            }
+            .fa {
+                font-size: 30px;
+                color: #633c41;
+                transition: all 0.5s ease;
+            }
+            .fa:hover {
+                color: #a28287;
+            }
+        }
+    }
+}
+@media screen and (min-width:500px) {
+    main#home {
+        section.about {
+            padding-bottom: 80px;
+            .text {
+                h3 {
+                    font-size: 30px;
+                    line-height: 28px;
+                }
+            }
+        }
+        section.projects {
+            .container {
+                h3 {
+                    font-size: 30px;
+                }
+                .content {
+                    .important-project {
+                        .presentation {
+                            width: 60%;
+                            h4 {
+                                font-size: 22px;
+                            }
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                        img {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+        section.contact {
+            .container {
+                h3 {
+                    font-size: 30px;
+                    small {
+                        font-size: 20px;
+                    }
+                }
+                .fa {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px) {
+    main#home {
+        section.landing {
+            .triangles {
+                display: none;
             }
         }
     }
@@ -124,30 +299,128 @@ main#home {
 @media screen and (min-width:768px) {
     main#home {
         section.landing {
-            .triangles {
-                display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .container {
+                height: 100%;
             }
-            h1.name {
-                font-size: 65px;
+            .block_noir {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                transform: skewX(-20deg);
+                transition: all 0.5s ease;
             }
-            h2.role {
-                font-size: 43px;
+            .content {
+                z-index: 1;
+                padding: 0 30px;
+                display: flex;
+                justify-content: center;
+                flex-flow: column wrap;
+                .title {
+                    position: static;
+                    top: 0;
+                    left: 0;
+                    transform: skewX(20deg);
+                }
+                h1.name {
+                    color: #1d314a;
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: 50px;
+                }
+                h2.role {
+                    margin-left: -20px;
+                    color: #1d314a;
+                    text-align: left;
+                    font-size: 35px;
+                    letter-spacing: 2px;
+                }
+                hr {
+                    display: block;
+                    width: 50px;
+                    margin: 50px 0;
+                }
+                p {
+                    display: block;
+                    font-weight: bold;
+                    color: #1d314a;
+                    font-family: $font-poiretone;
+                    letter-spacing: 2px;
+                    width: 350px;
+                    text-align: justify;
+                    line-height: 20px;
+                }
+            }
+        }
+        section.about {
+            padding-bottom: 50px;
+            .container {
+                padding-right: 80px;
             }
         }
         section.projects {
+            display: flex;
+            align-items: center;
+            padding: 0;
             .container {
-                .triangle {
-                    display: block;
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
-                    border-width: 200px 200px 0 0;
-                    border-color: #007bff transparent transparent transparent;
-                }
+                padding-right: 80px;
                 h3 {
                     font-size: 30px;
+                    text-align: center;
+                    margin-bottom: 80px;
+                }
+                hr {
+                    display: none;
+                }
+                .content {
                     text-align: left;
-                    margin:0;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin-bottom: 80px;
+                    .important-project {
+                        text-align: center;
+                        flex-flow: column wrap;
+                        margin-bottom: 0;
+                        -webkit-box-flex: 1;
+                        -ms-flex: 1;
+                        flex: 1;
+                        .presentation {
+                            margin: 20px 0;
+                            width: 90%;
+                            p {
+                                text-align: justify;
+                            }
+                        }
+                        img {
+                            width: 80%;
+                        }
+                    }
+                    .important-project:nth-of-type(3) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        section.contact {
+            height: 40%;
+            .container {
+                padding-bottom: 0;
+                padding-right: 80px;
+                h3 {
+                    font-size: 30px;
+                    small {
+                        font-size: 20px;
+                    }
+                }
+                .fa {
+                    font-size: 38px;
+                }
+                hr {
+                    display: none;
                 }
             }
         }
@@ -236,6 +509,9 @@ main#home {
             display: flex;
             align-items: center;
             justify-content: center;
+            .container {
+                padding-right: 0;
+            }
             .content {
                 display: flex;
                 align-items: center;
@@ -284,7 +560,7 @@ main#home {
                     padding: 15px 40px;
                     color: black;
                     text-decoration: none;
-                    margin-left: -110px;
+                    margin-right:0;
                     transition: all 0.5s ease;
 
                 }
@@ -297,17 +573,41 @@ main#home {
         }
         section.projects {
             .container {
-                .triangle {
-                    border-width: 300px 300px 0 0;
+                .important-project {
+                    margin: 20px 40px;
+                    img {
+                        width: 20%;
+                    }
                 }
                 h3 {
-                    background-color: white;
-                    position: relative;
-                    top: -240px;
-                    left: 50px;
                     font-size: 40px;
-                    text-align: left;
-                    margin:0;
+                }
+            }
+        }
+        section.contact {
+                height: 32%;
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0;
+                .text {
+                    width: 60%;
+                    float: left;
+                    text-align: center;
+                    h3 {
+                        small {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .social-network {
+                width: 40%;
+                float: left;
+                ul {
+                    padding: 0 30px;
+                    margin: 0;
                 }
             }
         }

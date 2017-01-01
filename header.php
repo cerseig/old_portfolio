@@ -1,4 +1,4 @@
-<?php require 'dbconnect.php'  ?>
+<?php require 'functions/init.php'  ?>
 
 <!DOCTYPE html>
 <html>
@@ -22,3 +22,21 @@
         <!-- Custom script -->
     </head>
     <body>
+        <?php
+            if(isset($_SESSION['errors'])) {
+                $errors = $_SESSION['errors'];
+
+                /* On affiche les erreurs */
+                echo    '<div class="alert alert-danger alert-dismissible errors" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <ul>';
+                                foreach ($errors as $key => $value) {
+                                    echo '<li>'.$value.'</li>';
+                                }
+                echo '      </ul>
+                        </div>';
+
+                /* On les supprime de la session */
+                unset($_SESSION['errors']);
+            }
+        ?>

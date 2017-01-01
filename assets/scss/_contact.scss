@@ -9,6 +9,7 @@ main#contact {
             display: flex;
             align-items: center;
             transition: all 0.75s ease;
+            padding-bottom: 80px;
         }
         .contact-form {
             h1 {
@@ -77,6 +78,7 @@ main#contact {
                 display: flex;
                 align-items: center;
                 transition: all 0.75s ease;
+                padding-bottom: 0;
             }
             .contact-form {
                 h1 {
