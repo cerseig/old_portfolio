@@ -71,27 +71,52 @@ nav ul li .fa {
   -webkit-transform: rotate(-45deg);
   /* Safari et Chrome */
 }
-/* line 41, ../scss/_navigation.scss */
+/* line 40, ../scss/_navigation.scss */
+nav ul li .losange:hover {
+  background-color: #385273;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 46, ../scss/_navigation.scss */
+nav ul li .losange:hover .fa {
+  -ms-transform: rotate(405deg);
+  /* Internet Explorer */
+  -moz-transform: rotate(405deg);
+  /* Firefox */
+  -webkit-transform: rotate(405deg);
+  /* Safari et Chrome */
+}
+/* line 53, ../scss/_navigation.scss */
 nav ul li:nth-of-type(5) {
   margin-right: 0;
 }
-/* line 44, ../scss/_navigation.scss */
+/* line 56, ../scss/_navigation.scss */
 nav ul p {
   display: none;
+  margin-left: -80px;
+  margin-top: -30px;
+  height: 10px;
+  width: 80px;
+  font-family: "Poiret One";
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-/* line 47, ../scss/_navigation.scss */
+/* line 67, ../scss/_navigation.scss */
 nav ul li:last-child {
   flex: none;
 }
 
 @media screen and (min-width: 500px) {
-  /* line 55, ../scss/_navigation.scss */
+  /* line 75, ../scss/_navigation.scss */
   nav ul {
     padding: 0 100px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 61, ../scss/_navigation.scss */
+  /* line 81, ../scss/_navigation.scss */
   nav {
     width: auto;
     height: 100%;
@@ -101,29 +126,29 @@ nav ul li:last-child {
     align-items: center;
     right: 0;
   }
-  /* line 69, ../scss/_navigation.scss */
+  /* line 89, ../scss/_navigation.scss */
   nav ul {
     padding: 0;
     display: block;
     margin: 0;
   }
-  /* line 73, ../scss/_navigation.scss */
+  /* line 93, ../scss/_navigation.scss */
   nav ul li {
     flex-grow: none;
     display: block;
     margin-top: 120%;
     text-align: -webkit-center;
   }
-  /* line 78, ../scss/_navigation.scss */
+  /* line 98, ../scss/_navigation.scss */
   nav ul li .losange {
     height: 50px;
     width: 50px;
   }
-  /* line 82, ../scss/_navigation.scss */
+  /* line 102, ../scss/_navigation.scss */
   nav ul li .fa {
     font-size: 20px;
   }
-  /* line 85, ../scss/_navigation.scss */
+  /* line 105, ../scss/_navigation.scss */
   nav ul li .losange:hover {
     background-color: #385273;
     -moz-transform: rotate(-45deg);
@@ -131,7 +156,7 @@ nav ul li:last-child {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 91, ../scss/_navigation.scss */
+  /* line 111, ../scss/_navigation.scss */
   nav ul li .losange:hover .fa {
     -ms-transform: rotate(405deg);
     /* Internet Explorer */
@@ -140,17 +165,14 @@ nav ul li:last-child {
     -webkit-transform: rotate(405deg);
     /* Safari et Chrome */
   }
-  /* line 98, ../scss/_navigation.scss */
+  /* line 118, ../scss/_navigation.scss */
   nav ul li:nth-of-type(5) {
     margin-bottom: 0;
   }
-  /* line 101, ../scss/_navigation.scss */
+  /* line 121, ../scss/_navigation.scss */
   nav ul p {
     margin-top: 20px;
-    font-family: "Poiret One";
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
+    margin-left: 0;
     width: 50px;
     font-size: 14px;
   }
@@ -742,17 +764,13 @@ main#home section.contact .container .fa:hover {
     align-items: center;
     justify-content: center;
   }
-  /* line 519, ../scss/_home.scss */
-  main#home section.about .content img {
-    width: 60%;
-  }
-  /* line 522, ../scss/_home.scss */
+  /* line 520, ../scss/_home.scss */
   main#home section.about .content .text {
     width: 50%;
     position: relative;
     z-index: 100;
   }
-  /* line 526, ../scss/_home.scss */
+  /* line 524, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     text-align: left;
     color: #cc3554;
@@ -769,7 +787,7 @@ main#home section.contact .container .fa:hover {
     line-height: 45px;
     transition: all 0.5s ease;
   }
-  /* line 542, ../scss/_home.scss */
+  /* line 540, ../scss/_home.scss */
   main#home section.about .content .text p {
     padding-top: 200px;
     width: 350px;
@@ -782,7 +800,7 @@ main#home section.contact .container .fa:hover {
     margin-bottom: 50px;
     transition: all 0.5s ease;
   }
-  /* line 555, ../scss/_home.scss */
+  /* line 553, ../scss/_home.scss */
   main#home section.about .content a {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -794,123 +812,123 @@ main#home section.contact .container .fa:hover {
     margin-right: 0;
     transition: all 0.5s ease;
   }
-  /* line 567, ../scss/_home.scss */
+  /* line 565, ../scss/_home.scss */
   main#home section.about .content a:hover {
     border-color: #cc3554;
     background-color: #cc3554;
     color: #fefefe;
   }
-  /* line 576, ../scss/_home.scss */
+  /* line 574, ../scss/_home.scss */
   main#home section.projects .container .important-project {
     margin: 20px 40px;
   }
-  /* line 578, ../scss/_home.scss */
+  /* line 576, ../scss/_home.scss */
   main#home section.projects .container .important-project img {
     width: 20%;
   }
-  /* line 582, ../scss/_home.scss */
+  /* line 580, ../scss/_home.scss */
   main#home section.projects .container h3 {
     font-size: 40px;
   }
-  /* line 587, ../scss/_home.scss */
+  /* line 585, ../scss/_home.scss */
   main#home section.contact {
     height: 32%;
   }
-  /* line 589, ../scss/_home.scss */
+  /* line 587, ../scss/_home.scss */
   main#home section.contact .container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
   }
-  /* line 594, ../scss/_home.scss */
+  /* line 592, ../scss/_home.scss */
   main#home section.contact .container .text {
     width: 60%;
     float: left;
     text-align: center;
   }
-  /* line 599, ../scss/_home.scss */
+  /* line 597, ../scss/_home.scss */
   main#home section.contact .container .text h3 small {
     font-size: 16px;
   }
-  /* line 605, ../scss/_home.scss */
+  /* line 603, ../scss/_home.scss */
   main#home section.contact .social-network {
     width: 40%;
     float: left;
   }
-  /* line 608, ../scss/_home.scss */
+  /* line 606, ../scss/_home.scss */
   main#home section.contact .social-network ul {
     padding: 0 30px;
     margin: 0;
   }
 }
 @media screen and (min-width: 1050px) {
-  /* line 620, ../scss/_home.scss */
+  /* line 618, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 48%;
   }
-  /* line 623, ../scss/_home.scss */
+  /* line 621, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -120px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 632, ../scss/_home.scss */
+  /* line 630, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -90px;
   }
-  /* line 639, ../scss/_home.scss */
+  /* line 637, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     left: -150px;
     top: 30px;
     font-size: 38px;
     margin-bottom: 50px;
   }
-  /* line 645, ../scss/_home.scss */
+  /* line 643, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 400px;
     left: -80px;
     margin-bottom: 30px;
   }
-  /* line 651, ../scss/_home.scss */
+  /* line 649, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: -80px;
   }
 }
 @media screen and (min-width: 1150px) {
-  /* line 661, ../scss/_home.scss */
+  /* line 659, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 51%;
   }
-  /* line 664, ../scss/_home.scss */
+  /* line 662, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 673, ../scss/_home.scss */
+  /* line 671, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -30px;
   }
-  /* line 680, ../scss/_home.scss */
+  /* line 678, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     font-size: 40px;
   }
-  /* line 683, ../scss/_home.scss */
+  /* line 681, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 500px;
   }
-  /* line 687, ../scss/_home.scss */
+  /* line 685, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: 50px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 697, ../scss/_home.scss */
+  /* line 695, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 55%;
   }
-  /* line 700, ../scss/_home.scss */
+  /* line 698, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -5px;
   }
@@ -1222,6 +1240,7 @@ main#contact section.contact_page form textarea {
 }
 /* line 1, ../scss/_footer.scss */
 footer {
+  position: relative;
   width: 100%;
   background-color: #14121f;
   color: #fefefe;
