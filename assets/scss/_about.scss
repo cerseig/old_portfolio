@@ -116,6 +116,11 @@ main#about {
                     align-items: center;
                     display: flex;
                     justify-content: center;
+                    transition: all 0.75s ease;
+                }
+                a:nth-of-type(1):hover .cv {
+                    background-color: white;
+                    color : #851e31;
                 }
                 a:nth-of-type(2) .cv {
                     background-color: #cc3554;
@@ -124,6 +129,11 @@ main#about {
                     display: flex;
                     justify-content: center;
                     margin-bottom: 80px;
+                    transition: all 0.75s ease;
+                }
+                a:nth-of-type(2):hover .cv {
+                    background-color: white;
+                    color : #cc3554;
                 }
             }
         }

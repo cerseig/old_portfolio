@@ -8,6 +8,17 @@
         <script src="assets/js/app.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+        <script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/imagesloaded.js"></script>
+		<script src="assets/js/classie.js"></script>
+		<script src="assets/js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
 
         <script>
             $( ".losange-home" ).mouseenter(function() {

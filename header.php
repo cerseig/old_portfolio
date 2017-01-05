@@ -5,11 +5,11 @@
     <head>
         <!-- Basic meta -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Title -->
         <title>Circé Grand | Portfolio</title>
 
         <!-- Mobile meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- SEO Elements -->
 
@@ -18,8 +18,11 @@
         <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/grid.css" />
 
         <!-- Custom script -->
+        <script src="assets/js/modernizr.custom.js"></script>
+
     </head>
     <body>
         <?php
