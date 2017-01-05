@@ -19,7 +19,7 @@
                             <h2 class="role">Creative Developer</2>
                         </div>
                         <hr>
-                        <p class="resume">Hello ! I am  a student in second yeard of my two-year university Degree of Techonology specialised in Multimedia and the Internet. I am a creative developper and I am looking for an internship as web integrator for 3 months in Paris (or around)</p>
+                        <p class="resume">Bonjour et bienvenue sur mon portfolio ! Je suis une étudiante en 2ème année de DUT MMI (Métiers du Multimédia et de l'Internet). Je suis une développeuse créative et je suis à la recherche d'un stage en tant qu'intégrateur ou développeur pour une durée de 3 mois, à Paris ou dans les alentours.</p>
                     </div>
             </div>
         </div>
@@ -43,21 +43,22 @@
     <section class="projects">
         <div class="container">
             <div class="top">
-                <h3>Les meilleurs projets<h3>
-                <hr>
+                <a href="projects.php" alt="Redirection vers la page présentant les projets">
+                    <h3>Les projets<br>...</h3>
+                </a>
             </div>
             <div class="content">
                 <div class="important-project">
                     <img src="assets/img/projettut1.png" alt="Projeut Tuteuré de première année">
                     <div class="presentation">
                         <h4>Projeut Tuteuré n°1</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
                 <div class="important-project">
                     <div class="presentation">
                         <h4>Portfolio V.Bootstrap</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                     <img src="assets/img/portfoliov1.png" alt="Portfolio, version n°1, version Bootstrap">
                 </div>
@@ -65,7 +66,7 @@
                     <img src="assets/img/aimemi.png" alt="Blog de 2ème année">
                     <div class="presentation">
                         <h4>Blog AIME.MI</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                 </div>
             </div>
