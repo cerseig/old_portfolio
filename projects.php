@@ -49,12 +49,11 @@ try {
                         <li>
                         <div class="project">
                             <img src="assets/img/'.$project->img.'" alt="Photo pour illustrer">
-                            <h2>';
-                            foreach ($categories as $category) {
-                                echo $category->name;
-                            }
+                            <h2>'.$project->date.'</h2>';
+                            // foreach ($categories as $category) {
+                            //     echo $category->name;
+                            // }
                             echo '
-                            </h2>
                             <h3>'.$project->title.'</h3>
                             <p>'.$project->resume.'</p>
                             <ul>';

@@ -1268,9 +1268,32 @@ main#projects section.projects_page {
   width: 100%;
   height: 100%;
 }
+/* line 8, ../scss/_projects.scss */
+main#projects section.projects_page .project {
+  text-align: center;
+}
+/* line 10, ../scss/_projects.scss */
+main#projects section.projects_page .project h2 {
+  margin: 10px 0;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: gray;
+}
+/* line 16, ../scss/_projects.scss */
+main#projects section.projects_page .project h3 {
+  margin: 10px 0;
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+/* line 21, ../scss/_projects.scss */
+main#projects section.projects_page .project p {
+  text-align: justify;
+  font-family: "Poiret One";
+  letter-spacing: 1px;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 14, ../scss/_projects.scss */
+  /* line 33, ../scss/_projects.scss */
   main#projects section.projects_page .container {
     padding-right: 100px;
   }
