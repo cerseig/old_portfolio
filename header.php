@@ -21,7 +21,6 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/grid.css" />
 
         <!-- Custom script -->
-        <script src="assets/js/modernizr.custom.js"></script>
 
     </head>
     <body>

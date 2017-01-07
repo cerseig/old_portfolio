@@ -20,7 +20,7 @@ try {
     <?php include 'navigation.php' ?>
     <section class="projects_page">
         <div class="container">
-            <ul class="grid effect-3" id="grid">
+            <div class="grid">
         <?php
             foreach ($projects as $project) {
                 // Récupère les skills associés au projet.
@@ -45,30 +45,29 @@ try {
                 }
                 // Puis j'affiche mon projet
                 echo '
-
-                        <li>
-                        <div class="project">
-                            <img src="assets/img/'.$project->img.'" alt="Photo pour illustrer">
-                            <h2>'.$project->date.'</h2>';
-                            // foreach ($categories as $category) {
-                            //     echo $category->name;
-                            // }
-                            echo '
-                            <h3>'.$project->title.'</h3>
-                            <p>'.$project->resume.'</p>
-                            <ul>';
-                                foreach ($skills as $skill) {
-                                    echo '<li>'.$skill->name.'</li>';
-                                }
-                            echo '
-                            </ul>
-                                </div>
-                        <li>
+                        <a href="project.php?id='.$project->id.'" alt="Redirection vers la description du projet sélectionné">
+                            <div class="project">
+                                <img src="assets/img/'.$project->img.'" alt="Photo pour illustrer">
+                                <h2>'.$project->date.'</h2>';
+                                // foreach ($categories as $category) {
+                                //     echo $category->name;
+                                // }
+                                echo '
+                                <h3>'.$project->title.'</h3>
+                                <p>'.$project->resume.'</p>
+                                <ul>';
+                                    // foreach ($skills as $skill) {
+                                    //     echo '<li>'.$skill->name.'</li>';
+                                    // }
+                                echo '
+                                </ul>
+                            </div>
+                        </a>
 
                 ';
             }
         ?>
-            </ul>
+    </div>
         </div>
     </section>
 </main>
