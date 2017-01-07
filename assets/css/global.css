@@ -320,17 +320,15 @@ main#home section.projects .container {
 }
 /* line 121, ../scss/_home.scss */
 main#home section.projects .container .top {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   display: -webkit-inline-box;
 }
-/* line 126, ../scss/_home.scss */
-main#home section.projects .container a {
+/* line 124, ../scss/_home.scss */
+main#home section.projects .container .top a {
   text-decoration: none;
 }
-/* line 129, ../scss/_home.scss */
+/* line 128, ../scss/_home.scss */
 main#home section.projects .container h3 {
-  width: 500px;
   font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: bold;
@@ -339,14 +337,14 @@ main#home section.projects .container h3 {
   color: #14121f;
   transition: all 0.3s ease;
 }
-/* line 139, ../scss/_home.scss */
+/* line 137, ../scss/_home.scss */
 main#home section.projects .container .content {
   padding: 0 20px;
   width: 100%;
   height: auto;
   text-align: center;
 }
-/* line 144, ../scss/_home.scss */
+/* line 142, ../scss/_home.scss */
 main#home section.projects .container .content .important-project {
   width: 100%;
   height: auto;
@@ -355,13 +353,46 @@ main#home section.projects .container .content .important-project {
   margin-bottom: 20px;
   transition: all 0.75s ease;
 }
-/* line 151, ../scss/_home.scss */
+/* line 150, ../scss/_home.scss */
+main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+/* line 159, ../scss/_home.scss */
+main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #46897e;
+  height: 5px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 175, ../scss/_home.scss */
+main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:hover:before, main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:focus:before, main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/* line 181, ../scss/_home.scss */
 main#home section.projects .container .content .important-project .presentation {
   width: 50%;
   float: left;
   transition: all 0.75s ease;
+  color: black;
 }
-/* line 155, ../scss/_home.scss */
+/* line 186, ../scss/_home.scss */
 main#home section.projects .container .content .important-project .presentation h4 {
   font-family: "Montserrat";
   text-transform: uppercase;
@@ -369,24 +400,48 @@ main#home section.projects .container .content .important-project .presentation 
   font-size: 15px;
   transition: all 0.75s ease;
   margin-bottom: 10px;
+  color: #46897e;
 }
-/* line 163, ../scss/_home.scss */
+/* line 195, ../scss/_home.scss */
 main#home section.projects .container .content .important-project .presentation p {
   font-family: "Poiret One";
   font-size: 13px;
-  transition: all 0.75s ease;
+  transition: all 0.3s ease;
+  padding-bottom: 20px;
 }
-/* line 169, ../scss/_home.scss */
+/* line 202, ../scss/_home.scss */
 main#home section.projects .container .content .important-project img {
   width: 50%;
   float: left;
   transition: all 0.75s ease;
-}
-/* line 175, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:nth-of-type(3) {
   margin-bottom: 50px;
 }
-/* line 179, ../scss/_home.scss */
+/* line 212, ../scss/_home.scss */
+main#home section.projects .container .content .important-project:nth-of-type(2) a:hover .hvr-underline-from-center:before {
+  background: #8aa8bc;
+}
+/* line 217, ../scss/_home.scss */
+main#home section.projects .container .content .important-project:nth-of-type(2) h4 {
+  color: #8aa8bc;
+}
+/* line 220, ../scss/_home.scss */
+main#home section.projects .container .content .important-project:nth-of-type(2) img {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+/* line 225, ../scss/_home.scss */
+main#home section.projects .container .content .important-project:nth-of-type(3) {
+  margin-bottom: 30px;
+}
+/* line 227, ../scss/_home.scss */
+main#home section.projects .container .content .important-project:nth-of-type(3) a:hover .hvr-underline-from-center:before {
+  background: #3d3c5d;
+}
+/* line 232, ../scss/_home.scss */
+main#home section.projects .container .content .important-project:nth-of-type(3) h4 {
+  color: #3d3c5d;
+}
+/* line 238, ../scss/_home.scss */
 main#home section.projects .container .content .important-project:hover img {
   -ms-transform: rotate(180deg);
   /* Internet Explorer */
@@ -399,18 +454,18 @@ main#home section.projects .container .content .important-project:hover img {
   -ms-transition: -ms-transform ease 0.6s;
   transition: transform ease-in 0.6s;
 }
-/* line 192, ../scss/_home.scss */
+/* line 251, ../scss/_home.scss */
 main#home section.contact {
   width: 100%;
   height: 50%;
   padding: 40px 80px;
 }
-/* line 196, ../scss/_home.scss */
+/* line 255, ../scss/_home.scss */
 main#home section.contact .container {
   text-align: center;
   padding-bottom: 80px;
 }
-/* line 199, ../scss/_home.scss */
+/* line 258, ../scss/_home.scss */
 main#home section.contact .container h3 {
   font-family: "Montserrat";
   font-size: 25px;
@@ -420,14 +475,14 @@ main#home section.contact .container h3 {
   color: #633c41;
   transition: all 0.75s ease;
 }
-/* line 207, ../scss/_home.scss */
+/* line 266, ../scss/_home.scss */
 main#home section.contact .container h3 small {
   font-family: "Poiret One";
   font-size: 15px;
   letter-spacing: 3px;
   transition: all 0.75s ease;
 }
-/* line 214, ../scss/_home.scss */
+/* line 273, ../scss/_home.scss */
 main#home section.contact .container ul {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -436,14 +491,14 @@ main#home section.contact .container ul {
   display: flex;
   transition: all 0.75s ease;
 }
-/* line 221, ../scss/_home.scss */
+/* line 280, ../scss/_home.scss */
 main#home section.contact .container ul li {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   transition: all 0.75s ease;
 }
-/* line 228, ../scss/_home.scss */
+/* line 287, ../scss/_home.scss */
 main#home section.contact .container a.contact-link {
   font-size: 13px;
   text-transform: uppercase;
@@ -455,84 +510,84 @@ main#home section.contact .container a.contact-link {
   text-decoration: none;
   transition: all 0.5s ease;
 }
-/* line 239, ../scss/_home.scss */
+/* line 298, ../scss/_home.scss */
 main#home section.contact .container a.contact-link:hover {
   border-color: #a28287;
   background-color: #a28287;
   color: #fefefe;
 }
-/* line 244, ../scss/_home.scss */
+/* line 303, ../scss/_home.scss */
 main#home section.contact .container .fa {
   font-size: 30px;
   color: #633c41;
   transition: all 0.5s ease;
 }
-/* line 249, ../scss/_home.scss */
+/* line 308, ../scss/_home.scss */
 main#home section.contact .container .fa:hover {
   color: #a28287;
 }
 
 @media screen and (min-width: 500px) {
-  /* line 257, ../scss/_home.scss */
+  /* line 316, ../scss/_home.scss */
   main#home section.about {
     padding-bottom: 80px;
   }
-  /* line 260, ../scss/_home.scss */
+  /* line 319, ../scss/_home.scss */
   main#home section.about .text h3 {
     font-size: 30px;
     line-height: 28px;
   }
-  /* line 268, ../scss/_home.scss */
+  /* line 327, ../scss/_home.scss */
   main#home section.projects .container h3 {
     font-size: 30px;
   }
-  /* line 273, ../scss/_home.scss */
+  /* line 332, ../scss/_home.scss */
   main#home section.projects .container .content .important-project .presentation {
     width: 60%;
   }
-  /* line 275, ../scss/_home.scss */
+  /* line 334, ../scss/_home.scss */
   main#home section.projects .container .content .important-project .presentation h4 {
     font-size: 22px;
   }
-  /* line 278, ../scss/_home.scss */
+  /* line 337, ../scss/_home.scss */
   main#home section.projects .container .content .important-project .presentation p {
     font-size: 18px;
   }
-  /* line 282, ../scss/_home.scss */
+  /* line 341, ../scss/_home.scss */
   main#home section.projects .container .content .important-project img {
     width: 40%;
   }
-  /* line 291, ../scss/_home.scss */
+  /* line 350, ../scss/_home.scss */
   main#home section.contact .container h3 {
     font-size: 30px;
   }
-  /* line 293, ../scss/_home.scss */
+  /* line 352, ../scss/_home.scss */
   main#home section.contact .container h3 small {
     font-size: 20px;
   }
-  /* line 297, ../scss/_home.scss */
+  /* line 356, ../scss/_home.scss */
   main#home section.contact .container .fa {
     font-size: 40px;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 308, ../scss/_home.scss */
+  /* line 367, ../scss/_home.scss */
   main#home section.landing .triangles {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 317, ../scss/_home.scss */
+  /* line 376, ../scss/_home.scss */
   main#home section.landing {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  /* line 321, ../scss/_home.scss */
+  /* line 380, ../scss/_home.scss */
   main#home section.landing .container {
     height: 100%;
   }
-  /* line 324, ../scss/_home.scss */
+  /* line 383, ../scss/_home.scss */
   main#home section.landing .block_noir {
     display: flex;
     width: 100%;
@@ -541,7 +596,7 @@ main#home section.contact .container .fa:hover {
     transform: skewX(-20deg);
     transition: all 0.5s ease;
   }
-  /* line 332, ../scss/_home.scss */
+  /* line 391, ../scss/_home.scss */
   main#home section.landing .content {
     z-index: 1;
     padding: 0 30px;
@@ -549,21 +604,21 @@ main#home section.contact .container .fa:hover {
     justify-content: center;
     flex-flow: column wrap;
   }
-  /* line 338, ../scss/_home.scss */
+  /* line 397, ../scss/_home.scss */
   main#home section.landing .content .title {
     position: static;
     top: 0;
     left: 0;
     transform: skewX(20deg);
   }
-  /* line 344, ../scss/_home.scss */
+  /* line 403, ../scss/_home.scss */
   main#home section.landing .content h1.name {
     color: #1d314a;
     font-weight: bold;
     text-align: left;
     font-size: 50px;
   }
-  /* line 350, ../scss/_home.scss */
+  /* line 409, ../scss/_home.scss */
   main#home section.landing .content h2.role {
     margin-left: -20px;
     color: #1d314a;
@@ -571,13 +626,13 @@ main#home section.contact .container .fa:hover {
     font-size: 35px;
     letter-spacing: 2px;
   }
-  /* line 357, ../scss/_home.scss */
+  /* line 416, ../scss/_home.scss */
   main#home section.landing .content hr {
     display: block;
     width: 50px;
     margin: 50px 0;
   }
-  /* line 362, ../scss/_home.scss */
+  /* line 421, ../scss/_home.scss */
   main#home section.landing .content p {
     display: block;
     font-weight: bold;
@@ -588,34 +643,34 @@ main#home section.contact .container .fa:hover {
     text-align: justify;
     line-height: 20px;
   }
-  /* line 374, ../scss/_home.scss */
+  /* line 433, ../scss/_home.scss */
   main#home section.about {
     padding-bottom: 50px;
   }
-  /* line 376, ../scss/_home.scss */
+  /* line 435, ../scss/_home.scss */
   main#home section.about .container {
     padding-right: 80px;
   }
-  /* line 378, ../scss/_home.scss */
+  /* line 437, ../scss/_home.scss */
   main#home section.about .container img {
     width: 60%;
   }
-  /* line 383, ../scss/_home.scss */
+  /* line 442, ../scss/_home.scss */
   main#home section.projects {
     display: flex;
     align-items: center;
     padding: 0;
   }
-  /* line 387, ../scss/_home.scss */
+  /* line 446, ../scss/_home.scss */
   main#home section.projects .container {
     padding-right: 80px;
   }
-  /* line 389, ../scss/_home.scss */
+  /* line 448, ../scss/_home.scss */
   main#home section.projects .container h3 {
     font-size: 30px;
     text-align: center;
   }
-  /* line 393, ../scss/_home.scss */
+  /* line 452, ../scss/_home.scss */
   main#home section.projects .container .content {
     text-align: left;
     display: -webkit-box;
@@ -623,7 +678,7 @@ main#home section.contact .container .fa:hover {
     display: flex;
     margin-bottom: 80px;
   }
-  /* line 399, ../scss/_home.scss */
+  /* line 458, ../scss/_home.scss */
   main#home section.projects .container .content .important-project {
     text-align: center;
     flex-flow: column wrap;
@@ -632,55 +687,55 @@ main#home section.contact .container .fa:hover {
     -ms-flex: 1;
     flex: 1;
   }
-  /* line 406, ../scss/_home.scss */
+  /* line 465, ../scss/_home.scss */
   main#home section.projects .container .content .important-project .presentation {
     margin: 20px 0;
     width: 90%;
   }
-  /* line 409, ../scss/_home.scss */
+  /* line 468, ../scss/_home.scss */
   main#home section.projects .container .content .important-project .presentation p {
     text-align: justify;
   }
-  /* line 413, ../scss/_home.scss */
+  /* line 472, ../scss/_home.scss */
   main#home section.projects .container .content .important-project img {
     width: 80%;
   }
-  /* line 417, ../scss/_home.scss */
+  /* line 476, ../scss/_home.scss */
   main#home section.projects .container .content .important-project:nth-of-type(3) {
     margin-bottom: 0;
   }
-  /* line 423, ../scss/_home.scss */
+  /* line 482, ../scss/_home.scss */
   main#home section.contact {
     height: 42%;
   }
-  /* line 425, ../scss/_home.scss */
+  /* line 484, ../scss/_home.scss */
   main#home section.contact .container {
     padding-bottom: 0;
     padding-right: 80px;
   }
-  /* line 428, ../scss/_home.scss */
+  /* line 487, ../scss/_home.scss */
   main#home section.contact .container h3 {
     font-size: 30px;
   }
-  /* line 430, ../scss/_home.scss */
+  /* line 489, ../scss/_home.scss */
   main#home section.contact .container h3 small {
     font-size: 20px;
   }
-  /* line 434, ../scss/_home.scss */
+  /* line 493, ../scss/_home.scss */
   main#home section.contact .container .fa {
     font-size: 38px;
   }
-  /* line 437, ../scss/_home.scss */
+  /* line 496, ../scss/_home.scss */
   main#home section.contact .container hr {
     display: none;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 446, ../scss/_home.scss */
+  /* line 505, ../scss/_home.scss */
   main#home {
     max-width: 1300px;
   }
-  /* line 448, ../scss/_home.scss */
+  /* line 507, ../scss/_home.scss */
   main#home section.landing {
     background-image: url(../img/trytrait.jpg);
     background-position: left;
@@ -690,12 +745,12 @@ main#home section.contact .container .fa:hover {
     background-position: center;
     background-size: cover;
   }
-  /* line 456, ../scss/_home.scss */
+  /* line 515, ../scss/_home.scss */
   main#home section.landing .container {
     width: 100%;
     height: 100%;
   }
-  /* line 460, ../scss/_home.scss */
+  /* line 519, ../scss/_home.scss */
   main#home section.landing .particles {
     display: block;
     width: 360px;
@@ -705,11 +760,11 @@ main#home section.contact .container .fa:hover {
     top: 68px;
     left: -140px;
   }
-  /* line 469, ../scss/_home.scss */
+  /* line 528, ../scss/_home.scss */
   main#home section.landing canvas {
     border-radius: 50%;
   }
-  /* line 472, ../scss/_home.scss */
+  /* line 531, ../scss/_home.scss */
   main#home section.landing .block_noir {
     display: flex;
     width: 100%;
@@ -719,7 +774,7 @@ main#home section.contact .container .fa:hover {
     margin-left: 46%;
     transition: all 0.5s ease;
   }
-  /* line 481, ../scss/_home.scss */
+  /* line 540, ../scss/_home.scss */
   main#home section.landing .content {
     z-index: 1;
     margin-left: 30px;
@@ -727,21 +782,21 @@ main#home section.contact .container .fa:hover {
     justify-content: center;
     flex-flow: column wrap;
   }
-  /* line 487, ../scss/_home.scss */
+  /* line 546, ../scss/_home.scss */
   main#home section.landing .content .title {
     position: static;
     top: 0;
     left: 0;
     transform: skewX(20deg);
   }
-  /* line 493, ../scss/_home.scss */
+  /* line 552, ../scss/_home.scss */
   main#home section.landing .content h1.name {
     color: #1d314a;
     font-weight: bold;
     text-align: left;
     font-size: 48px;
   }
-  /* line 499, ../scss/_home.scss */
+  /* line 558, ../scss/_home.scss */
   main#home section.landing .content h2.role {
     margin-left: -20px;
     color: #1d314a;
@@ -749,13 +804,13 @@ main#home section.contact .container .fa:hover {
     font-size: 36px;
     letter-spacing: 2px;
   }
-  /* line 506, ../scss/_home.scss */
+  /* line 565, ../scss/_home.scss */
   main#home section.landing .content hr {
     display: block;
     width: 50px;
     margin: 50px 0;
   }
-  /* line 511, ../scss/_home.scss */
+  /* line 570, ../scss/_home.scss */
   main#home section.landing .content p {
     display: block;
     font-weight: bold;
@@ -766,29 +821,29 @@ main#home section.contact .container .fa:hover {
     text-align: justify;
     line-height: 20px;
   }
-  /* line 523, ../scss/_home.scss */
+  /* line 582, ../scss/_home.scss */
   main#home section.about {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 527, ../scss/_home.scss */
+  /* line 586, ../scss/_home.scss */
   main#home section.about .container {
     padding-right: 0;
   }
-  /* line 530, ../scss/_home.scss */
+  /* line 589, ../scss/_home.scss */
   main#home section.about .content {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 535, ../scss/_home.scss */
+  /* line 594, ../scss/_home.scss */
   main#home section.about .content .text {
     width: 50%;
     position: relative;
     z-index: 100;
   }
-  /* line 539, ../scss/_home.scss */
+  /* line 598, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     text-align: left;
     color: #cc3554;
@@ -805,7 +860,7 @@ main#home section.contact .container .fa:hover {
     line-height: 45px;
     transition: all 0.5s ease;
   }
-  /* line 555, ../scss/_home.scss */
+  /* line 614, ../scss/_home.scss */
   main#home section.about .content .text p {
     padding-top: 200px;
     width: 350px;
@@ -818,7 +873,7 @@ main#home section.contact .container .fa:hover {
     margin-bottom: 50px;
     transition: all 0.5s ease;
   }
-  /* line 568, ../scss/_home.scss */
+  /* line 627, ../scss/_home.scss */
   main#home section.about .content a {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -830,128 +885,119 @@ main#home section.contact .container .fa:hover {
     margin-right: 0;
     transition: all 0.5s ease;
   }
-  /* line 580, ../scss/_home.scss */
+  /* line 639, ../scss/_home.scss */
   main#home section.about .content a:hover {
     border-color: #cc3554;
     background-color: #cc3554;
     color: #fefefe;
   }
-  /* line 589, ../scss/_home.scss */
+  /* line 648, ../scss/_home.scss */
   main#home section.projects .container .important-project {
     margin: 20px 40px;
   }
-  /* line 591, ../scss/_home.scss */
+  /* line 650, ../scss/_home.scss */
   main#home section.projects .container .important-project img {
     width: 20%;
   }
-  /* line 595, ../scss/_home.scss */
-  main#home section.projects .container h3 {
-    font-size: 40px;
-    padding: 40px 0;
-  }
-  /* line 599, ../scss/_home.scss */
-  main#home section.projects .container h3:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  /* line 604, ../scss/_home.scss */
+  /* line 656, ../scss/_home.scss */
   main#home section.contact {
     height: 35%;
   }
-  /* line 606, ../scss/_home.scss */
+  /* line 658, ../scss/_home.scss */
   main#home section.contact .container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
   }
-  /* line 611, ../scss/_home.scss */
+  /* line 663, ../scss/_home.scss */
   main#home section.contact .container .text {
     width: 60%;
     float: left;
     text-align: center;
   }
-  /* line 616, ../scss/_home.scss */
+  /* line 668, ../scss/_home.scss */
   main#home section.contact .container .text h3 small {
     font-size: 16px;
   }
-  /* line 622, ../scss/_home.scss */
+  /* line 674, ../scss/_home.scss */
   main#home section.contact .social-network {
     width: 40%;
     float: left;
   }
-  /* line 625, ../scss/_home.scss */
+  /* line 677, ../scss/_home.scss */
   main#home section.contact .social-network ul {
     padding: 0 30px;
     margin: 0;
   }
 }
 @media screen and (min-width: 1050px) {
-  /* line 637, ../scss/_home.scss */
+  /* line 689, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 48%;
   }
-  /* line 640, ../scss/_home.scss */
+  /* line 692, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -120px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 649, ../scss/_home.scss */
+  /* line 701, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -90px;
   }
-  /* line 656, ../scss/_home.scss */
+  /* line 708, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     left: -150px;
     top: 30px;
     font-size: 38px;
     margin-bottom: 50px;
   }
-  /* line 662, ../scss/_home.scss */
+  /* line 714, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 400px;
     left: -80px;
     margin-bottom: 30px;
   }
-  /* line 668, ../scss/_home.scss */
+  /* line 720, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: -80px;
   }
 }
 @media screen and (min-width: 1150px) {
-  /* line 678, ../scss/_home.scss */
+  /* line 730, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 51%;
   }
-  /* line 681, ../scss/_home.scss */
+  /* line 733, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 690, ../scss/_home.scss */
+  /* line 742, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -30px;
   }
-  /* line 697, ../scss/_home.scss */
+  /* line 749, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     font-size: 40px;
   }
-  /* line 700, ../scss/_home.scss */
+  /* line 752, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 500px;
   }
-  /* line 704, ../scss/_home.scss */
+  /* line 756, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: 50px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 714, ../scss/_home.scss */
+  /* line 766, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 53%;
   }
-  /* line 717, ../scss/_home.scss */
+  /* line 769, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -5px;
   }
@@ -1268,7 +1314,7 @@ main#projects section.projects_page {
 }
 /* line 6, ../scss/_projects.scss */
 main#projects section.projects_page .grid {
-  padding: 0 50px;
+  padding: 0 20px;
   transition: all 0.75s ease;
 }
 /* line 10, ../scss/_projects.scss */
@@ -1281,29 +1327,28 @@ main#projects section.projects_page .project {
   width: 100%;
   height: 350px;
   float: left;
-  margin: 0 10px;
   margin-bottom: 50px;
   text-align: center;
   transition: all 0.75s ease;
 }
-/* line 22, ../scss/_projects.scss */
+/* line 21, ../scss/_projects.scss */
 main#projects section.projects_page .project img {
   width: 100%;
 }
-/* line 25, ../scss/_projects.scss */
+/* line 24, ../scss/_projects.scss */
 main#projects section.projects_page .project h2 {
   margin: 10px 0;
   font-family: "Montserrat";
   text-transform: uppercase;
   color: gray;
 }
-/* line 31, ../scss/_projects.scss */
+/* line 30, ../scss/_projects.scss */
 main#projects section.projects_page .project h3 {
   margin: 10px 0;
   font-family: "Montserrat";
   font-size: 20px;
 }
-/* line 36, ../scss/_projects.scss */
+/* line 35, ../scss/_projects.scss */
 main#projects section.projects_page .project p {
   text-align: justify;
   font-family: "Poiret One";
@@ -1312,23 +1357,36 @@ main#projects section.projects_page .project p {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 50, ../scss/_projects.scss */
+  /* line 49, ../scss/_projects.scss */
   main#projects section.projects_page .container {
     padding-right: 100px;
   }
 }
 @media screen and (min-width: 870px) {
-  /* line 59, ../scss/_projects.scss */
+  /* line 58, ../scss/_projects.scss */
   main#projects section.projects_page .project {
+    margin: 0 10px;
+    margin-bottom: 50px;
     width: 47%;
   }
 }
 @media screen and (min-width: 1061px) {
-  /* line 69, ../scss/_projects.scss */
+  /* line 70, ../scss/_projects.scss */
   main#projects section.projects_page .project {
     width: 31%;
   }
 }
+/* line 1, ../scss/_project.scss */
+main#project {
+  height: 100%;
+  width: 100%;
+}
+/* line 4, ../scss/_project.scss */
+main#project section.project_page {
+  width: 100%;
+  height: 100%;
+}
+
 /* line 1, ../scss/_contact.scss */
 main#contact {
   height: 100%;

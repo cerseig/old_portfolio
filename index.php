@@ -43,31 +43,37 @@
     <section class="projects">
         <div class="container">
             <div class="top">
-                <a href="projects.php" alt="Redirection vers la page présentant les projets">
-                    <h3>Les projets<br>...</h3>
+                <a href="projects.php" alt="Redirection vers la page présentant les projets" class="hvr-underline-from-center">
+                    <h3>Mes réalisations<br></h3>
                 </a>
             </div>
             <div class="content">
                 <div class="important-project">
+                    <a href="projects.php" alt="Redirection vers la page des projets">
                     <img src="assets/img/projettut1.png" alt="Projeut Tuteuré de première année">
-                    <div class="presentation">
-                        <h4>Projeut Tuteuré n°1</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
+                        <div class="presentation">
+                            <h4>Projeut Tuteuré n°1</h4>
+                            <p class="hvr-underline-from-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="important-project">
-                    <div class="presentation">
-                        <h4>Portfolio V.Bootstrap</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                    <img src="assets/img/portfoliov1.png" alt="Portfolio, version n°1, version Bootstrap">
+                    <a href="projects.php" alt="Redirection vers la page des projets">
+                        <div class="presentation">
+                            <h4>Portfolio V.Bootstrap</h4>
+                            <p class="hvr-underline-from-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                        <img src="assets/img/portfoliov1.png" alt="Portfolio, version n°1, version Bootstrap">
+                    </a>
                 </div>
                 <div class="important-project">
-                    <img src="assets/img/aimemi.png" alt="Blog de 2ème année">
-                    <div class="presentation">
-                        <h4>Blog AIME.MI</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
+                    <a href="projects.php" alt="Redirection vers la page des projets">
+                        <img src="assets/img/aimemi.png" alt="Blog de 2ème année">
+                        <div class="presentation">
+                            <h4>Blog AIME.MI</h4>
+                            <p class="hvr-underline-from-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
