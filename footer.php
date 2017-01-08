@@ -2,47 +2,95 @@
             ©Portfolio | Circé Grand, created on 2016.
         </footer>
 
+    </main>
+
         <!-- Include scripts -->
         <script src="assets/js/script.js"></script>
         <script src="assets/js/particles.js"></script>
         <script src="assets/js/app.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 
         <script>
-            $( ".losange-home" ).mouseenter(function() {
-                $( ".p-home" ).slideDown( "fast" );
-            });
-            $( ".losange-home" ).mouseleave(function() {
-                $( ".p-home" ).slideUp( "fast" );
-            });
+            (function($) {
+                $( ".losange-home" ).mouseenter(function() {
+                    $( "span.home" ).slideDown( "fast" );
+                });
+                $( ".losange-home" ).mouseleave(function() {
+                    $( "span.home" ).slideUp( "fast" );
+                });
 
-            $( ".losange-about" ).mouseenter(function() {
-                $( ".p-about" ).slideDown( "fast" );
-            });
-            $( ".losange-about" ).mouseleave(function() {
-                $( ".p-about" ).slideUp( "fast" );
-            });
+                $( ".losange-about" ).mouseenter(function() {
+                    $( "span.about" ).slideDown( "fast" );
+                });
+                $( ".losange-about" ).mouseleave(function() {
+                    $( "span.about" ).slideUp( "fast" );
+                });
 
-            $( ".losange-skills" ).mouseenter(function() {
-                $( ".p-skills" ).slideDown( "fast" );
-            });
-            $( ".losange-skills" ).mouseleave(function() {
-                $( ".p-skills" ).slideUp( "fast" );
-            });
+                $( ".losange-skills" ).mouseenter(function() {
+                    $( "span.skills" ).slideDown( "fast" );
+                });
+                $( ".losange-skills" ).mouseleave(function() {
+                    $( "span.skills" ).slideUp( "fast" );
+                });
 
-            $( ".losange-projects" ).mouseenter(function() {
-                $( ".p-projects" ).slideDown( "fast" );
-            });
-            $( ".losange-projects" ).mouseleave(function() {
-                $( ".p-projects" ).slideUp( "fast" );
-            });
+                $( ".losange-projects" ).mouseenter(function() {
+                    $( "span.projects" ).slideDown( "fast" );
+                });
+                $( ".losange-projects" ).mouseleave(function() {
+                    $( "span.projects" ).slideUp( "fast" );
+                });
 
-            $( ".losange-contact" ).mouseenter(function() {
-                $( ".p-contact" ).slideDown( "fast" );
-            });
-            $( ".losange-contact" ).mouseleave(function() {
-                $( ".p-contact" ).slideUp( "fast" );
+                $( ".losange-contact" ).mouseenter(function() {
+                    $( "span.contact" ).slideDown( "fast" );
+                });
+                $( ".losange-contact" ).mouseleave(function() {
+                    $( "span.contact" ).slideUp( "fast" );
+                });
+            })(jQuery);
+        </script>
+
+        <script>
+            var ctx = document.getElementById("myChart");
+
+            var data = {
+                labels: ["HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "JavaScript", "Symfony3", "Photoshop", "Illustrator", "InDesign"],
+                datasets: [
+                    {
+                        label: "Pôle développement",
+                        backgroundColor: "rgba(255,255,255,0.2)",
+                        borderColor: "rgba(255,255,255,1)",
+                        pointBackgroundColor: "rgba(179,181,198,1)",
+                        pointBorderColor: "#fff",
+                        pointHoverBackgroundColor: "#fff",
+                        pointHoverBorderColor: "rgba(179,181,198,1)",
+                        data: [90, 85, 70, 60, 60, 40, 40, 0, 0, 0]
+                    },
+                    {
+                        label: "Pôle graphique",
+                        backgroundColor: "rgba(204,53,84,0.2)",
+                        borderColor: "rgba(204,53,84,1)",
+                        pointBackgroundColor: "rgba(255,99,132,1)",
+                        pointBorderColor: "#fff",
+                        pointHoverBackgroundColor: "#fff",
+                        pointHoverBorderColor: "rgba(255,99,132,1)",
+                        data: [0, 0, 0, 0, 0, 0, 0, 70, 80, 60]
+                    }
+                ]
+            };
+
+            var myRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: data,
+                options: {
+                    scale: {
+                        reverse: false,
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }
+                }
             });
         </script>
 

@@ -36,12 +36,27 @@ nav ul li {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  position: relative;
 }
-/* line 15, ../scss/_navigation.scss */
+/* line 16, ../scss/_navigation.scss */
+nav ul li span {
+  display: none;
+  width: 80px;
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Poiret One";
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* line 29, ../scss/_navigation.scss */
 nav ul li a {
   text-decoration: none;
 }
-/* line 18, ../scss/_navigation.scss */
+/* line 32, ../scss/_navigation.scss */
 nav ul li .losange {
   height: 40px;
   width: 40px;
@@ -60,7 +75,7 @@ nav ul li .losange {
   align-items: center;
   justify-content: center;
 }
-/* line 33, ../scss/_navigation.scss */
+/* line 47, ../scss/_navigation.scss */
 nav ul li .fa {
   font-size: 18px;
   color: #fefefe;
@@ -71,7 +86,7 @@ nav ul li .fa {
   -webkit-transform: rotate(-45deg);
   /* Safari et Chrome */
 }
-/* line 40, ../scss/_navigation.scss */
+/* line 54, ../scss/_navigation.scss */
 nav ul li .losange:hover {
   background-color: #385273;
   -moz-transform: rotate(-45deg);
@@ -79,7 +94,7 @@ nav ul li .losange:hover {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 46, ../scss/_navigation.scss */
+/* line 60, ../scss/_navigation.scss */
 nav ul li .losange:hover .fa {
   -ms-transform: rotate(405deg);
   /* Internet Explorer */
@@ -88,35 +103,23 @@ nav ul li .losange:hover .fa {
   -webkit-transform: rotate(405deg);
   /* Safari et Chrome */
 }
-/* line 53, ../scss/_navigation.scss */
+/* line 67, ../scss/_navigation.scss */
 nav ul li:nth-of-type(5) {
   margin-right: 0;
 }
-/* line 56, ../scss/_navigation.scss */
-nav ul p {
-  display: none;
-  margin-left: -80px;
-  margin-top: -30px;
-  height: 10px;
-  width: 80px;
-  font-family: "Poiret One";
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-/* line 67, ../scss/_navigation.scss */
+/* line 70, ../scss/_navigation.scss */
 nav ul li:last-child {
   flex: none;
 }
 
 @media screen and (min-width: 500px) {
-  /* line 75, ../scss/_navigation.scss */
+  /* line 78, ../scss/_navigation.scss */
   nav ul {
     padding: 0 100px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 81, ../scss/_navigation.scss */
+  /* line 84, ../scss/_navigation.scss */
   nav {
     width: auto;
     height: 100%;
@@ -126,29 +129,33 @@ nav ul li:last-child {
     align-items: center;
     right: 0;
   }
-  /* line 89, ../scss/_navigation.scss */
+  /* line 92, ../scss/_navigation.scss */
   nav ul {
     padding: 0;
     display: block;
     margin: 0;
   }
-  /* line 93, ../scss/_navigation.scss */
+  /* line 96, ../scss/_navigation.scss */
   nav ul li {
     flex-grow: none;
     display: block;
     margin-top: 120%;
     text-align: -webkit-center;
   }
-  /* line 98, ../scss/_navigation.scss */
+  /* line 101, ../scss/_navigation.scss */
+  nav ul li span {
+    font-size: 14px;
+  }
+  /* line 104, ../scss/_navigation.scss */
   nav ul li .losange {
     height: 50px;
     width: 50px;
   }
-  /* line 102, ../scss/_navigation.scss */
+  /* line 108, ../scss/_navigation.scss */
   nav ul li .fa {
     font-size: 20px;
   }
-  /* line 105, ../scss/_navigation.scss */
+  /* line 111, ../scss/_navigation.scss */
   nav ul li .losange:hover {
     background-color: #385273;
     -moz-transform: rotate(-45deg);
@@ -156,7 +163,7 @@ nav ul li:last-child {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 111, ../scss/_navigation.scss */
+  /* line 117, ../scss/_navigation.scss */
   nav ul li .losange:hover .fa {
     -ms-transform: rotate(405deg);
     /* Internet Explorer */
@@ -165,16 +172,9 @@ nav ul li:last-child {
     -webkit-transform: rotate(405deg);
     /* Safari et Chrome */
   }
-  /* line 118, ../scss/_navigation.scss */
+  /* line 124, ../scss/_navigation.scss */
   nav ul li:nth-of-type(5) {
     margin-bottom: 0;
-  }
-  /* line 121, ../scss/_navigation.scss */
-  nav ul p {
-    margin-top: 20px;
-    margin-left: 0;
-    width: 50px;
-    font-size: 14px;
   }
 }
 /* line 1, ../scss/_home.scss */
@@ -901,7 +901,7 @@ main#home section.contact .container .fa:hover {
   }
   /* line 656, ../scss/_home.scss */
   main#home section.contact {
-    height: 35%;
+    height: 33%;
   }
   /* line 658, ../scss/_home.scss */
   main#home section.contact .container {
@@ -1302,27 +1302,161 @@ main#skills {
 main#skills section.skills_page {
   width: 100%;
   height: 100%;
+  background-image: url(../img/background-skills.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 11, ../scss/_skills.scss */
+main#skills section.skills_page .container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+/* line 15, ../scss/_skills.scss */
+main#skills section.skills_page .container .column {
+  width: 100%;
+}
+/* line 18, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 {
+  padding: 0 20px;
+  margin-bottom: 50px;
+  transition: all 0.50s ease;
+}
+/* line 22, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #cc3554;
+  transition: all 0.50s ease;
+}
+/* line 28, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 h1 {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  transition: all 0.50s ease;
+  color: #fefefe;
+}
+/* line 36, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 .line {
+  width: 50px;
+  height: 5px;
+  background-color: #cc3554;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+/* line 43, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 p {
+  font-family: "Poiret One";
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-align: justify;
+  transition: all 0.50s ease;
+  color: #fefefe;
+}
+/* line 52, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  padding-bottom: 80px;
+  transition: all 0.50s ease;
+}
+/* line 60, ../scss/_skills.scss */
+main#skills section.skills_page .container .charts {
+  width: 100%;
+  height: 100%;
+  transition: all 0.50s ease;
 }
 
+@media screen and (min-width: 768px) {
+  /* line 73, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column {
+    height: 100%;
+  }
+  /* line 76, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-1 {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 40%;
+    margin-bottom: 0;
+  }
+  /* line 82, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-1 i {
+    font-size: 40px;
+  }
+  /* line 85, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-1 h1 {
+    font-size: 30px;
+  }
+  /* line 89, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-2 {
+    float: left;
+    width: 60%;
+    padding-bottom: 0;
+    padding-right: 100px;
+  }
+  /* line 95, ../scss/_skills.scss */
+  main#skills section.skills_page .container .charts {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 109, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-1 {
+    width: 50%;
+  }
+  /* line 111, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-1 i {
+    font-size: 60px;
+  }
+  /* line 114, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-1 h1 {
+    font-size: 40px;
+  }
+  /* line 117, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-1 p {
+    font-family: "Poiret One";
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: justify;
+  }
+  /* line 124, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-2 {
+    width: 50%;
+  }
+  /* line 127, ../scss/_skills.scss */
+  main#skills section.skills_page .container .charts {
+    width: 400px;
+    height: 400px;
+  }
+}
 /* line 2, ../scss/_projects.scss */
 main#projects {
+  height: 100%;
   width: 100%;
 }
-/* line 4, ../scss/_projects.scss */
+/* line 5, ../scss/_projects.scss */
 main#projects section.projects_page {
+  height: 100%;
   width: 100%;
 }
-/* line 6, ../scss/_projects.scss */
+/* line 8, ../scss/_projects.scss */
 main#projects section.projects_page .grid {
   padding: 0 20px;
   transition: all 0.75s ease;
 }
-/* line 10, ../scss/_projects.scss */
+/* line 12, ../scss/_projects.scss */
 main#projects section.projects_page a {
   color: black;
   text-decoration: none;
 }
-/* line 14, ../scss/_projects.scss */
+/* line 16, ../scss/_projects.scss */
 main#projects section.projects_page .project {
   width: 100%;
   height: 350px;
@@ -1331,24 +1465,24 @@ main#projects section.projects_page .project {
   text-align: center;
   transition: all 0.75s ease;
 }
-/* line 21, ../scss/_projects.scss */
+/* line 23, ../scss/_projects.scss */
 main#projects section.projects_page .project img {
   width: 100%;
 }
-/* line 24, ../scss/_projects.scss */
+/* line 26, ../scss/_projects.scss */
 main#projects section.projects_page .project h2 {
   margin: 10px 0;
   font-family: "Montserrat";
   text-transform: uppercase;
   color: gray;
 }
-/* line 30, ../scss/_projects.scss */
+/* line 32, ../scss/_projects.scss */
 main#projects section.projects_page .project h3 {
   margin: 10px 0;
   font-family: "Montserrat";
   font-size: 20px;
 }
-/* line 35, ../scss/_projects.scss */
+/* line 37, ../scss/_projects.scss */
 main#projects section.projects_page .project p {
   text-align: justify;
   font-family: "Poiret One";
@@ -1357,13 +1491,13 @@ main#projects section.projects_page .project p {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 49, ../scss/_projects.scss */
+  /* line 51, ../scss/_projects.scss */
   main#projects section.projects_page .container {
     padding-right: 100px;
   }
 }
 @media screen and (min-width: 870px) {
-  /* line 58, ../scss/_projects.scss */
+  /* line 60, ../scss/_projects.scss */
   main#projects section.projects_page .project {
     margin: 0 10px;
     margin-bottom: 50px;
@@ -1371,7 +1505,7 @@ main#projects section.projects_page .project p {
   }
 }
 @media screen and (min-width: 1061px) {
-  /* line 70, ../scss/_projects.scss */
+  /* line 72, ../scss/_projects.scss */
   main#projects section.projects_page .project {
     width: 31%;
   }
@@ -1386,7 +1520,112 @@ main#project section.project_page {
   width: 100%;
   height: 100%;
 }
+/* line 7, ../scss/_project.scss */
+main#project section.project_page .container {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+/* line 11, ../scss/_project.scss */
+main#project section.project_page .container .column-1 {
+  display: none;
+}
+/* line 14, ../scss/_project.scss */
+main#project section.project_page .container .column-2 {
+  padding-bottom: 80px;
+}
+/* line 17, ../scss/_project.scss */
+main#project section.project_page .container .column-2 .project h1 {
+  margin: 10px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: gray;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  color: white;
+}
+/* line 29, ../scss/_project.scss */
+main#project section.project_page .container .column-2 .project h2 {
+  margin: 20px 0;
+  font-size: 20px;
+  border-left: 5px solid black;
+  padding-left: 10px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 38, ../scss/_project.scss */
+main#project section.project_page .container .column-2 .project p {
+  font-family: "Poiret One";
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+/* line 44, ../scss/_project.scss */
+main#project section.project_page .container .column-2 .project ul {
+  margin: 20px 0;
+  text-align: center;
+}
+/* line 47, ../scss/_project.scss */
+main#project section.project_page .container .column-2 .project ul li {
+  display: inline-block;
+  margin: 5px 5px;
+}
+/* line 55, ../scss/_project.scss */
+main#project section.project_page a {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+/* line 62, ../scss/_project.scss */
+main#project section.project_page a:nth-of-type(1) .link-project {
+  border: 2px solid black;
+  color: black;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all 0.75s ease;
+}
+/* line 71, ../scss/_project.scss */
+main#project section.project_page a:nth-of-type(1):hover .link-project {
+  background-color: #851e31;
+  color: white;
+}
 
+@media screen and (min-width: 500px) {
+  /* line 82, ../scss/_project.scss */
+  main#project section.project_page .container .column-1 {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 94, ../scss/_project.scss */
+  main#project section.project_page .container .column-2 {
+    padding-right: 120px;
+    padding-left: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 107, ../scss/_project.scss */
+  main#project section.project_page .container .column-1 {
+    float: left;
+    width: 45%;
+  }
+  /* line 111, ../scss/_project.scss */
+  main#project section.project_page .container .column-2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 55%;
+  }
+}
 /* line 1, ../scss/_contact.scss */
 main#contact {
   height: 100%;
@@ -1396,9 +1635,8 @@ main#contact {
 main#contact section.contact_page {
   width: 100%;
   height: 100%;
-  padding-bottom: 30px;
 }
-/* line 8, ../scss/_contact.scss */
+/* line 7, ../scss/_contact.scss */
 main#contact section.contact_page .column-2 {
   width: 100%;
   display: flex;
@@ -1406,7 +1644,7 @@ main#contact section.contact_page .column-2 {
   transition: all 0.75s ease;
   padding-bottom: 80px;
 }
-/* line 16, ../scss/_contact.scss */
+/* line 15, ../scss/_contact.scss */
 main#contact section.contact_page .contact-form h1 {
   margin-top: 30px;
   text-align: center;
@@ -1418,12 +1656,12 @@ main#contact section.contact_page .contact-form h1 {
   color: #1d314a;
   transition: all 0.75s ease;
 }
-/* line 28, ../scss/_contact.scss */
+/* line 27, ../scss/_contact.scss */
 main#contact section.contact_page form {
   padding: 0 30px;
   width: 100%;
 }
-/* line 31, ../scss/_contact.scss */
+/* line 30, ../scss/_contact.scss */
 main#contact section.contact_page form input, main#contact section.contact_page form textarea {
   width: 100%;
   height: 40px;
@@ -1431,7 +1669,7 @@ main#contact section.contact_page form input, main#contact section.contact_page 
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-/* line 38, ../scss/_contact.scss */
+/* line 37, ../scss/_contact.scss */
 main#contact section.contact_page form input[type="submit"] {
   margin-top: 30px;
   border: 1px solid #1d314a;
@@ -1444,19 +1682,19 @@ main#contact section.contact_page form input[type="submit"] {
   width: 100%;
   transition: all 0.75s ease;
 }
-/* line 50, ../scss/_contact.scss */
+/* line 49, ../scss/_contact.scss */
 main#contact section.contact_page form input[type="submit"]:hover {
   border: 1px solid #1d314a;
   background-color: #1d314a;
   color: white;
 }
-/* line 55, ../scss/_contact.scss */
+/* line 54, ../scss/_contact.scss */
 main#contact section.contact_page form textarea {
   height: 150px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 65, ../scss/_contact.scss */
+  /* line 64, ../scss/_contact.scss */
   main#contact section.contact_page .column-1 {
     float: left;
     width: 40%;
@@ -1467,7 +1705,7 @@ main#contact section.contact_page form textarea {
     background-size: cover;
     transition: all 0.75s ease;
   }
-  /* line 75, ../scss/_contact.scss */
+  /* line 74, ../scss/_contact.scss */
   main#contact section.contact_page .column-2 {
     float: left;
     width: 60%;
@@ -1477,7 +1715,7 @@ main#contact section.contact_page form textarea {
     transition: all 0.75s ease;
     padding-bottom: 0;
   }
-  /* line 85, ../scss/_contact.scss */
+  /* line 84, ../scss/_contact.scss */
   main#contact section.contact_page .contact-form h1 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -1485,12 +1723,12 @@ main#contact section.contact_page form textarea {
     transition: all 0.75s ease;
     text-align: left;
   }
-  /* line 93, ../scss/_contact.scss */
+  /* line 92, ../scss/_contact.scss */
   main#contact section.contact_page form {
     padding: 0;
     padding-left: 30px;
   }
-  /* line 96, ../scss/_contact.scss */
+  /* line 95, ../scss/_contact.scss */
   main#contact section.contact_page form input, main#contact section.contact_page form textarea {
     width: 75%;
     height: 50px;
@@ -1498,7 +1736,7 @@ main#contact section.contact_page form textarea {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
-  /* line 103, ../scss/_contact.scss */
+  /* line 102, ../scss/_contact.scss */
   main#contact section.contact_page form input[type="submit"] {
     margin-top: 30px;
     border: 1px solid #1d314a;
@@ -1511,35 +1749,33 @@ main#contact section.contact_page form textarea {
     width: 30%;
     transition: all 0.75s ease;
   }
-  /* line 115, ../scss/_contact.scss */
+  /* line 114, ../scss/_contact.scss */
   main#contact section.contact_page form input[type="submit"]:hover {
     border: 1px solid #1d314a;
     background-color: #1d314a;
     color: white;
   }
-  /* line 120, ../scss/_contact.scss */
+  /* line 119, ../scss/_contact.scss */
   main#contact section.contact_page form textarea {
     height: 150px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 131, ../scss/_contact.scss */
+  /* line 130, ../scss/_contact.scss */
   main#contact section.contact_page .column-1 {
     width: 45%;
   }
-  /* line 134, ../scss/_contact.scss */
+  /* line 133, ../scss/_contact.scss */
   main#contact section.contact_page .column-2 {
     width: 55%;
   }
-  /* line 138, ../scss/_contact.scss */
+  /* line 137, ../scss/_contact.scss */
   main#contact section.contact_page .contact-form h1 {
     font-size: 40px;
   }
 }
 /* line 1, ../scss/_footer.scss */
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: #14121f;
   color: #fefefe;
@@ -1552,8 +1788,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 15, ../scss/_footer.scss */
+  /* line 13, ../scss/_footer.scss */
   footer {
     display: block;
+    float: left;
   }
 }

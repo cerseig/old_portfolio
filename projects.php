@@ -21,35 +21,33 @@ try {
     <section class="projects_page">
         <div class="container">
             <div class="grid">
-        <?php
-            foreach ($projects as $project) {
-                // Puis j'affiche mon projet
-                echo '
-                        <a href="project.php?id='.$project->id.'" alt="Redirection vers la description du projet sélectionné">
-                            <div class="project">
-                                <img src="assets/img/'.$project->img.'" alt="Photo pour illustrer">
-                                <h2>'.$project->date.'</h2>';
-                                // foreach ($categories as $category) {
-                                //     echo $category->name;
-                                // }
-                                echo '
-                                <h3>'.$project->title.'</h3>
-                                <p>'.$project->resume.'</p>
-                                <ul>';
-                                    // foreach ($skills as $skill) {
-                                    //     echo '<li>'.$skill->name.'</li>';
-                                    // }
-                                echo '
-                                </ul>
-                            </div>
-                        </a>
+                <?php
+                    foreach ($projects as $project) {
+                        // Puis j'affiche mon projet
+                        echo '
+                                <a href="project.php?id='.$project->id.'" alt="Redirection vers la description du projet sélectionné">
+                                    <div class="project">
+                                        <img src="assets/img/'.$project->img.'" alt="Photo pour illustrer">
+                                        <h2>'.$project->date.'</h2>';
+                                        // foreach ($categories as $category) {
+                                        //     echo $category->name;
+                                        // }
+                                        echo '
+                                        <h3>'.$project->title.'</h3>
+                                        <p>'.$project->resume.'</p>
+                                        <ul>';
+                                            // foreach ($skills as $skill) {
+                                            //     echo '<li>'.$skill->name.'</li>';
+                                            // }
+                                        echo '
+                                        </ul>
+                                    </div>
+                                </a>
 
-                ';
-            }
-        ?>
-    </div>
+                        ';
+                    }
+                ?>
+            </div>
         </div>
     </section>
-</main>
-
 <?php require 'footer.php' ?>
