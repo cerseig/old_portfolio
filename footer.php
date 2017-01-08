@@ -55,27 +55,27 @@
             var ctx = document.getElementById("myChart");
 
             var data = {
-                labels: ["HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "JavaScript", "Symfony3", "Photoshop", "Illustrator", "InDesign"],
+                labels: ["Scale","HTML5", "CSS3", "Bootstrap", "PHP", "MySQL", "JavaScript", "Symfony3", "Photoshop", "Illustrator", "InDesign"],
                 datasets: [
                     {
-                        label: "Pôle développement",
+                        label: "PÔLE DÉVELOPPEMENT",
                         backgroundColor: "rgba(255,255,255,0.2)",
                         borderColor: "rgba(255,255,255,1)",
                         pointBackgroundColor: "rgba(179,181,198,1)",
                         pointBorderColor: "#fff",
                         pointHoverBackgroundColor: "#fff",
                         pointHoverBorderColor: "rgba(179,181,198,1)",
-                        data: [90, 85, 70, 60, 60, 40, 40, 0, 0, 0]
+                        data: [0, 90, 85, 70, 60, 60, 40, 40, 0, 0, 0]
                     },
                     {
-                        label: "Pôle graphique",
+                        label: "PÔLE GRAPHIQUE",
                         backgroundColor: "rgba(204,53,84,0.2)",
                         borderColor: "rgba(204,53,84,1)",
                         pointBackgroundColor: "rgba(255,99,132,1)",
                         pointBorderColor: "#fff",
                         pointHoverBackgroundColor: "#fff",
                         pointHoverBorderColor: "rgba(255,99,132,1)",
-                        data: [0, 0, 0, 0, 0, 0, 0, 70, 80, 60]
+                        data: [0, 0, 0, 0, 0, 0, 0, 0, 70, 80, 60]
                     }
                 ]
             };
@@ -84,6 +84,13 @@
                 type: 'radar',
                 data: data,
                 options: {
+                    legend: {
+                        display: true,
+                        labels: {
+                            fontColor: 'rgb(255, 255, 255)',
+                            fontFamily: 'Montserrat',
+                        }
+                    },
                     scale: {
                         reverse: false,
                         ticks: {
