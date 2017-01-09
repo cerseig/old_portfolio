@@ -30,20 +30,14 @@ try {
                         echo '
                                 <a href="project.php?id='.$project->id.'" alt="Redirection vers la description du projet sélectionné">
                                     <div class="project">
-                                        <img src="assets/img/'.$project->img.'" alt="Photo pour illustrer">
-                                        <h2>'.$project->date.'</h2>';
-                                        // foreach ($categories as $category) {
-                                        //     echo $category->name;
-                                        // }
-                                        echo '
-                                        <h3>'.$project->title.'</h3>
-                                        <p>'.$project->resume.'</p>
-                                        <ul>';
-                                            // foreach ($skills as $skill) {
-                                            //     echo '<li>'.$skill->name.'</li>';
-                                            // }
-                                        echo '
-                                        </ul>
+                                        <figure class="snip1084 dark">
+                                            <img src="assets/img/'.$project->img.'" alt="Photo pour illustrer">
+                                            <figcaption>
+                                                <div class="text">
+                                                    <p><span>'.$project->title.'</span><br>'.$project->resume.'</p>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
                                     </div>
                                 </a>
 

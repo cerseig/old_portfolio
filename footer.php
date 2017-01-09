@@ -11,6 +11,8 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-58d22c749295bca52f487966e382a94a495ac103faca9206cbd160bdf8aedf2a.js'></script>
+        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
         <script>
             (function($) {
@@ -49,6 +51,15 @@
                     $( "span.contact" ).slideUp( "fast" );
                 });
             })(jQuery);
+        </script>
+
+        <script>
+            /* Demo purposes only */
+            $("figure").mouseleave(
+              function() {
+                $(this).removeClass("hover");
+              }
+            );
         </script>
 
         <script>

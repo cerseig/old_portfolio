@@ -18,6 +18,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
 
         <!-- Custom script -->
 

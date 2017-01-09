@@ -8,7 +8,7 @@
     <section class="landing">
         <div class="container">
             <div class="particles" id="particles-js"></div>
-                <div class="block_noir">
+                <div class="block_noir animated bounceInRight">
                     <div class="content">
                         <div class="triangles">
                             <img src="assets/img/triangle.png" alt="">
