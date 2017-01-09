@@ -109,7 +109,7 @@ main#home {
     section.projects {
         width: 100%;
         min-height: 100%;
-        padding: 50px 0;
+        padding-bottom: 50px;
         background-image: url(../img/papier1.png);
         background-position: center;
         background-repeat: repeat;
@@ -126,12 +126,13 @@ main#home {
                 }
             }
             h3 {
+                margin-top: -7px;
                 font-family: $font-montserrat;
                 text-transform: uppercase;
                 font-weight: bold;
-                font-size: 25px;
+                font-size: 30px;
                 text-align: center;
-                color: #14121f;
+                color: white;
                 transition: all 0.3s ease;
             }
             .content {

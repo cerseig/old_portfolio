@@ -22,6 +22,7 @@ try {
         <div class="container">
             <div class="top">
                 <h1>Réalisations</h1>
+                <img src="assets/img/essai.png" alt="">
             </div>
             <div class="grid">
                 <?php

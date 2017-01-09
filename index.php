@@ -44,7 +44,7 @@
         <div class="container">
             <div class="top">
                 <a href="projects.php" alt="Redirection vers la page présentant les projets" class="hvr-underline-from-center">
-                    <h3>Mes réalisations<br></h3>
+                    <h3>Mes réalisations</h3>
                 </a>
             </div>
             <div class="content">
