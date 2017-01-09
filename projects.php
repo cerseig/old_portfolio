@@ -20,7 +20,9 @@ try {
     <?php include 'navigation.php' ?>
     <section class="projects_page">
         <div class="container">
-            <h1>Réalisations</h1>
+            <div class="top">
+                <h1>Réalisations</h1>
+            </div>
             <div class="grid">
                 <?php
                     foreach ($projects as $project) {

@@ -1,5 +1,5 @@
 main#project {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     section.project_page {
         width: 100%;
@@ -18,7 +18,7 @@ main#project {
                         margin: 10px 0;
                         margin-bottom: 30px;
                         text-align: center;
-                        background-color: gray;
+                        background-color: #cc3554;
                         padding: 10px 0;
                         text-transform: uppercase;
                         font-size: 12px;
@@ -47,6 +47,9 @@ main#project {
                         li {
                             display: inline-block;
                             margin: 5px 5px;
+                            img {
+                                height: 60px;
+                            }
                         }
                     }
                 }
@@ -81,6 +84,10 @@ main#project {
             .container {
                 .column-1 {
                     display: block;
+                    padding-top: 20px;
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -91,9 +98,18 @@ main#project {
     main#project {
         section.project_page {
             .container {
+                .column-1 {
+                    padding-right: 120px;
+                    padding-left: 40px;
+                }
                 .column-2 {
                     padding-right: 120px;
                     padding-left: 40px;
+                    padding-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 30px;
                 }
             }
         }
@@ -102,14 +118,20 @@ main#project {
 
 @media screen and (min-width:992px) {
     main#project {
+            height: 100%;
         section.project_page {
             .container {
+                padding-left: 0;
                 .column-1 {
+                    overflow: hidden;
+                    padding: 0;
                     float: left;
                     width: 45%;
+                    img {
+
+                    }
                 }
                 .column-2 {
-                    height: 100%;
                     display: flex;
                     align-items: center;
                     float: left;

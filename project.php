@@ -24,7 +24,7 @@
                     }
                 ?>
             </div>
-            
+
             <div class="column column-2">
                 <?php
                 $errors = [];
@@ -73,7 +73,7 @@
                                     <p>'.$project->description.'</p>
                                     <ul>';
                                         foreach ($skills as $skill) {
-                                            echo '<li>'.$skill->name.'</li>';
+                                            echo '<li><img src="assets/img/'.$skill->name.'"</li>';
                                         }
                                     echo '
                                     </ul>
