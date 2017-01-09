@@ -8,15 +8,16 @@ main#skills {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
         .container {
             width: 100%;
             height: 100%;
-            padding: 20px;
             .column {
                 width: 100%;
             }
             .column-1 {
-                padding: 0 20px;
+                padding: 0 40px;
+                padding-top: 50px;
                 margin-bottom: 50px;
                 transition: all 0.50s ease;
                 i {
@@ -54,13 +55,29 @@ main#skills {
                 align-items: center;
                 justify-content: center;
                 padding: 0 20px;
+                padding-top: 50px;
                 padding-bottom: 80px;
                 transition: all 0.50s ease;
+                background-color: white;
             }
             .charts{
                 width: 100%;
                 height:100%;
                 transition: all 0.50s ease;
+            }
+        }
+    }
+}
+@media screen and (min-width:500px) {
+    main#skills {
+        section.skills_page {
+            .container {
+                .column-2 {
+                    .charts {
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
             }
         }
     }
@@ -74,6 +91,7 @@ main#skills {
                     height: 100%;
                 }
                 .column-1 {
+                    padding: 0 40px;
                     display: flex;
                     align-items: center;
                     float: left;
@@ -114,19 +132,13 @@ main#skills {
                     h1 {
                         font-size: 40px;
                     }
-                    p {
-                        font-family: $font-poiretone;
-                        letter-spacing: 1px;
-                        line-height: 20px;
-                        text-align: justify;
-                    }
                 }
                 .column-2 {
                     width: 50%;
-                }
-                .charts {
-                    width: 400px;
-                    height: 400px;
+                    .charts {
+                        width: 400px;
+                        height: 400px;
+                    }
                 }
             }
         }

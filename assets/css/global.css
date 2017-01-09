@@ -1306,12 +1306,12 @@ main#skills section.skills_page {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
-/* line 11, ../scss/_skills.scss */
+/* line 12, ../scss/_skills.scss */
 main#skills section.skills_page .container {
   width: 100%;
   height: 100%;
-  padding: 20px;
 }
 /* line 15, ../scss/_skills.scss */
 main#skills section.skills_page .container .column {
@@ -1319,18 +1319,19 @@ main#skills section.skills_page .container .column {
 }
 /* line 18, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 {
-  padding: 0 20px;
+  padding: 0 40px;
+  padding-top: 50px;
   margin-bottom: 50px;
   transition: all 0.50s ease;
 }
-/* line 22, ../scss/_skills.scss */
+/* line 23, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 i {
   font-size: 30px;
   margin-bottom: 10px;
   color: #cc3554;
   transition: all 0.50s ease;
 }
-/* line 28, ../scss/_skills.scss */
+/* line 29, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 h1 {
   font-family: "Montserrat";
   text-transform: uppercase;
@@ -1339,7 +1340,7 @@ main#skills section.skills_page .container .column-1 h1 {
   transition: all 0.50s ease;
   color: #f3f3f3;
 }
-/* line 36, ../scss/_skills.scss */
+/* line 37, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 .line {
   width: 50px;
   height: 5px;
@@ -1347,7 +1348,7 @@ main#skills section.skills_page .container .column-1 .line {
   margin-top: 15px;
   margin-bottom: 40px;
 }
-/* line 43, ../scss/_skills.scss */
+/* line 44, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 p {
   font-family: "Poiret One";
   letter-spacing: 1px;
@@ -1356,94 +1357,97 @@ main#skills section.skills_page .container .column-1 p {
   transition: all 0.50s ease;
   color: #f3f3f3;
 }
-/* line 52, ../scss/_skills.scss */
+/* line 53, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-2 {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  padding-top: 50px;
   padding-bottom: 80px;
   transition: all 0.50s ease;
+  background-color: white;
 }
-/* line 60, ../scss/_skills.scss */
+/* line 63, ../scss/_skills.scss */
 main#skills section.skills_page .container .charts {
   width: 100%;
   height: 100%;
   transition: all 0.50s ease;
 }
 
+@media screen and (min-width: 500px) {
+  /* line 76, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-2 .charts {
+    width: 400px;
+    height: 400px;
+  }
+}
 @media screen and (min-width: 768px) {
-  /* line 73, ../scss/_skills.scss */
+  /* line 90, ../scss/_skills.scss */
   main#skills section.skills_page .container .column {
     height: 100%;
   }
-  /* line 76, ../scss/_skills.scss */
+  /* line 93, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 {
+    padding: 0 40px;
     display: flex;
     align-items: center;
     float: left;
     width: 40%;
     margin-bottom: 0;
   }
-  /* line 82, ../scss/_skills.scss */
+  /* line 100, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 i {
     font-size: 40px;
   }
-  /* line 85, ../scss/_skills.scss */
+  /* line 103, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 h1 {
     font-size: 30px;
   }
-  /* line 89, ../scss/_skills.scss */
+  /* line 107, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-2 {
     float: left;
     width: 60%;
     padding-bottom: 0;
     padding-right: 100px;
   }
-  /* line 95, ../scss/_skills.scss */
+  /* line 113, ../scss/_skills.scss */
   main#skills section.skills_page .container .charts {
     width: 350px;
     height: 350px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 109, ../scss/_skills.scss */
+  /* line 127, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 {
     width: 50%;
   }
-  /* line 111, ../scss/_skills.scss */
+  /* line 129, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 i {
     font-size: 60px;
   }
-  /* line 114, ../scss/_skills.scss */
+  /* line 132, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 h1 {
     font-size: 40px;
   }
-  /* line 117, ../scss/_skills.scss */
-  main#skills section.skills_page .container .column-1 p {
-    font-family: "Poiret One";
-    letter-spacing: 1px;
-    line-height: 20px;
-    text-align: justify;
-  }
-  /* line 124, ../scss/_skills.scss */
+  /* line 136, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-2 {
     width: 50%;
   }
-  /* line 127, ../scss/_skills.scss */
-  main#skills section.skills_page .container .charts {
+  /* line 138, ../scss/_skills.scss */
+  main#skills section.skills_page .container .column-2 .charts {
     width: 400px;
     height: 400px;
   }
 }
 /* line 2, ../scss/_projects.scss */
 main#projects {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 /* line 5, ../scss/_projects.scss */
 main#projects section.projects_page {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 /* line 8, ../scss/_projects.scss */
@@ -1458,60 +1462,50 @@ main#projects section.projects_page .container h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 25px;
-  text-align: center;
-}
-/* line 19, ../scss/_projects.scss */
-main#projects section.projects_page .container .line {
-  width: 50px;
-  height: 5px;
-  background-color: red;
-  margin-top: 20px;
   margin-bottom: 40px;
+  border-left: 5px solid black;
+  padding-left: 10px;
 }
-/* line 26, ../scss/_projects.scss */
-main#projects section.projects_page .container p {
-  font-family: "Poiret One";
-  font-size: 15px;
-  letter-spacing: 2px;
-  line-height: 15px;
-  text-align: justify;
-}
-/* line 34, ../scss/_projects.scss */
+/* line 22, ../scss/_projects.scss */
 main#projects section.projects_page .grid {
   transition: all 0.75s ease;
 }
-/* line 37, ../scss/_projects.scss */
+/* line 25, ../scss/_projects.scss */
 main#projects section.projects_page a {
   color: black;
   text-decoration: none;
 }
-/* line 41, ../scss/_projects.scss */
+/* line 30, ../scss/_projects.scss */
+main#projects section.projects_page a:last-child .project {
+  margin-bottom: 90px;
+}
+/* line 34, ../scss/_projects.scss */
 main#projects section.projects_page .project {
   width: 100%;
-  height: 350px;
+  height: 320px;
   float: left;
   margin-bottom: 50px;
   text-align: center;
   transition: all 0.75s ease;
 }
-/* line 48, ../scss/_projects.scss */
+/* line 41, ../scss/_projects.scss */
 main#projects section.projects_page .project img {
   width: 100%;
 }
-/* line 51, ../scss/_projects.scss */
+/* line 44, ../scss/_projects.scss */
 main#projects section.projects_page .project h2 {
   margin: 10px 0;
   font-family: "Montserrat";
   text-transform: uppercase;
   color: gray;
 }
-/* line 57, ../scss/_projects.scss */
+/* line 50, ../scss/_projects.scss */
 main#projects section.projects_page .project h3 {
   margin: 10px 0;
   font-family: "Montserrat";
   font-size: 20px;
 }
-/* line 62, ../scss/_projects.scss */
+/* line 55, ../scss/_projects.scss */
 main#projects section.projects_page .project p {
   text-align: justify;
   font-family: "Poiret One";
@@ -1520,13 +1514,13 @@ main#projects section.projects_page .project p {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 76, ../scss/_projects.scss */
+  /* line 69, ../scss/_projects.scss */
   main#projects section.projects_page .container {
     padding-right: 100px;
   }
 }
 @media screen and (min-width: 870px) {
-  /* line 85, ../scss/_projects.scss */
+  /* line 78, ../scss/_projects.scss */
   main#projects section.projects_page .project {
     margin: 0 10px;
     margin-bottom: 50px;
@@ -1534,7 +1528,7 @@ main#projects section.projects_page .project p {
   }
 }
 @media screen and (min-width: 1061px) {
-  /* line 97, ../scss/_projects.scss */
+  /* line 90, ../scss/_projects.scss */
   main#projects section.projects_page .project {
     width: 31%;
   }

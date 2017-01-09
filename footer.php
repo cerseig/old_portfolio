@@ -59,8 +59,8 @@
                 datasets: [
                     {
                         label: "PÔLE DÉVELOPPEMENT",
-                        backgroundColor: "rgba(255,255,255,0.2)",
-                        borderColor: "rgba(255,255,255,1)",
+                        backgroundColor: "rgba(29,49,76,0.2)",
+                        borderColor: "rgba(29,49,76,1)",
                         pointBackgroundColor: "rgba(179,181,198,1)",
                         pointBorderColor: "#fff",
                         pointHoverBackgroundColor: "#fff",
@@ -87,7 +87,7 @@
                     legend: {
                         display: true,
                         labels: {
-                            fontColor: 'rgb(255, 255, 255)',
+                            fontColor: 'rgb(0, 0, 0)',
                             fontFamily: 'Montserrat',
                         }
                     },
