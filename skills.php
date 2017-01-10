@@ -6,7 +6,11 @@
         <div class="container">
             <div class="column column-1">
                 <div class="content">
-                    <i class="fa fa-cogs"></i>
+                    <div class="cogs">
+                        <i class="fa fa-cog rotating-fast"></i>
+                        <i class="fa fa-cog rotating-fast"></i>
+                        <i class="fa fa-cog rotating-fast"></i>
+                    </div>
                     <h1>Mes compétences</h1>
                     <div class="line"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

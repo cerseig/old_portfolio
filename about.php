@@ -8,7 +8,7 @@
             <h1>Faisons<br>connaissance</h1>
             <div class="big-square"></div>
             <div class="medium-square"></div>
-            <div class="little-square"></div>
+            <div class="little-square rotating-fast"></div>
         </div>
         <div class="container">
             <div class="content">

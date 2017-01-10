@@ -17,6 +17,69 @@ body {
   overflow-x: hidden;
 }
 
+/* line 18, ../scss/_default.scss */
+.beat {
+  animation: battement 1.5s ease infinite;
+}
+
+@keyframes battement {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* line 27, ../scss/_default.scss */
+.move-line {
+  animation: nudge 3s linear infinite;
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(300px, 0);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 56, ../scss/_default.scss */
+.rotating {
+  -webkit-animation: rotating 40s linear infinite;
+  -moz-animation: rotating 40s linear infinite;
+  -ms-animation: rotating 40s linear infinite;
+  -o-animation: rotating 40s linear infinite;
+  animation: rotating 40s linear infinite;
+}
+
+/* line 63, ../scss/_default.scss */
+.rotating-fast {
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
+}
+
 /* line 1, ../scss/_navigation.scss */
 nav {
   width: 100%;
@@ -305,168 +368,111 @@ main#home section.about .text a:hover {
 /* line 109, ../scss/_home.scss */
 main#home section.projects {
   width: 100%;
-  min-height: 100%;
-  padding-bottom: 50px;
+  height: 100%;
   background-image: url(../img/papier1.png);
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
 }
-/* line 117, ../scss/_home.scss */
+/* line 116, ../scss/_home.scss */
 main#home section.projects .container {
   width: 100%;
   height: 100%;
-  text-align: center;
-}
-/* line 121, ../scss/_home.scss */
-main#home section.projects .container .top {
-  padding-bottom: 50px;
-  display: -webkit-inline-box;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.75s ease;
 }
 /* line 124, ../scss/_home.scss */
-main#home section.projects .container .top a {
-  text-decoration: none;
+main#home section.projects .container .background-white {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.75s ease;
 }
-/* line 128, ../scss/_home.scss */
-main#home section.projects .container h3 {
-  margin-top: -7px;
-  font-family: "Montserrat";
+/* line 129, ../scss/_home.scss */
+main#home section.projects .container .background-white .border-white {
+  border: 3px solid white;
+  padding: 30px;
+  transition: all 0.75s ease;
+}
+/* line 133, ../scss/_home.scss */
+main#home section.projects .container .background-white .border-white h4 {
   text-transform: uppercase;
+  font-family: "Montserrat";
   font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  color: white;
-  transition: all 0.3s ease;
+  font-size: 23px;
+  transition: all 0.75s ease;
+  color: #cc3554;
+  letter-spacing: 3px;
 }
-/* line 138, ../scss/_home.scss */
-main#home section.projects .container .content {
-  padding: 0 20px;
+/* line 142, ../scss/_home.scss */
+main#home section.projects .container .background-white .border-white .line {
   width: 100%;
-  height: auto;
+  height: 3px;
+  background-color: white;
   text-align: center;
-}
-/* line 143, ../scss/_home.scss */
-main#home section.projects .container .content .important-project {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
+  margin-top: 30px;
   margin-bottom: 20px;
   transition: all 0.75s ease;
 }
 /* line 151, ../scss/_home.scss */
-main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  overflow: hidden;
-}
-/* line 160, ../scss/_home.scss */
-main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: #46897e;
-  height: 5px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.75s;
-  transition-duration: 0.75s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-/* line 176, ../scss/_home.scss */
-main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:hover:before, main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:focus:before, main#home section.projects .container .content .important-project a:hover .hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
-}
-/* line 182, ../scss/_home.scss */
-main#home section.projects .container .content .important-project .presentation {
-  width: 50%;
-  float: left;
+main#home section.projects .container .background-white .border-white p {
+  text-align: justify;
+  font-family: "Poiret One";
+  letter-spacing: 1px;
   transition: all 0.75s ease;
-  color: black;
+  line-height: 20px;
+}
+/* line 158, ../scss/_home.scss */
+main#home section.projects .container .background-white .border-white .link-projects {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+/* line 164, ../scss/_home.scss */
+main#home section.projects .container .background-white .border-white .link-projects a {
+  text-decoration: none;
+  color: #cc3554;
+  transition: all 0.75s ease;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 171, ../scss/_home.scss */
+main#home section.projects .container .background-white .border-white .link-projects a:hover {
+  font-size: 20px;
+}
+/* line 178, ../scss/_home.scss */
+main#home section.projects .container .background-white:hover .border-white {
+  border: 3px solid #cc3554;
+}
+/* line 180, ../scss/_home.scss */
+main#home section.projects .container .background-white:hover .border-white h4 {
+  color: #1d314a;
+}
+/* line 183, ../scss/_home.scss */
+main#home section.projects .container .background-white:hover .border-white .line {
+  background-color: #cc3554;
 }
 /* line 187, ../scss/_home.scss */
-main#home section.projects .container .content .important-project .presentation h4 {
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 15px;
-  transition: all 0.75s ease;
-  margin-bottom: 10px;
-  color: #46897e;
+main#home section.projects .container .background-white:hover .border-white .link-projects a {
+  color: #1d314a;
 }
-/* line 196, ../scss/_home.scss */
-main#home section.projects .container .content .important-project .presentation p {
-  font-family: "Poiret One";
-  font-size: 13px;
-  transition: all 0.3s ease;
-  padding-bottom: 20px;
-}
-/* line 203, ../scss/_home.scss */
-main#home section.projects .container .content .important-project img {
-  width: 50%;
-  float: left;
-  transition: all 0.75s ease;
-  margin-bottom: 50px;
-}
-/* line 213, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:nth-of-type(2) a:hover .hvr-underline-from-center:before {
-  background: #8aa8bc;
-}
-/* line 218, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:nth-of-type(2) h4 {
-  color: #8aa8bc;
-}
-/* line 221, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:nth-of-type(2) img {
-  margin-bottom: 0;
-  margin-top: 30px;
-}
-/* line 226, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:nth-of-type(3) {
-  margin-bottom: 30px;
-}
-/* line 228, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:nth-of-type(3) a:hover .hvr-underline-from-center:before {
-  background: #3d3c5d;
-}
-/* line 233, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:nth-of-type(3) h4 {
-  color: #3d3c5d;
-}
-/* line 239, ../scss/_home.scss */
-main#home section.projects .container .content .important-project:hover img {
-  -ms-transform: rotate(180deg);
-  /* Internet Explorer */
-  -moz-transform: rotate(180deg);
-  /* Firefox */
-  -webkit-transform: rotate(180deg);
-  /* Safari et Chrome */
-  -moz-transition: -moz-transform ease 0.6s;
-  -webkit-transition: -webkit-transform ease 0.6s;
-  -ms-transition: -ms-transform ease 0.6s;
-  transition: transform ease-in 0.6s;
-}
-/* line 252, ../scss/_home.scss */
+/* line 195, ../scss/_home.scss */
 main#home section.contact {
   width: 100%;
   height: 50%;
   padding: 40px 80px;
 }
-/* line 256, ../scss/_home.scss */
+/* line 199, ../scss/_home.scss */
 main#home section.contact .container {
   text-align: center;
   padding-bottom: 80px;
 }
-/* line 259, ../scss/_home.scss */
+/* line 202, ../scss/_home.scss */
 main#home section.contact .container h3 {
   font-family: "Montserrat";
   font-size: 25px;
@@ -476,14 +482,14 @@ main#home section.contact .container h3 {
   color: #633c41;
   transition: all 0.75s ease;
 }
-/* line 267, ../scss/_home.scss */
+/* line 210, ../scss/_home.scss */
 main#home section.contact .container h3 small {
   font-family: "Poiret One";
   font-size: 15px;
   letter-spacing: 3px;
   transition: all 0.75s ease;
 }
-/* line 274, ../scss/_home.scss */
+/* line 217, ../scss/_home.scss */
 main#home section.contact .container ul {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -492,14 +498,14 @@ main#home section.contact .container ul {
   display: flex;
   transition: all 0.75s ease;
 }
-/* line 281, ../scss/_home.scss */
+/* line 224, ../scss/_home.scss */
 main#home section.contact .container ul li {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   transition: all 0.75s ease;
 }
-/* line 288, ../scss/_home.scss */
+/* line 231, ../scss/_home.scss */
 main#home section.contact .container a.contact-link {
   font-size: 13px;
   text-transform: uppercase;
@@ -511,84 +517,64 @@ main#home section.contact .container a.contact-link {
   text-decoration: none;
   transition: all 0.5s ease;
 }
-/* line 299, ../scss/_home.scss */
+/* line 242, ../scss/_home.scss */
 main#home section.contact .container a.contact-link:hover {
   border-color: #a28287;
   background-color: #a28287;
   color: #fefefe;
 }
-/* line 304, ../scss/_home.scss */
+/* line 247, ../scss/_home.scss */
 main#home section.contact .container .fa {
   font-size: 30px;
   color: #633c41;
   transition: all 0.5s ease;
 }
-/* line 309, ../scss/_home.scss */
+/* line 252, ../scss/_home.scss */
 main#home section.contact .container .fa:hover {
   color: #a28287;
 }
 
 @media screen and (min-width: 500px) {
-  /* line 317, ../scss/_home.scss */
+  /* line 260, ../scss/_home.scss */
   main#home section.about {
     padding-bottom: 80px;
   }
-  /* line 320, ../scss/_home.scss */
+  /* line 263, ../scss/_home.scss */
   main#home section.about .text h3 {
     font-size: 30px;
     line-height: 28px;
   }
-  /* line 328, ../scss/_home.scss */
-  main#home section.projects .container h3 {
-    font-size: 30px;
-  }
-  /* line 333, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project .presentation {
-    width: 60%;
-  }
-  /* line 335, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project .presentation h4 {
-    font-size: 22px;
-  }
-  /* line 338, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project .presentation p {
-    font-size: 18px;
-  }
-  /* line 342, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project img {
-    width: 40%;
-  }
-  /* line 351, ../scss/_home.scss */
+  /* line 276, ../scss/_home.scss */
   main#home section.contact .container h3 {
     font-size: 30px;
   }
-  /* line 353, ../scss/_home.scss */
+  /* line 278, ../scss/_home.scss */
   main#home section.contact .container h3 small {
     font-size: 20px;
   }
-  /* line 357, ../scss/_home.scss */
+  /* line 282, ../scss/_home.scss */
   main#home section.contact .container .fa {
     font-size: 40px;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 368, ../scss/_home.scss */
+  /* line 293, ../scss/_home.scss */
   main#home section.landing .triangles {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 377, ../scss/_home.scss */
+  /* line 302, ../scss/_home.scss */
   main#home section.landing {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  /* line 381, ../scss/_home.scss */
+  /* line 306, ../scss/_home.scss */
   main#home section.landing .container {
     height: 100%;
   }
-  /* line 384, ../scss/_home.scss */
+  /* line 309, ../scss/_home.scss */
   main#home section.landing .block_noir {
     display: flex;
     width: 100%;
@@ -597,7 +583,7 @@ main#home section.contact .container .fa:hover {
     transform: skewX(-20deg);
     transition: all 0.5s ease;
   }
-  /* line 392, ../scss/_home.scss */
+  /* line 317, ../scss/_home.scss */
   main#home section.landing .content {
     z-index: 1;
     padding: 0 30px;
@@ -605,21 +591,21 @@ main#home section.contact .container .fa:hover {
     justify-content: center;
     flex-flow: column wrap;
   }
-  /* line 398, ../scss/_home.scss */
+  /* line 323, ../scss/_home.scss */
   main#home section.landing .content .title {
     position: static;
     top: 0;
     left: 0;
     transform: skewX(20deg);
   }
-  /* line 404, ../scss/_home.scss */
+  /* line 329, ../scss/_home.scss */
   main#home section.landing .content h1.name {
     color: #1d314a;
     font-weight: bold;
     text-align: left;
     font-size: 50px;
   }
-  /* line 410, ../scss/_home.scss */
+  /* line 335, ../scss/_home.scss */
   main#home section.landing .content h2.role {
     margin-left: -20px;
     color: #1d314a;
@@ -627,13 +613,13 @@ main#home section.contact .container .fa:hover {
     font-size: 35px;
     letter-spacing: 2px;
   }
-  /* line 417, ../scss/_home.scss */
+  /* line 342, ../scss/_home.scss */
   main#home section.landing .content hr {
     display: block;
     width: 50px;
     margin: 50px 0;
   }
-  /* line 422, ../scss/_home.scss */
+  /* line 347, ../scss/_home.scss */
   main#home section.landing .content p {
     display: block;
     font-weight: bold;
@@ -644,99 +630,75 @@ main#home section.contact .container .fa:hover {
     text-align: justify;
     line-height: 20px;
   }
-  /* line 434, ../scss/_home.scss */
+  /* line 359, ../scss/_home.scss */
   main#home section.about {
     padding-bottom: 50px;
   }
-  /* line 436, ../scss/_home.scss */
+  /* line 361, ../scss/_home.scss */
   main#home section.about .container {
     padding-right: 80px;
   }
-  /* line 438, ../scss/_home.scss */
+  /* line 363, ../scss/_home.scss */
   main#home section.about .container img {
     width: 60%;
   }
-  /* line 443, ../scss/_home.scss */
-  main#home section.projects {
-    display: flex;
-    align-items: center;
-    padding: 0;
-  }
-  /* line 447, ../scss/_home.scss */
+  /* line 369, ../scss/_home.scss */
   main#home section.projects .container {
-    padding-right: 80px;
+    padding: 0;
+    padding-left: 50px;
+    padding-right: 150px;
   }
-  /* line 449, ../scss/_home.scss */
-  main#home section.projects .container h3 {
-    font-size: 30px;
-    text-align: center;
+  /* line 373, ../scss/_home.scss */
+  main#home section.projects .container .background-white {
+    padding: 20px;
   }
-  /* line 453, ../scss/_home.scss */
-  main#home section.projects .container .content {
-    text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 80px;
+  /* line 375, ../scss/_home.scss */
+  main#home section.projects .container .background-white .border-white {
+    padding: 30px;
   }
-  /* line 459, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project {
-    text-align: center;
-    flex-flow: column wrap;
-    margin-bottom: 0;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+  /* line 377, ../scss/_home.scss */
+  main#home section.projects .container .background-white .border-white h4 {
+    font-size: 25px;
   }
-  /* line 466, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project .presentation {
-    margin: 20px 0;
-    width: 90%;
-  }
-  /* line 469, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project .presentation p {
-    text-align: justify;
-  }
-  /* line 473, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project img {
-    width: 80%;
-  }
-  /* line 477, ../scss/_home.scss */
-  main#home section.projects .container .content .important-project:nth-of-type(3) {
-    margin-bottom: 0;
-  }
-  /* line 483, ../scss/_home.scss */
+  /* line 384, ../scss/_home.scss */
   main#home section.contact {
     height: 42%;
   }
-  /* line 485, ../scss/_home.scss */
+  /* line 386, ../scss/_home.scss */
   main#home section.contact .container {
     padding-bottom: 0;
     padding-right: 80px;
   }
-  /* line 488, ../scss/_home.scss */
+  /* line 389, ../scss/_home.scss */
   main#home section.contact .container h3 {
     font-size: 30px;
   }
-  /* line 490, ../scss/_home.scss */
+  /* line 391, ../scss/_home.scss */
   main#home section.contact .container h3 small {
     font-size: 20px;
   }
-  /* line 494, ../scss/_home.scss */
+  /* line 395, ../scss/_home.scss */
   main#home section.contact .container .fa {
     font-size: 38px;
   }
-  /* line 497, ../scss/_home.scss */
+  /* line 398, ../scss/_home.scss */
   main#home section.contact .container hr {
     display: none;
   }
 }
+@media screen and (min-width: 880px) {
+  /* line 409, ../scss/_home.scss */
+  main#home section.projects .container {
+    padding-left: 100px;
+    padding-right: 200px;
+  }
+}
 @media screen and (min-width: 992px) {
-  /* line 506, ../scss/_home.scss */
+  /* line 417, ../scss/_home.scss */
   main#home {
     max-width: 1300px;
   }
-  /* line 508, ../scss/_home.scss */
+  /* line 419, ../scss/_home.scss */
   main#home section.landing {
     background-image: url(../img/trytrait.jpg);
     background-position: left;
@@ -746,12 +708,12 @@ main#home section.contact .container .fa:hover {
     background-position: center;
     background-size: cover;
   }
-  /* line 516, ../scss/_home.scss */
+  /* line 427, ../scss/_home.scss */
   main#home section.landing .container {
     width: 100%;
     height: 100%;
   }
-  /* line 520, ../scss/_home.scss */
+  /* line 431, ../scss/_home.scss */
   main#home section.landing .particles {
     display: block;
     width: 360px;
@@ -761,11 +723,11 @@ main#home section.contact .container .fa:hover {
     top: 68px;
     left: -140px;
   }
-  /* line 529, ../scss/_home.scss */
+  /* line 440, ../scss/_home.scss */
   main#home section.landing canvas {
     border-radius: 50%;
   }
-  /* line 532, ../scss/_home.scss */
+  /* line 443, ../scss/_home.scss */
   main#home section.landing .block_noir {
     display: flex;
     width: 100%;
@@ -775,7 +737,7 @@ main#home section.contact .container .fa:hover {
     margin-left: 46%;
     transition: all 0.5s ease;
   }
-  /* line 541, ../scss/_home.scss */
+  /* line 452, ../scss/_home.scss */
   main#home section.landing .content {
     z-index: 1;
     margin-left: 30px;
@@ -783,21 +745,21 @@ main#home section.contact .container .fa:hover {
     justify-content: center;
     flex-flow: column wrap;
   }
-  /* line 547, ../scss/_home.scss */
+  /* line 458, ../scss/_home.scss */
   main#home section.landing .content .title {
     position: static;
     top: 0;
     left: 0;
     transform: skewX(20deg);
   }
-  /* line 553, ../scss/_home.scss */
+  /* line 464, ../scss/_home.scss */
   main#home section.landing .content h1.name {
     color: #1d314a;
     font-weight: bold;
     text-align: left;
     font-size: 48px;
   }
-  /* line 559, ../scss/_home.scss */
+  /* line 470, ../scss/_home.scss */
   main#home section.landing .content h2.role {
     margin-left: -20px;
     color: #1d314a;
@@ -805,13 +767,13 @@ main#home section.contact .container .fa:hover {
     font-size: 36px;
     letter-spacing: 2px;
   }
-  /* line 566, ../scss/_home.scss */
+  /* line 477, ../scss/_home.scss */
   main#home section.landing .content hr {
     display: block;
     width: 50px;
     margin: 50px 0;
   }
-  /* line 571, ../scss/_home.scss */
+  /* line 482, ../scss/_home.scss */
   main#home section.landing .content p {
     display: block;
     font-weight: bold;
@@ -822,29 +784,29 @@ main#home section.contact .container .fa:hover {
     text-align: justify;
     line-height: 20px;
   }
-  /* line 583, ../scss/_home.scss */
+  /* line 494, ../scss/_home.scss */
   main#home section.about {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 587, ../scss/_home.scss */
+  /* line 498, ../scss/_home.scss */
   main#home section.about .container {
     padding-right: 0;
   }
-  /* line 590, ../scss/_home.scss */
+  /* line 501, ../scss/_home.scss */
   main#home section.about .content {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  /* line 595, ../scss/_home.scss */
+  /* line 506, ../scss/_home.scss */
   main#home section.about .content .text {
     width: 50%;
     position: relative;
     z-index: 100;
   }
-  /* line 599, ../scss/_home.scss */
+  /* line 510, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     text-align: left;
     color: #cc3554;
@@ -861,7 +823,7 @@ main#home section.contact .container .fa:hover {
     line-height: 45px;
     transition: all 0.5s ease;
   }
-  /* line 615, ../scss/_home.scss */
+  /* line 526, ../scss/_home.scss */
   main#home section.about .content .text p {
     padding-top: 200px;
     width: 350px;
@@ -874,7 +836,7 @@ main#home section.contact .container .fa:hover {
     margin-bottom: 50px;
     transition: all 0.5s ease;
   }
-  /* line 628, ../scss/_home.scss */
+  /* line 539, ../scss/_home.scss */
   main#home section.about .content a {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -886,119 +848,133 @@ main#home section.contact .container .fa:hover {
     margin-right: 0;
     transition: all 0.5s ease;
   }
-  /* line 640, ../scss/_home.scss */
+  /* line 551, ../scss/_home.scss */
   main#home section.about .content a:hover {
     border-color: #cc3554;
     background-color: #cc3554;
     color: #fefefe;
   }
-  /* line 649, ../scss/_home.scss */
-  main#home section.projects .container .important-project {
-    margin: 20px 40px;
+  /* line 559, ../scss/_home.scss */
+  main#home section.projects .container {
+    padding-left: 220px;
+    padding-right: 320px;
   }
-  /* line 651, ../scss/_home.scss */
-  main#home section.projects .container .important-project img {
-    width: 20%;
+  /* line 564, ../scss/_home.scss */
+  main#home section.projects .container .background-white .border-white h4 {
+    font-size: 40px;
   }
-  /* line 657, ../scss/_home.scss */
+  /* line 567, ../scss/_home.scss */
+  main#home section.projects .container .background-white .border-white p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  /* line 572, ../scss/_home.scss */
+  main#home section.projects .container .background-white .border-white .link-projects a {
+    font-size: 20px;
+  }
+  /* line 575, ../scss/_home.scss */
+  main#home section.projects .container .background-white .border-white .link-projects a:hover {
+    font-size: 22px;
+  }
+  /* line 583, ../scss/_home.scss */
   main#home section.contact {
     height: 33%;
   }
-  /* line 659, ../scss/_home.scss */
+  /* line 585, ../scss/_home.scss */
   main#home section.contact .container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
   }
-  /* line 664, ../scss/_home.scss */
+  /* line 590, ../scss/_home.scss */
   main#home section.contact .container .text {
     width: 60%;
     float: left;
     text-align: center;
   }
-  /* line 669, ../scss/_home.scss */
+  /* line 595, ../scss/_home.scss */
   main#home section.contact .container .text h3 small {
     font-size: 16px;
   }
-  /* line 675, ../scss/_home.scss */
+  /* line 601, ../scss/_home.scss */
   main#home section.contact .social-network {
     width: 40%;
     float: left;
   }
-  /* line 678, ../scss/_home.scss */
+  /* line 604, ../scss/_home.scss */
   main#home section.contact .social-network ul {
     padding: 0 30px;
     margin: 0;
   }
 }
 @media screen and (min-width: 1050px) {
-  /* line 690, ../scss/_home.scss */
+  /* line 616, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 48%;
   }
-  /* line 693, ../scss/_home.scss */
+  /* line 619, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -120px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 702, ../scss/_home.scss */
+  /* line 628, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -90px;
   }
-  /* line 709, ../scss/_home.scss */
+  /* line 635, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     left: -150px;
     top: 30px;
     font-size: 38px;
     margin-bottom: 50px;
   }
-  /* line 715, ../scss/_home.scss */
+  /* line 641, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 400px;
     left: -80px;
     margin-bottom: 30px;
   }
-  /* line 721, ../scss/_home.scss */
+  /* line 647, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: -80px;
   }
 }
 @media screen and (min-width: 1150px) {
-  /* line 731, ../scss/_home.scss */
+  /* line 657, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 51%;
   }
-  /* line 734, ../scss/_home.scss */
+  /* line 660, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 743, ../scss/_home.scss */
+  /* line 669, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -30px;
   }
-  /* line 750, ../scss/_home.scss */
+  /* line 676, ../scss/_home.scss */
   main#home section.about .content .text h3 {
     font-size: 40px;
   }
-  /* line 753, ../scss/_home.scss */
+  /* line 679, ../scss/_home.scss */
   main#home section.about .content .text p {
     width: 500px;
   }
-  /* line 757, ../scss/_home.scss */
+  /* line 683, ../scss/_home.scss */
   main#home section.about .content a {
     margin-left: 50px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 767, ../scss/_home.scss */
+  /* line 693, ../scss/_home.scss */
   main#home section.landing .block_noir {
     margin-left: 53%;
   }
-  /* line 770, ../scss/_home.scss */
+  /* line 696, ../scss/_home.scss */
   main#home section.landing .particles {
     left: -5px;
   }
@@ -1326,13 +1302,31 @@ main#skills section.skills_page .container .column-1 {
   transition: all 0.50s ease;
 }
 /* line 23, ../scss/_skills.scss */
-main#skills section.skills_page .container .column-1 i {
-  font-size: 30px;
-  margin-bottom: 10px;
+main#skills section.skills_page .container .column-1 .cogs {
+  height: 55px;
+}
+/* line 25, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 .cogs i {
   color: #cc3554;
   transition: all 0.50s ease;
+  position: relative;
 }
-/* line 29, ../scss/_skills.scss */
+/* line 30, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 .cogs i:nth-of-type(1) {
+  font-size: 35px;
+}
+/* line 33, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 .cogs i:nth-of-type(2) {
+  font-size: 25px;
+  top: -20px;
+  left: -7px;
+}
+/* line 38, ../scss/_skills.scss */
+main#skills section.skills_page .container .column-1 .cogs i:nth-of-type(3) {
+  font-size: 20px;
+  left: -28px;
+}
+/* line 49, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 h1 {
   font-family: "Montserrat";
   text-transform: uppercase;
@@ -1341,7 +1335,7 @@ main#skills section.skills_page .container .column-1 h1 {
   transition: all 0.50s ease;
   color: #f3f3f3;
 }
-/* line 37, ../scss/_skills.scss */
+/* line 57, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 .line {
   width: 50px;
   height: 5px;
@@ -1349,7 +1343,7 @@ main#skills section.skills_page .container .column-1 .line {
   margin-top: 15px;
   margin-bottom: 40px;
 }
-/* line 44, ../scss/_skills.scss */
+/* line 64, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-1 p {
   font-family: "Poiret One";
   letter-spacing: 1px;
@@ -1358,7 +1352,7 @@ main#skills section.skills_page .container .column-1 p {
   transition: all 0.50s ease;
   color: #f3f3f3;
 }
-/* line 53, ../scss/_skills.scss */
+/* line 73, ../scss/_skills.scss */
 main#skills section.skills_page .container .column-2 {
   display: flex;
   align-items: center;
@@ -1369,7 +1363,7 @@ main#skills section.skills_page .container .column-2 {
   transition: all 0.50s ease;
   background-color: white;
 }
-/* line 63, ../scss/_skills.scss */
+/* line 83, ../scss/_skills.scss */
 main#skills section.skills_page .container .charts {
   width: 100%;
   height: 100%;
@@ -1377,18 +1371,18 @@ main#skills section.skills_page .container .charts {
 }
 
 @media screen and (min-width: 500px) {
-  /* line 76, ../scss/_skills.scss */
+  /* line 96, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-2 .charts {
     width: 400px;
     height: 400px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 90, ../scss/_skills.scss */
+  /* line 110, ../scss/_skills.scss */
   main#skills section.skills_page .container .column {
     height: 100%;
   }
-  /* line 93, ../scss/_skills.scss */
+  /* line 113, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 {
     padding: 0 40px;
     display: flex;
@@ -1397,45 +1391,45 @@ main#skills section.skills_page .container .charts {
     width: 40%;
     margin-bottom: 0;
   }
-  /* line 100, ../scss/_skills.scss */
+  /* line 120, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 i {
     font-size: 40px;
   }
-  /* line 103, ../scss/_skills.scss */
+  /* line 123, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 h1 {
     font-size: 30px;
   }
-  /* line 107, ../scss/_skills.scss */
+  /* line 127, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-2 {
     float: left;
     width: 60%;
     padding-bottom: 0;
     padding-right: 100px;
   }
-  /* line 113, ../scss/_skills.scss */
+  /* line 133, ../scss/_skills.scss */
   main#skills section.skills_page .container .charts {
     width: 350px;
     height: 350px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 127, ../scss/_skills.scss */
+  /* line 147, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 {
     width: 50%;
   }
-  /* line 129, ../scss/_skills.scss */
+  /* line 149, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 i {
     font-size: 60px;
   }
-  /* line 132, ../scss/_skills.scss */
+  /* line 152, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-1 h1 {
     font-size: 40px;
   }
-  /* line 136, ../scss/_skills.scss */
+  /* line 156, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-2 {
     width: 50%;
   }
-  /* line 138, ../scss/_skills.scss */
+  /* line 158, ../scss/_skills.scss */
   main#skills section.skills_page .container .column-2 .charts {
     width: 400px;
     height: 400px;
@@ -1445,19 +1439,22 @@ main#skills section.skills_page .container .charts {
 main#projects {
   min-height: 100%;
   width: 100%;
+  background-image: url(../img/papier1.png);
+  background-position: center;
+  background-repeat: repeat;
 }
-/* line 5, ../scss/_projects.scss */
+/* line 8, ../scss/_projects.scss */
 main#projects section.projects_page {
   min-height: 100%;
   width: 100%;
 }
-/* line 8, ../scss/_projects.scss */
+/* line 11, ../scss/_projects.scss */
 main#projects section.projects_page .container {
   width: 100%;
   min-height: 100%;
   padding: 20px;
 }
-/* line 12, ../scss/_projects.scss */
+/* line 15, ../scss/_projects.scss */
 main#projects section.projects_page .container .top {
   width: 100%;
   height: 100px;
@@ -1467,7 +1464,7 @@ main#projects section.projects_page .container .top {
   align-items: center;
   justify-content: center;
 }
-/* line 20, ../scss/_projects.scss */
+/* line 23, ../scss/_projects.scss */
 main#projects section.projects_page .container .top h1 {
   font-weight: bold;
   font-family: "Montserrat";
@@ -1475,23 +1472,23 @@ main#projects section.projects_page .container .top h1 {
   font-size: 30px;
   color: #fefefe;
 }
-/* line 27, ../scss/_projects.scss */
+/* line 30, ../scss/_projects.scss */
 main#projects section.projects_page .container .top img {
   display: none;
 }
-/* line 31, ../scss/_projects.scss */
+/* line 34, ../scss/_projects.scss */
 main#projects section.projects_page .container img {
   margin-bottom: -10px;
 }
-/* line 34, ../scss/_projects.scss */
+/* line 37, ../scss/_projects.scss */
 main#projects section.projects_page .container a {
   text-decoration: none;
 }
-/* line 38, ../scss/_projects.scss */
+/* line 41, ../scss/_projects.scss */
 main#projects section.projects_page .container a:last-child figure {
   margin-bottom: 100px;
 }
-/* line 42, ../scss/_projects.scss */
+/* line 45, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084 {
   font-family: 'Raleway';
   color: #fff;
@@ -1502,19 +1499,19 @@ main#projects section.projects_page .container figure.snip1084 {
   text-align: center;
   margin: 10px 0;
 }
-/* line 52, ../scss/_projects.scss */
+/* line 55, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084 * {
   -webkit-box-sizing: padding-box;
   box-sizing: padding-box;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 59, ../scss/_projects.scss */
+/* line 62, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084 img {
   opacity: 1;
   width: 100%;
 }
-/* line 64, ../scss/_projects.scss */
+/* line 67, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084 figcaption {
   top: 50%;
   left: 40px;
@@ -1523,14 +1520,14 @@ main#projects section.projects_page .container figure.snip1084 figcaption {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 73, ../scss/_projects.scss */
+/* line 76, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084 figcaption span {
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Montserrat";
   line-height: 15px;
 }
-/* line 80, ../scss/_projects.scss */
+/* line 83, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084 figcaption p {
   font-family: "Poiret One";
   letter-spacing: 1px;
@@ -1540,7 +1537,7 @@ main#projects section.projects_page .container figure.snip1084 figcaption p {
   opacity: 0;
   margin: 0;
 }
-/* line 90, ../scss/_projects.scss */
+/* line 93, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084:before,
 main#projects section.projects_page .container figure.snip1084:after {
   position: absolute;
@@ -1553,25 +1550,25 @@ main#projects section.projects_page .container figure.snip1084:after {
   -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
   transition: opacity 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s, -o-transform 0.6s, transform 0.6s;
 }
-/* line 103, ../scss/_projects.scss */
+/* line 106, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084:before {
   border-top: 1px double #fff;
   border-bottom: 1px double #fff;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
 }
-/* line 110, ../scss/_projects.scss */
+/* line 113, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084:after {
   border-right: 1px double #fff;
   border-left: 1px double #fff;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
 }
-/* line 117, ../scss/_projects.scss */
+/* line 120, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084.dark {
   background: #851e31;
 }
-/* line 121, ../scss/_projects.scss */
+/* line 124, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084:hover img,
 main#projects section.projects_page .container figure.snip1084.hover img {
   opacity: 0.2;
@@ -1580,7 +1577,7 @@ main#projects section.projects_page .container figure.snip1084.hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 130, ../scss/_projects.scss */
+/* line 133, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084:hover figcaption h2,
 main#projects section.projects_page .container figure.snip1084.hover figcaption h2,
 main#projects section.projects_page .container figure.snip1084:hover figcaption p,
@@ -1592,13 +1589,13 @@ main#projects section.projects_page .container figure.snip1084.hover figcaption 
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 142, ../scss/_projects.scss */
+/* line 145, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084:hover figcaption p,
 main#projects section.projects_page .container figure.snip1084.hover figcaption p {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 148, ../scss/_projects.scss */
+/* line 151, ../scss/_projects.scss */
 main#projects section.projects_page .container figure.snip1084:hover:before,
 main#projects section.projects_page .container figure.snip1084.hover:before,
 main#projects section.projects_page .container figure.snip1084:hover:after,
@@ -1609,65 +1606,65 @@ main#projects section.projects_page .container figure.snip1084.hover:after {
 }
 
 @media screen and (min-width: 500px) {
-  /* line 162, ../scss/_projects.scss */
+  /* line 165, ../scss/_projects.scss */
   main#projects section.projects_page .container {
     padding: 20px 100px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 171, ../scss/_projects.scss */
+  /* line 174, ../scss/_projects.scss */
   main#projects section.projects_page .container {
     padding: 20px;
     padding-right: 100px;
   }
-  /* line 174, ../scss/_projects.scss */
+  /* line 177, ../scss/_projects.scss */
   main#projects section.projects_page .container .top {
     background: none;
     justify-content: none;
     align-items: none;
   }
-  /* line 178, ../scss/_projects.scss */
+  /* line 181, ../scss/_projects.scss */
   main#projects section.projects_page .container .top h1 {
     display: none;
   }
-  /* line 181, ../scss/_projects.scss */
+  /* line 184, ../scss/_projects.scss */
   main#projects section.projects_page .container .top img {
     display: block;
     margin-top: 30px;
     width: 600px;
   }
-  /* line 188, ../scss/_projects.scss */
+  /* line 191, ../scss/_projects.scss */
   main#projects section.projects_page .container a:last-child figure {
     margin-bottom: 30px;
   }
-  /* line 192, ../scss/_projects.scss */
+  /* line 195, ../scss/_projects.scss */
   main#projects section.projects_page .container figure.snip1084 {
     width: 47%;
     margin: 20px 1%;
   }
-  /* line 196, ../scss/_projects.scss */
+  /* line 199, ../scss/_projects.scss */
   main#projects section.projects_page .container figure.snip1084 figcaption span {
     font-size: 1.3em;
   }
-  /* line 199, ../scss/_projects.scss */
+  /* line 202, ../scss/_projects.scss */
   main#projects section.projects_page .container figure.snip1084 figcaption p {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1050px) {
-  /* line 209, ../scss/_projects.scss */
+  /* line 212, ../scss/_projects.scss */
   main#projects section.projects_page .container {
     padding-right: 100px;
   }
-  /* line 211, ../scss/_projects.scss */
+  /* line 214, ../scss/_projects.scss */
   main#projects section.projects_page .container figure.snip1084 {
     width: 30%;
   }
-  /* line 214, ../scss/_projects.scss */
+  /* line 217, ../scss/_projects.scss */
   main#projects section.projects_page .container figure.snip1084 figcaption span {
     font-size: 1.2em;
   }
-  /* line 217, ../scss/_projects.scss */
+  /* line 220, ../scss/_projects.scss */
   main#projects section.projects_page .container figure.snip1084 figcaption p {
     font-size: 1em;
   }
@@ -1738,7 +1735,7 @@ main#project section.project_page .container .column-2 .project ul li {
 }
 /* line 50, ../scss/_project.scss */
 main#project section.project_page .container .column-2 .project ul li img {
-  height: 60px;
+  height: 50px;
 }
 /* line 58, ../scss/_project.scss */
 main#project section.project_page a {
@@ -1810,8 +1807,9 @@ main#project section.project_page a:nth-of-type(1):hover .link-project {
   }
   /* line 134, ../scss/_project.scss */
   main#project section.project_page .container .column-2 {
-    display: flex;
-    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     float: left;
     width: 55%;
   }
@@ -1909,57 +1907,34 @@ main#contact section.contact_page form textarea {
   main#contact section.contact_page .contact-form h1 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #1d314a;
-    transition: all 0.75s ease;
     text-align: left;
   }
-  /* line 92, ../scss/_contact.scss */
+  /* line 90, ../scss/_contact.scss */
   main#contact section.contact_page form {
     padding: 0;
     padding-left: 30px;
   }
-  /* line 95, ../scss/_contact.scss */
+  /* line 93, ../scss/_contact.scss */
   main#contact section.contact_page form input, main#contact section.contact_page form textarea {
     width: 75%;
     height: 50px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
-  /* line 102, ../scss/_contact.scss */
+  /* line 97, ../scss/_contact.scss */
   main#contact section.contact_page form input[type="submit"] {
-    margin-top: 30px;
-    border: 1px solid #1d314a;
-    background-color: #fefefe;
-    color: black;
-    text-transform: uppercase;
-    font-family: "Montserrat";
-    font-weight: bold;
-    letter-spacing: 3px;
     width: 30%;
-    transition: all 0.75s ease;
-  }
-  /* line 114, ../scss/_contact.scss */
-  main#contact section.contact_page form input[type="submit"]:hover {
-    border: 1px solid #1d314a;
-    background-color: #1d314a;
-    color: white;
-  }
-  /* line 119, ../scss/_contact.scss */
-  main#contact section.contact_page form textarea {
-    height: 150px;
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 130, ../scss/_contact.scss */
+  /* line 109, ../scss/_contact.scss */
   main#contact section.contact_page .column-1 {
     width: 45%;
   }
-  /* line 133, ../scss/_contact.scss */
+  /* line 112, ../scss/_contact.scss */
   main#contact section.contact_page .column-2 {
     width: 55%;
   }
-  /* line 137, ../scss/_contact.scss */
+  /* line 116, ../scss/_contact.scss */
   main#contact section.contact_page .contact-form h1 {
     font-size: 40px;
   }

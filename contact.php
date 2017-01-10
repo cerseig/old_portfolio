@@ -12,7 +12,7 @@
                 <br><input type="mail" name="mail" value="" placeholder="Mail" autocomplete="off" require>
                 <br><input type="text" name="subject" value="" placeholder="Sujet" autocomplete="off" require>
                 <br><textarea name="message" placeholder="Votre message" autocomplete="off" ></textarea>
-                <br><input type="submit" name="valid" value="Envoyer">
+                <br><div class="beat"><input type="submit" name="valid" value="Envoyer"></div>
             </form>
         </div>
     </section>

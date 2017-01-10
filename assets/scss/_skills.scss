@@ -20,11 +20,31 @@ main#skills {
                 padding-top: 50px;
                 margin-bottom: 50px;
                 transition: all 0.50s ease;
-                i {
-                    font-size: 30px;
-                    margin-bottom: 10px;
-                    color: #cc3554;
-                    transition: all 0.50s ease;
+                .cogs {
+                    height: 55px;
+                    i {
+                        color: #cc3554;
+                        transition: all 0.50s ease;
+                        position: relative;
+                    }
+                    i:nth-of-type(1) {
+                        font-size: 35px;
+                    }
+                    i:nth-of-type(2) {
+                        font-size: 25px;
+                        top: -20px;
+                        left: -7px;
+                    }
+                    i:nth-of-type(3) {
+                        font-size: 20px;
+                        left: -28px;
+                    }
+                    // i {
+                    //     font-size: 30px;
+                    //     margin-bottom: 10px;
+                    //     color: #cc3554;
+                    //     transition: all 0.50s ease;
+                    // }
                 }
                 h1 {
                     font-family: $font-montserrat;

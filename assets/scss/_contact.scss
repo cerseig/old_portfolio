@@ -84,8 +84,6 @@ main#contact {
                 h1 {
                     font-size: 30px;
                     margin-bottom: 20px;
-                    color: #1d314a;
-                    transition: all 0.75s ease;
                     text-align: left;
                 }
             }
@@ -95,29 +93,10 @@ main#contact {
                 input, textarea {
                     width: 75%;
                     height: 50px;
-                    margin: 10px 0;
-                    border: none;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
                 }
                 input[type="submit"] {
-                    margin-top: 30px;
-                    border: 1px solid #1d314a;
-                    background-color: #fefefe;
-                    color: black;
-                    text-transform: uppercase;
-                    font-family: $font-montserrat;
-                    font-weight: bold;
-                    letter-spacing: 3px;
                     width: 30%;
-                    transition: all 0.75s ease;
-                }
-                input[type="submit"]:hover {
-                    border: 1px solid #1d314a;
-                    background-color: #1d314a;
-                    color: white;
-                }
-                textarea {
-                    height: 150px;
+                    margin-left: 30px;
                 }
             }
         }

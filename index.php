@@ -7,7 +7,7 @@
 <!-- SECTION PAGE D'ARRIVÉE -->
     <section class="landing">
         <div class="container">
-            <div class="particles" id="particles-js"></div>
+            <div class="particles rotating" id="particles-js"></div>
                 <div class="block_noir animated bounceInRight">
                     <div class="content">
                         <div class="triangles">
@@ -18,7 +18,7 @@
                             <h1 class="name">Circé Grand</h1>
                             <h2 class="role">Creative Developer</2>
                         </div>
-                        <hr>
+                        <hr class="move-line">
                         <p class="resume">Bonjour et bienvenue sur mon portfolio ! Je suis une étudiante en 2ème année de DUT MMI (Métiers du Multimédia et de l'Internet). Je suis une développeuse créative et je suis à la recherche d'un stage en tant qu'intégrateur ou développeur pour une durée de 3 mois, à Paris ou dans les alentours.</p>
                     </div>
             </div>
@@ -33,7 +33,7 @@
                 <div class="text">
                     <h3>A dynamic french <br>web developer</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <a href="about.php" alt="Etre redirigé sur la page A Propos">En savoir plus</a>
+                    <div class="beat"><a href="about.php" alt="Etre redirigé sur la page A Propos">En savoir plus</a></div>
                 </div>
             </div>
         </div>
@@ -42,38 +42,12 @@
 <!-- SECTION PROJETS -->
     <section class="projects">
         <div class="container">
-            <div class="top">
-                <a href="projects.php" alt="Redirection vers la page présentant les projets" class="hvr-underline-from-center">
-                    <h3>Mes réalisations</h3>
-                </a>
-            </div>
-            <div class="content">
-                <div class="important-project">
-                    <a href="projects.php" alt="Redirection vers la page des projets">
-                    <img src="assets/img/projettut1.png" alt="Projeut Tuteuré de première année">
-                        <div class="presentation">
-                            <h4>Projeut Tuteuré n°1</h4>
-                            <p class="hvr-underline-from-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="important-project">
-                    <a href="projects.php" alt="Redirection vers la page des projets">
-                        <div class="presentation">
-                            <h4>Portfolio V.Bootstrap</h4>
-                            <p class="hvr-underline-from-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                        <img src="assets/img/portfoliov1.png" alt="Portfolio, version n°1, version Bootstrap">
-                    </a>
-                </div>
-                <div class="important-project">
-                    <a href="projects.php" alt="Redirection vers la page des projets">
-                        <img src="assets/img/aimemi.png" alt="Blog de 2ème année">
-                        <div class="presentation">
-                            <h4>Blog AIME.MI</h4>
-                            <p class="hvr-underline-from-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                    </a>
+            <div class="background-white">
+                <div class="border-white">
+                    <h4>Réalisations</h4>
+                    <div class="line"></div>
+                    <p>Grâce à mon parcours en MMI, j'ai pu livrer divers projets, dans différent domaines tel qu'en développement, en graphisme ou en audiovisuel. Ayant une attirance particulère pour le développement, la plupart des projets présentés concerne le domaine du développement et de l'intégration web.</p>
+                    <div class="link-projects"><a href="projects.php" alt="">Parcourir mes projets</a></div>
                 </div>
             </div>
         </div>
@@ -84,7 +58,9 @@
         <div class="container">
             <div class="text">
                 <h3>Besoin de me contacter ?<br><small>C'est avec plaisir que je vous répondrai</small></h3>
-                <a href="contact.php" alt="Etre redirigé sur la page Contact" class="contact-link">M'écrire</a>
+                <div class="beat">
+                    <a href="contact.php" alt="Etre redirigé sur la page Contact" class="contact-link">M'écrire</a>
+                </div>
             </div>
             <div class="social-network">
                 <ul>
