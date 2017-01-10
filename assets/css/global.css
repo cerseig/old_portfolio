@@ -466,30 +466,31 @@ main#home section.contact {
   width: 100%;
   height: 50%;
   padding: 40px 80px;
+  background-color: #cc3554;
 }
-/* line 199, ../scss/_home.scss */
+/* line 200, ../scss/_home.scss */
 main#home section.contact .container {
   text-align: center;
   padding-bottom: 80px;
 }
-/* line 202, ../scss/_home.scss */
+/* line 203, ../scss/_home.scss */
 main#home section.contact .container h3 {
   font-family: "Montserrat";
   font-size: 25px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #633c41;
+  color: #f6f6f6;
   transition: all 0.75s ease;
 }
-/* line 210, ../scss/_home.scss */
+/* line 211, ../scss/_home.scss */
 main#home section.contact .container h3 small {
   font-family: "Poiret One";
   font-size: 15px;
   letter-spacing: 3px;
   transition: all 0.75s ease;
 }
-/* line 217, ../scss/_home.scss */
+/* line 218, ../scss/_home.scss */
 main#home section.contact .container ul {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -498,40 +499,39 @@ main#home section.contact .container ul {
   display: flex;
   transition: all 0.75s ease;
 }
-/* line 224, ../scss/_home.scss */
+/* line 225, ../scss/_home.scss */
 main#home section.contact .container ul li {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   transition: all 0.75s ease;
 }
-/* line 231, ../scss/_home.scss */
+/* line 232, ../scss/_home.scss */
 main#home section.contact .container a.contact-link {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: bold;
-  border: 2px solid black;
+  border: 2px solid #f6f6f6;
   padding: 15px 40px;
-  color: black;
+  color: #f6f6f6;
   text-decoration: none;
   transition: all 0.5s ease;
 }
-/* line 242, ../scss/_home.scss */
+/* line 243, ../scss/_home.scss */
 main#home section.contact .container a.contact-link:hover {
-  border-color: #a28287;
-  background-color: #a28287;
-  color: #fefefe;
+  background-color: #f6f6f6;
+  color: #cc3554;
 }
 /* line 247, ../scss/_home.scss */
 main#home section.contact .container .fa {
   font-size: 30px;
-  color: #633c41;
+  color: #f6f6f6;
   transition: all 0.5s ease;
 }
 /* line 252, ../scss/_home.scss */
 main#home section.contact .container .fa:hover {
-  color: #a28287;
+  color: #4a1b23;
 }
 
 @media screen and (min-width: 500px) {
