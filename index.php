@@ -32,7 +32,7 @@
                 <img src="assets/img/test-brush.png" alt="Photo de la section A Propos">
                 <div class="text">
                     <h3>A dynamic french <br>web developer</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Après l'obtention de mon baccalauréat scientifique, j'ai intégré le DUT MMI à Champs-sur-Marne. Cela fait maintenant 2 ans que j'ai découvert le monde du web et du développement. C'est durant les cours d'intégration web et de base de données que mon intêret pour le code est apparu. Ma passion du web s'est développé au fur et à mesure que je découvrais des nouveaux langages. </p>
                     <div class="beat"><a href="about.php" alt="Etre redirigé sur la page A Propos">En savoir plus</a></div>
                 </div>
             </div>
