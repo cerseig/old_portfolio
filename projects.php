@@ -21,8 +21,9 @@ try {
     <section class="projects_page">
         <div class="container">
             <div class="top">
+                <div class="line"></div>
                 <h1>Réalisations</h1>
-                <img src="assets/img/essai.png" alt="">
+                <quote></quote>
             </div>
             <div class="grid">
                 <?php

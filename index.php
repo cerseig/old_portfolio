@@ -10,10 +10,6 @@
             <div class="particles rotating" id="particles-js"></div>
                 <div class="block_noir animated bounceInRight">
                     <div class="content">
-                        <div class="triangles">
-                            <img src="assets/img/triangle.png" alt="">
-                            <img src="assets/img/triangle-contour.png" alt="">
-                        </div>
                         <div class="title">
                             <h1 class="name">Circé Grand</h1>
                             <h2 class="role">Creative Developer</2>
@@ -33,7 +29,7 @@
                 <div class="text">
                     <h3>A dynamic french <br>web developer</h3>
                     <p>Après l'obtention de mon baccalauréat scientifique, j'ai intégré le DUT MMI à Champs-sur-Marne. Cela fait maintenant 2 ans que j'ai découvert le monde du web et du développement. C'est durant les cours d'intégration web et de base de données que mon intêret pour le code est apparu. Ma passion du web s'est développé au fur et à mesure que je découvrais des nouveaux langages. </p>
-                    <div class="beat"><a href="about.php" alt="Etre redirigé sur la page A Propos">En savoir plus</a></div>
+                    <a href="about.php" alt="Etre redirigé sur la page A Propos">En savoir plus</a>
                 </div>
             </div>
         </div>
@@ -69,7 +65,6 @@
                     <li><a href="http://www.viadeo.com/p/002r2kearrmvi16" alt="Redirection vers Viadeo"><i class="fa fa-viadeo"></i></a></li>
                     <li><a href="https://github.com/cerseig" alt="Redirection vers Github"><i class="fa fa-github"></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCvx4lsTwaR_r_F_Z63BQYRA" alt="Redirection vers Youtube"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="https://www.flickr.com/photos/circe_g/" alt="Redirection vers Flickr"><i class="fa fa-picture-o"></i></a></li>
                 </ul>
                 <hr>
             </div>
